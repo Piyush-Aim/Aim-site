@@ -733,6 +733,12 @@
     .intro-text {
         font-size: 1rem;
     }
+
+    /* Case Studies-sidebar */
+    .case-sidebar {
+        width: 80%;
+        right: -80%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -769,5 +775,23 @@
     /* technology page */
     .tech-hero-visual {
         display: none;
+    }
+
+    /* Portfolio SLIDER */
+    .ps-title {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    .ps-num-bg {
+        font-size: 12rem;
+        left: -10px;
+    }
+
+
+    /* Case Studies-sidebar */
+    .case-sidebar {
+        width: 80%;
+        right: -90%;
     }
 }
