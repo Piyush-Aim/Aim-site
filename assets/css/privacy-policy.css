@@ -1,0 +1,123 @@
+.policy-hero {
+    padding: clamp(8rem, 15vw, 12rem) 0 clamp(4rem, 10vw, 8rem);
+    background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg) 100%);
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+}
+
+.policy-hero-inner {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.policy-hero .last-updated {
+    color: var(--muted);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Content Section */
+.policy-card {
+    background: var(--white);
+    border-radius: 24px;
+    padding: clamp(2rem, 5vw, 5rem);
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.05);
+    border: 1px solid var(--border);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: #475569;
+}
+
+.policy-item {
+    margin-top: 3.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+}
+
+.policy-item:first-of-type {
+    margin-top: 2rem;
+    border-top: none;
+    padding-top: 0;
+}
+
+.policy-item h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: var(--secondary);
+}
+
+.policy-item p {
+    margin-bottom: 1.25rem;
+    color: #475569;
+}
+
+.sub-item {
+    margin: 1.5rem 0 1.5rem 1.5rem;
+    padding-left: 1.5rem;
+    border-left: 3px solid var(--primary);
+}
+
+.sub-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+}
+
+.policy-item ul {
+    margin-bottom: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+.policy-item ul li {
+    position: relative;
+    padding-left: 1.75rem;
+    margin-bottom: 0.75rem;
+    color: #475569;
+}
+
+.policy-item ul li::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: var(--primary);
+    font-size: 0.85rem;
+}
+
+.contact-info {
+    font-style: normal;
+    background: var(--bg-light);
+    padding: 2.5rem;
+    border-radius: 16px;
+    border: 1px solid rgba(244, 121, 89, 0.2);
+    margin-top: 2rem;
+}
+
+.contact-info strong {
+    font-size: 1.2rem;
+    color: var(--secondary);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info a {
+    color: var(--primary);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: var(--secondary);
+}

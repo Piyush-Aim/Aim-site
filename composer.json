@@ -1,0 +1,14 @@
+{
+    "name": "aim/site",
+    "description": "Aim Infocorp Site",
+    "type": "project",
+    "require": {
+        "phpmailer/phpmailer": "6.9"
+    },
+    "authors": [
+        {
+            "name": "Aim Infocorp",
+            "email": "info@aiminfocorp.com"
+        }
+    ]
+}

@@ -1,0 +1,773 @@
+@media (max-width: 1280px) {
+
+    /* Home hero section */
+    .hero-decor-wrapper-left,
+    .hero-decor-wrapper-right {
+        display: none;
+    }
+
+    /* About page hero section */
+    .legacy-hub-wrap {
+        width: 400px !important;
+        height: 400px !important;
+    }
+
+    /* Services-detail template */
+    .professional-img-wrapper {
+        height: 500px;
+    }
+
+    /* Project detail page */
+    .project-summary-grid {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 1180px) {
+    .pshow-stats {
+        flex-direction: column;
+        gap: .5rem;
+        width: 100%;
+    }
+
+    .pshowcase-list {
+        min-height: 750px;
+    }
+
+    .bento-feat.wide {
+        gap: 3rem;
+        align-items: center;
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    /* hero */
+    .hero-trust-row {
+        max-width: 90%;
+        padding: 2rem 0.5rem;
+    }
+
+    /* Services */
+    .s3-hero-grid {
+        gap: 2rem;
+    }
+
+    .services-tabs-container,
+    .filter-tabs {
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .s3-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    .service-tab-btn {
+        font-size: 0.88rem;
+    }
+
+    /* PORTFOLIO SLIDER */
+    .ps-title {
+        font-size: 3rem;
+    }
+
+    .ps-desc {
+        font-size: 1rem;
+    }
+
+    .ps-num-bg {
+        left: -20px;
+    }
+
+    .ps-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    /* Why us */
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-right {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .bento-card:nth-child(even) {
+        margin-top: 0;
+    }
+
+    /* Process */
+    .proc-steps {
+        gap: 1rem;
+    }
+
+    .psi-card {
+        padding: 1.5rem 1rem;
+    }
+
+    /* Industries */
+    .ind-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* About */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .about-experience-badge {
+        right: 1rem;
+        bottom: 1rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .about-content {
+        padding-left: 0;
+    }
+
+    /* About page hero section */
+    .legacy-composition {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    /* Case Studies - Grid */
+    .project-grid {
+        grid-template-columns: repeat(2, minmax(auto, 1fr));
+    }
+
+    /* Contact */
+    .contact-info-col,
+    .contact-form-col {
+        padding: 2.5rem;
+    }
+
+    .info-links {
+        margin: 3rem 0;
+    }
+
+    /* Services-detail template */
+    .webdev-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .webdev-hero-text {
+        text-align: center;
+        justify-items: center;
+    }
+
+    .exp-panel-grid {
+        gap: 3rem;
+        padding: 2rem;
+    }
+
+    .process-horz {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem 1rem;
+    }
+
+    .pulse-track-line {
+        display: none;
+    }
+
+    /* project-detail page */
+    .toc-btn-mobile,
+    .sidebar-overlay {
+        display: block;
+    }
+
+    /* Technology page */
+    .tech-hero-text {
+        justify-items: center;
+        z-index: 9;
+    }
+
+    .tech-hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 4rem;
+    }
+
+    .tech-hero-visual {
+        height: 450px;
+        align-items: end;
+    }
+
+    .tech-tabs-nav {
+        border-radius: 100px;
+        padding: 0.75rem;
+        width: 100%;
+        max-width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        -webkit-overflow-scrolling: touch;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .tech-tabs-nav.is-shrunk {
+        transform: scale(1);
+        justify-content: center;
+    }
+
+    /* TOC button */
+    .case-detail-grid {
+        display: block;
+    }
+
+    .case-sidebar {
+        position: fixed;
+        top: 0;
+        right: -50%;
+        width: 50%;
+        height: 100vh;
+        z-index: 1000;
+        padding-top: 5rem;
+        transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        overflow-y: auto;
+    }
+
+    .case-sidebar.is-open {
+        right: 0;
+    }
+
+    .sticky-card {
+        border-radius: 1rem 0rem 0rem 1rem;
+    }
+
+    .sidebar-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(4px);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .sidebar-overlay.is-active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .toc-btn-mobile {
+        font-family: var(--font-body);
+        position: fixed;
+        top: 120px;
+        right: 0;
+        z-index: 998;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.6rem 1rem;
+        background: var(--primary);
+        color: var(--white);
+        border: none;
+        border-radius: 20px 0 0 20px;
+        box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .toc-btn-mobile:hover {
+        transform: translateY(-4px);
+    }
+}
+
+@media (max-width: 991px) {
+
+    /* Services */
+    .s3-hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .s3-hero-visual {
+        display: none;
+    }
+
+    .s3-hero-text {
+        justify-items: center;
+    }
+
+    /* About page hero section */
+    .legacy-stats-row {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .legacy-hub-wrap {
+        width: 450px !important;
+        height: 450px !important;
+    }
+
+    .legacy-narrative .subtitle {
+        margin-inline: auto;
+    }
+
+    .legacy-composition {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 5rem;
+    }
+
+    /* Contact */
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    /* Services-detail template */
+    .exp-panel-grid {
+        grid-template-columns: 1fr;
+        padding: 2.5rem;
+        gap: 3rem;
+    }
+
+    .webdev-t-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 920px) {
+
+    /* Services */
+    .services-grid,
+    .s3-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .s3-tech-grid-small {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    /* PORTFOLIO SLIDER */
+    .ps-slide {
+        gap: 2rem;
+    }
+
+    .ps-content {
+        padding-left: 0;
+    }
+
+    /* Portfoila - INTERACTIVE SHOWCASE */
+    .pshowcase-inner {
+        grid-template-columns: 0.9fr 1.1fr;
+    }
+
+    .pshow-content {
+        padding: 2rem;
+    }
+
+    .pshow-counter {
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+    .pshow-nav {
+        right: 2rem;
+    }
+
+    /* Case Studies - Featured */
+    .featured-card {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding: 2rem;
+    }
+
+    .featured-visual {
+        height: 350px;
+    }
+
+    /* Services-detail template */
+    .intro-professional-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gsc-1 {
+        top: 7%;
+        left: 3%;
+    }
+
+    .gsc-2 {
+        bottom: 5%;
+        right: 3%;
+    }
+
+    .webdev-benefits .section-header {
+        width: 100%;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Technology page */
+    .tech-tabs-nav.is-shrunk {
+        transform: scale(1);
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 850px) {
+
+    /* Portfoila - INTERACTIVE SHOWCASE */
+    .pshowcase-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .pshowcase-list {
+        min-height: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .pshowcase-detail {
+        height: 700px;
+    }
+
+    /* Project Detail */
+    .challenge-grid,
+    .process-grid,
+    .results-grid,
+    .performance-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* WHY CHOOSE US */
+    .why-right {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Process */
+    .proc-svg-line {
+        display: none;
+    }
+
+    .proc-fluid-wrap {
+        margin: 0rem auto 0;
+    }
+
+    .proc-steps {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .proc-step-item {
+        margin-top: 0 !important;
+    }
+
+    .psi-card {
+        max-width: 100%;
+        padding: 2.5rem 1rem;
+    }
+
+    /* Testimonials */
+    .testi-layout {
+        grid-template-columns: 1fr;
+    }
+
+    /* Industries */
+    .ind-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Services */
+    .s3-tech-tabs-wrapper {
+        width: 100%;
+    }
+
+    /* About page journey section */
+    .conduit-line-outer {
+        left: 20px;
+        transform: none;
+    }
+
+    .conduit-node {
+        left: 20px;
+        transform: translateX(-50%);
+    }
+
+    .conduit-step,
+    .conduit-step:nth-child(even) {
+        flex-direction: row;
+    }
+
+    .conduit-content-wrap {
+        width: calc(100% - 60px);
+        margin-left: 60px;
+    }
+
+    /* Case Studies - Grid */
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Contact */
+    .contact-hero {
+        padding-top: 8rem;
+    }
+
+    /* Services-detail template */
+    .process-horz {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* HERO */
+    .hero-center-text {
+        max-width: 100%;
+    }
+
+    .btn-primary-lg,
+    .btn-outline-premium {
+        width: 100%;
+        max-width: 320px;
+        padding: 1rem 2rem;
+    }
+
+    /* TRUST INDICATORS */
+    .hero-trust-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem 1rem;
+        gap: 0;
+    }
+
+    .trust-item {
+        flex: 0 0 50%;
+        border-right: none !important;
+        padding: 1.5rem 0;
+    }
+
+    .trust-item:nth-child(odd) {
+        border-right: 1px solid var(--border) !important;
+    }
+
+    .trust-item:nth-child(n+3) {
+        border-top: 1px solid var(--border) !important;
+    }
+
+    /* Services */
+    .services-grid,
+    .s3-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .s3-tech-grid-small {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Cases */
+    .ps-stats {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    /* Portfolio SLIDER */
+    .cases-top-flex {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    .ps-slide {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 4rem;
+    }
+
+    .testi-featured {
+        padding: 2rem;
+    }
+
+    .tf-role {
+        font-size: .88rem;
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .premium-form .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info-col,
+    .contact-form-col {
+        padding: 1.5rem;
+    }
+
+    /* Portfolio - Hero*/
+    .port-hero .subtitle {
+        margin-bottom: 3rem;
+    }
+
+    .pshowcase-list {
+        padding: 2rem;
+    }
+
+    .pshow-counter,
+    .pshow-nav {
+        right: 1rem;
+        display: none;
+    }
+
+    .pshow-stats {
+        gap: 0.5rem;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .pshow-stat-num {
+        font-size: 1.5rem;
+    }
+
+    /* Case Studies - Grid */
+    .project-grid {
+        grid-template-columns: repeat(1, minmax(auto, 1fr));
+    }
+
+    .featured-card {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        padding: 1.5rem;
+    }
+
+    .featured-visual {
+        height: 350px;
+    }
+
+    .featured-desc {
+        font-size: 1rem;
+    }
+
+    /* Project Detail */
+    .challenge-grid,
+    .process-grid,
+    .results-grid,
+    .performance-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .actions-card {
+        flex-direction: column;
+    }
+
+    .actions-image-container {
+        min-height: 400px;
+    }
+
+    /* contact */
+    .contact-form-col .btn-primary-lg {
+        max-width: 100%;
+    }
+
+    /* Services-detail template */
+    .hero-metrics {
+        justify-content: center;
+    }
+
+    .wd-submit-btn {
+        max-width: 100%;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .webdev-t-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .exp-panel-grid {
+        padding: 1.25rem;
+    }
+
+    .process-horz {
+        grid-template-columns: 1fr;
+    }
+
+    .webdev-glass-form {
+        padding: 1.5rem;
+    }
+
+    /* Technology page */
+    .hero-stats {
+        flex-direction: column;
+    }
+
+    .tech-card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Technology detail page */
+    .bento-feat.wide {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    /* policy / T&C */
+    .policy-item h2 {
+        font-size: 1.4rem;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* WHY CHOOSE US */
+    .why-items {
+        grid-template-columns: 1fr;
+    }
+
+    .why-right {
+        grid-template-columns: 1fr;
+    }
+
+    /* Process */
+    .proc-steps {
+        grid-template-columns: 1fr;
+    }
+
+    /* Industries */
+    .ind-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* CTA */
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    /* About page hero section */
+    .legacy-visual {
+        display: none;
+    }
+
+    /* technology page */
+    .tech-hero-visual {
+        display: none;
+    }
+}

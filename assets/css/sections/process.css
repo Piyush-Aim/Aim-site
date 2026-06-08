@@ -1,0 +1,93 @@
+/* PROCESS */
+.process-section {
+  background: var(--bg-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.proc-fluid-wrap {
+  position: relative;
+  width: 100%;
+  margin: 7rem auto 0;
+}
+
+.proc-svg-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  transform: translateY(-22%);
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.proc-steps {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+
+.proc-step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+/* Path positions */
+.proc-step-item:nth-child(odd) {
+  margin-top: -3rem;
+}
+
+.proc-step-item:nth-child(even) {
+  margin-top: 5rem;
+}
+
+.psi-card {
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 320px;
+  border: 1px solid var(--border);
+}
+
+.psi-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  border-color: var(--primary);
+}
+
+.psi-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--pri-sh);
+  transition: all 0.4s ease;
+}
+
+.psi-card:hover .psi-icon {
+  background: var(--primary);
+  color: var(--white);
+  transform: rotate(-10deg);
+}
+
+.proc-p {
+  font-size: 0.9rem;
+  color: var(--muted);
+}

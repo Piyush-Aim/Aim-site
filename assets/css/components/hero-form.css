@@ -1,0 +1,161 @@
+/* --- Right Side: Glass Form Card --- */
+.webdev-hero-form-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.webdev-glass-form {
+  background: var(--secondary);
+  border-radius: 24px;
+  padding: 2.5rem;
+}
+
+.webdev-glass-form h3 {
+  font-size: 2.2rem;
+  color: var(--white);
+  margin-bottom: 0.4rem;
+}
+
+.webdev-glass-form .form-sub {
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+
+/* ---- FLOATING LABEL FORM ---- */
+.form-group.floating {
+  position: relative;
+  border-bottom: 1px solid var(--border);
+  transition: border-color 0.3s;
+}
+
+.form-group.floating:focus-within {
+  border-color: var(--primary);
+}
+
+.form-group.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: all 0.3s;
+  appearance: none;
+}
+
+.form-group label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: var(--muted);
+  transition: all 0.3s;
+  pointer-events: none;
+}
+
+.form-group textarea+label {
+  top: 0rem;
+  transform: none;
+}
+
+.form-group input:focus+label,
+.form-group input:not(:placeholder-shown)+label,
+.form-group textarea:focus+label,
+.form-group textarea:not(:placeholder-shown)+label,
+.form-group select:focus+label,
+.form-group select:valid+label {
+  top: -10px;
+  font-size: 0.8rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.select-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
+  pointer-events: none;
+}
+
+.form-line {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-group:focus-within .form-line {
+  width: 100%;
+}
+
+.form-footer {
+  margin-top: 3rem;
+}
+
+/* Override form colours for dark hero card context */
+.webdev-form .form-group input,
+.webdev-form .form-group textarea,
+.webdev-form .form-group select {
+  color: var(--white);
+  caret-color: var(--primary);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 100px transparent inset !important;
+  -webkit-text-fill-color: var(--white) !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.webdev-form .form-group select option {
+  background: var(--secondary);
+  color: var(--white);
+  padding: 10px !important;
+}
+
+.webdev-form .form-group label {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.webdev-form .form-group input:focus+label,
+.webdev-form .form-group input:not(:placeholder-shown)+label,
+.webdev-form .form-group textarea:focus+label,
+.webdev-form .form-group textarea:not(:placeholder-shown)+label,
+.webdev-form .form-group select:focus+label,
+.webdev-form .form-group select:valid+label {
+  color: var(--primary);
+}
+
+.webdev-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem 2rem;
+}
+
+.wd-submit-btn {
+  font-family: var(--font-body);
+  width: 100%;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.wd-submit-btn:hover {
+  transform: translateY(-2px);
+  background-color: var(--primary);
+  color: var(--white);
+}

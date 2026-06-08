@@ -1,0 +1,454 @@
+/* ================================================
+   1. HERO
+   ================================================ */
+.port-hero {
+  padding: clamp(8rem, 15vw, 10rem) 0 clamp(4rem, 10vw, 4rem);
+  background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg) 100%);
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.port-hero-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.port-hero .subtitle {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  max-width: 640px;
+  margin: 0 auto 5rem;
+}
+
+
+/* TRUST INDICATORS (Stats Row) */
+.hero-trust-row {
+  display: flex;
+  background: var(--white);
+  padding: 2rem 1rem;
+  border-radius: 1.75rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  max-width: 950px;
+  margin: 0 auto;
+  border: 1px solid var(--border);
+  justify-content: space-around;
+  position: relative;
+  z-index: 10;
+}
+
+.trust-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  border-right: 1px solid var(--border);
+}
+
+.trust-item:last-child {
+  border-right: none;
+}
+
+.trust-num-box {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+  color: var(--primary);
+}
+
+.trust-sym {
+  font-size: 0.75em;
+  margin-left: 2px;
+}
+
+.trust-lbl {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.port-scroll-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  margin-top: 5rem;
+}
+
+.port-scroll-hint:hover {
+  opacity: 0.7;
+}
+
+.port-scroll-hint p {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--muted);
+}
+
+.port-scroll-mouse {
+  width: 22px;
+  height: 36px;
+  border: 2px solid var(--accent);
+  border-radius: 20px;
+}
+
+.port-scroll-wheel {
+  width: 4px;
+  height: 8px;
+  background: var(--primary);
+  border-radius: 4px;
+  margin: 6px auto 0;
+  animation: scrollWheel 1.6s ease-in-out infinite;
+}
+
+@keyframes scrollWheel {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+/* ================================================
+   2. INTERACTIVE SHOWCASE
+   ================================================ */
+.pshowcase {
+  background: var(--secondary);
+  padding-inline: 1.25rem;
+}
+
+.pshowcase-inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #111a2f;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pshowcase-list {
+  padding: 2.5rem;
+  background: #111a2f;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+}
+
+.pshowcase-list-header {
+  margin-bottom: 1.5rem;
+}
+
+.pshowcase-list-header .tag-primary {
+  background-color: transparent;
+}
+
+.pshowcase-list-header h2 {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.pshow-item {
+  font-family: var(--font-body);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  border: none;
+  background: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.pshow-item:last-child {
+  border-bottom: none;
+}
+
+.pshow-item-left {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.pshow-num {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.pshow-tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.pshow-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.pshow-arrow {
+  font-size: 1rem;
+  color: var(--primary);
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s;
+}
+
+.pshow-progress {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: none;
+}
+
+.pshow-item.is-active {
+  padding-left: 1rem;
+}
+
+.pshow-item.is-active .pshow-num,
+.pshow-item.is-active .pshow-tag {
+  color: var(--primary);
+}
+
+.pshow-item.is-active .pshow-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.pshow-item.is-active .pshow-progress {
+  width: 100%;
+  transition: width 5s linear;
+}
+
+/* Updated Counter */
+.pshow-counter {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 3.5rem;
+  right: 3.5rem;
+  z-index: 10;
+  transition: all 0.6s 0.2s ease;
+}
+
+#pshowCurrent {
+  font-size: 2.5rem;
+  color: var(--primary);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.pshow-counter-sep {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.pshow-counter-total {
+  color: var(--muted);
+}
+
+/* Detail Side */
+.pshowcase-detail {
+  position: relative;
+  background: var(--secondary);
+  overflow: hidden;
+}
+
+.pshow-panel {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pshow-panel.is-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+.pshow-img-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.pshow-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 10s ease;
+}
+
+.pshow-panel.is-active .pshow-img-wrap img {
+  transform: scale(1.15);
+}
+
+.pshow-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.4) 100%, transparent 100%);
+}
+
+.pshow-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3.5rem;
+  z-index: 3;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: all 0.6s 0.2s ease;
+}
+
+.pshow-panel.is-active .pshow-content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.pshow-h3 {
+  color: var(--white) !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.pshow-desc {
+  max-width: 550px;
+  color: var(--white) !important;
+  margin-bottom: 2rem !important;
+}
+
+.pshow-stats {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 2.5rem;
+  width: 650px;
+}
+
+.pshow-stat-num {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--primary);
+  display: block;
+}
+
+.pshow-stat-lbl {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgb(255 255 255 / 66%);
+}
+
+.pshow-cta-btn {
+  background: var(--white);
+  transition: all 0.3s;
+}
+
+.pshow-cta-btn:hover {
+  transform: translateY(-4px);
+}
+
+.pshow-nav {
+  position: absolute;
+  top: 3.5rem;
+  right: 3.5rem;
+  display: flex;
+  gap: 1rem;
+  z-index: 10;
+}
+
+.pshow-nav-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.pshow-nav-btn:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+/* ================================================
+   3. PROJECT GALLERY: BROWSER GRID
+   ================================================ */
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 4.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.filter-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-btn {
+  font-family: var(--font-h);
+  border: 1px solid var(--border);
+  background: var(--white);
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.filter-btn.active {
+  background: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+  box-shadow: 0 10px 25px rgba(244, 121, 89, 0.2);
+}

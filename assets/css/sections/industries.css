@@ -1,0 +1,58 @@
+/* INDUSTRIES */
+.indus-section {
+  background: var(--white);
+}
+
+.ind-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.25rem;
+}
+
+.ind-card {
+  border-radius: 2rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border: 1px solid var(--border);
+  background: var(--white);
+  transition: all 0.32s;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  display: block;
+}
+
+.ind-card:hover {
+  transform: translateY(-7px);
+  background-color: var(--bg-light);
+  border-color: var(--primary);
+  box-shadow: var(--pri-sh);
+}
+
+.ind-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin: 0 auto 1.1rem;
+  transition: all 0.3s;
+}
+
+.ind-card:hover .ind-icon {
+  background: var(--primary);
+  color: var(--white) !important;
+  transform: scale(1.12) rotate(-5deg);
+}
+
+.ind-card h5 {
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.ind-card p {
+  color: var(--muted);
+  margin-bottom: 0;
+}

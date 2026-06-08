@@ -1,0 +1,113 @@
+/* FINAL CTA */
+#cta {
+  text-align: center;
+  background: linear-gradient(270deg, #fa6742, #ffb72f, #ff7a59, #fa6742);
+  background-size: 400% 400%;
+  animation: gradientMove 8s ease infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.cta-content {
+  text-align: center;
+  color: var(--white);
+  position: relative;
+}
+
+.cta-title {
+  color: var(--white);
+}
+
+.cta-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+/* white button */
+.btn-white-solid {
+  background: var(--white);
+  color: var(--primary);
+}
+
+.btn-white-solid:hover,
+.btn-outline-white:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.btn-white-solid svg {
+  transition: transform 0.2s;
+}
+
+.btn-white-solid:hover svg {
+  transform: translateX(4px);
+}
+
+/* outline button */
+.btn-outline-white {
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.btn-outline-white:hover {
+  background: var(--white);
+  color: var(--primary);
+}
+
+/* contact cards */
+.contact-grid {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: all 0.3s;
+}
+
+.contact-card:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-4px);
+}
+
+.contact-card svg {
+  margin: 0 auto 1rem;
+}
+
+.contact-card-title {
+  color: var(--white);
+}
+
+.contact-card-link {
+  color: var(--white);
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}

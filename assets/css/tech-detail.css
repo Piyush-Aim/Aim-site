@@ -1,0 +1,435 @@
+/* 1. HERO SECTION */
+.webdev-hero {
+  padding: clamp(8rem, 12vw, 10rem) 0 clamp(4rem, 10vw, 6rem);
+  background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg) 100%);
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+.webdev-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-sub {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+}
+
+/* 1.5 PREMIUM TECH WHY BENTO (Newly Designed Section) */
+.tech_why {
+  background: var(--white);
+}
+
+.tech-why-bento {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.bento-feat {
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 3rem 2.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bento-feat:hover {
+  transform: translateY(-8px);
+  background: var(--white);
+  border-color: var(--primary);
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.08);
+}
+
+.bento-feat.wide {
+  grid-column: 1 / -1;
+  background: var(--secondary);
+  color: var(--white);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 4rem;
+  align-items: center;
+  padding: 4rem;
+  border: none;
+}
+
+.bento-feat.wide h3 {
+  color: var(--white);
+}
+
+.bento-feat-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s;
+}
+
+.bento-feat .bento-feat-icon {
+  color: var(--white);
+  background: var(--primary);
+}
+
+.tech-code-visual {
+  background: #1e1e1e;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-code-visual .code-visual {
+  padding: 2rem;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9rem;
+  color: #d4d4d4;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tech-code-visual::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #61DAFB, var(--primary));
+}
+
+.code-keyword {
+  color: #569cd6;
+}
+
+.code-tag {
+  color: #4ec9b0;
+}
+
+.code-prop {
+  color: #9cdcfe;
+}
+
+.code-string {
+  color: #ce9178;
+}
+
+/* 4. MODERN GRID CARDS (Benefits & Services) */
+.tech_services {
+  background-color: var(--bg-light);
+}
+
+.tech-bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-top: 4rem;
+}
+
+.tech-bento-card {
+  background: var(--white);
+  padding: 3rem 2.5rem;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.02);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.tech-bento-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary);
+  box-shadow: 0 30px 60px -15px rgba(244, 121, 89, 0.15);
+}
+
+.tech-bento-card:hover::before {
+  opacity: 0.02;
+}
+
+.tb-icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s;
+}
+
+.tech-bento-card:hover .tb-icon-box {
+  background: var(--primary);
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+.tech-bento-card p {
+  color: var(--muted);
+}
+
+
+
+/* 6. PROCESS TIMELINE */
+.tech_process {
+  background: var(--white);
+}
+
+.pulse-track-line {
+  position: absolute;
+  top: 45px;
+  left: 10%;
+  right: 10%;
+  height: 3px;
+  background: var(--border);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.pulse-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  animation: pulse-shine 4s infinite linear;
+}
+
+@keyframes pulse-shine {
+  0% {
+    left: -10%;
+  }
+
+  100% {
+    left: 110%;
+  }
+}
+
+.process-horz {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.process-horz-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ph-node-wrapper {
+  margin-bottom: 2.5rem;
+}
+
+.ph-step-node {
+  width: 90px;
+  height: 90px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.05);
+  transition: all 0.4s;
+}
+
+.node-glass {
+  position: absolute;
+  inset: 5px;
+  border-radius: 50%;
+  border: 1px dashed var(--border);
+  transition: all 0.4s;
+}
+
+.process-horz-item:hover .ph-step-node {
+  border-color: var(--primary);
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px rgba(244, 121, 89, 0.15);
+}
+
+.process-horz-item:hover .node-glass {
+  border-color: var(--primary);
+  transform: rotate(45deg);
+}
+
+.node-num {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.process-horz-item:hover .node-num {
+  color: var(--primary);
+}
+
+.ph-info-card p {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+
+/* 10. WHY CHOOSE US (Extracted from why.css) */
+.why-section {
+  background-color: var(--bg-light);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.why-items {
+  margin-top: 2.25rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.why-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  background-color: var(--white);
+  transition: all 0.27s;
+  cursor: default;
+}
+
+.why-row:hover {
+  border-color: var(--primary);
+  background: var(--bg-light);
+  transform: translateX(4px);
+}
+
+.why-row-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  transition: all 0.3s;
+}
+
+.why-row:hover .why-row-icon {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.why-row p {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.why-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.bento-card {
+  border-radius: 2rem;
+  padding: 2rem 1.75rem;
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+  text-align: left;
+}
+
+.bento-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--pri-sh);
+}
+
+.icon-v,
+.bento-card.vc .bento-num {
+  color: #5b21b6 !important;
+}
+
+.bento-card.vc {
+  background: linear-gradient(135deg, rgba(92, 33, 182, 0.08), rgba(92, 33, 182, 0.04));
+  border-color: rgba(92, 33, 182, 0.15);
+}
+
+.icon-c,
+.bento-card.cc .bento-num {
+  color: #0891b2 !important;
+}
+
+.bento-card.cc {
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.08), rgba(6, 182, 212, 0.04));
+  border-color: rgba(6, 182, 212, 0.15);
+}
+
+.icon-e,
+.bento-card.ec .bento-num {
+  color: #059669 !important;
+}
+
+.bento-card.ec {
+  background: linear-gradient(135deg, rgba(5, 150, 105, 0.08), rgba(5, 150, 105, 0.04));
+  border-color: rgba(5, 150, 105, 0.15);
+}
+
+.icon-a,
+.bento-card.ac .bento-num {
+  color: #d97706 !important;
+}
+
+.bento-card.ac {
+  background: linear-gradient(135deg, rgba(217, 119, 6, 0.08), rgba(217, 119, 6, 0.04));
+  border-color: rgba(217, 119, 6, 0.15);
+}
+
+.bento-card:nth-child(even) {
+  margin-top: 1.5rem;
+}
+
+.bento-num {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.4rem;
+}
+
+.bento-icon {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.bento-lbl {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* related tech */
+.related_tech {
+  background-color: var(--bg-light);
+}

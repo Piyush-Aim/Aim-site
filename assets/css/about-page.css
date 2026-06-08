@@ -1,0 +1,328 @@
+/* HERO SECTION - THE ARCHITECTURAL LEGACY */
+
+.about-hero-legacy {
+    padding: clamp(8rem, 15vw, 11rem) 0 clamp(4rem, 10vw, 7rem);
+    background: linear-gradient(135deg, var(--bg-light) 0%, var(--bg) 100%);
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border);
+}
+
+/* LEGACY COMPOSITION */
+.legacy-composition {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 6rem;
+    position: relative;
+    z-index: 10;
+}
+
+/* NARRATIVE SECTION */
+.legacy-narrative .subtitle {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    max-width: 90%;
+}
+
+.legacy-stats-row {
+    display: flex;
+    gap: 2.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.stat-badge {
+    position: relative;
+}
+
+.stat-num {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.stat-text {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 8px;
+}
+
+.legacy-cta .btn-primary-lg {
+    background: var(--primary);
+    color: var(--white);
+    font-size: 1.1rem;
+    border-radius: 100px;
+}
+
+.legacy-cta .btn-primary-lg:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--pri-sh);
+}
+
+/* INNOVATION HUB VISUAL */
+.legacy-visual {
+    display: flex;
+    justify-content: center;
+    perspective: 1500px;
+}
+
+.legacy-hub-wrap {
+    position: relative;
+    width: 480px;
+    height: 480px;
+    transform-style: preserve-3d;
+}
+
+.legacy-hub {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hub-core {
+    width: 90px;
+    height: 90px;
+    background: var(--primary);
+    border-radius: 50%;
+    box-shadow: 0 0 70px var(--primary);
+    animation: hub-pulse 4s infinite alternate ease-in-out;
+    z-index: 5;
+}
+
+@keyframes hub-pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.9;
+        box-shadow: 0 0 40px var(--primary);
+    }
+
+    100% {
+        transform: scale(1.1);
+        opacity: 1;
+        box-shadow: 0 0 80px var(--primary);
+    }
+}
+
+.hub-ring {
+    position: absolute;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    border-radius: 50%;
+    animation: hub-rotate infinite linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ring-1 {
+    width: 100%;
+    height: 100%;
+    animation-duration: 40s;
+}
+
+.ring-2 {
+    width: 78%;
+    height: 78%;
+    animation-duration: 30s;
+    animation-direction: reverse;
+    border-color: var(--primary);
+}
+
+.ring-3 {
+    width: 55%;
+    height: 55%;
+    animation-duration: 25s;
+}
+
+@keyframes hub-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ORBITING LABELS */
+.legacy-label {
+    position: absolute;
+    padding: 0.65rem 1.15rem;
+    background: var(--white);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 10;
+    white-space: nowrap;
+    animation: hub-rotate infinite linear reverse;
+}
+
+.ring-1 .legacy-label {
+    animation-duration: 40s;
+}
+
+.ring-2 .legacy-label {
+    animation-duration: 30s;
+    animation-direction: normal;
+}
+
+.ring-3 .legacy-label {
+    animation-duration: 25s;
+}
+
+.legacy-label i {
+    color: var(--primary);
+    font-size: 0.9rem;
+}
+
+/* Perimeter Positioning */
+.label-1 {
+    top: -4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.label-2 {
+    bottom: -4%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.label-3 {
+    left: -16%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.label-4 {
+    right: -16%;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+
+/* JOURNEY SECTION - FIXED & REFINED */
+.journey-ultra-conduit {
+    background: var(--bg);
+}
+
+.conduit-timeline-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.conduit-line-outer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--border);
+}
+
+.conduit-line-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--primary);
+    box-shadow: 0 0 15px var(--primary);
+    transition: height 0.1s linear;
+}
+
+.conduit-step {
+    display: flex;
+    align-items: center;
+    position: relative;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.conduit-step.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.conduit-step:nth-child(even) {
+    flex-direction: row-reverse;
+    margin-block: 6rem;
+}
+
+.conduit-node {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3rem;
+    height: 3rem;
+    padding: 1.5rem;
+    background: #ffffff;
+    border: 6px solid #f1f5f9;
+    border-radius: 50%;
+    z-index: 10;
+    transition: all 0.5s ease;
+}
+
+.conduit-node.active {
+    border-color: var(--primary);
+    box-shadow: 0 0 25px rgba(244, 121, 89, 0.3);
+}
+
+.node-year {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--muted);
+    transition: color 0.5s;
+}
+
+.conduit-node.active .node-year {
+    color: var(--primary);
+}
+
+.conduit-content-wrap {
+    width: 42%;
+}
+
+.conduit-card {
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    transition: all 0.4s;
+    position: relative;
+}
+
+.conduit-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: var(--primary);
+    box-shadow: 0 20px 50px rgba(244, 121, 89, 0.1);
+}
+
+.c-header {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+}
+
+.conduit-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
