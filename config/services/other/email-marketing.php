@@ -43,7 +43,7 @@ return [
                 'desc' => 'Automate email sequences for better engagement.'
             ],
         ],
-        'img' => 'assets/images/services/email-marketing-intro.png',
+        'img' => 'assets/images/services/email-marketing-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Open Rate',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Email Campaign Management',
                 'tagline'   => 'Drive Engagement',
                 'desc'      => 'Create and manage high-performing email campaigns.',
-                'image'     => 'assets/images/services/email-marketing-campaigns.png',
+                'image'     => 'assets/images/services/email-marketing-campaigns.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Engagement', 'icon' => 'fa-solid fa-chart-line'],
                 'features'  => ['Campaign Setup', 'A/B Testing', 'Performance Tracking'],
                 'techStack' => ['Mailchimp', 'Klaviyo']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Email Automation',
                 'tagline'   => 'Smart Marketing',
                 'desc'      => 'Automate email workflows for better conversions.',
-                'image'     => 'assets/images/services/email-marketing-automation.png',
+                'image'     => 'assets/images/services/email-marketing-automation.webp',
                 'metric'    => ['val' => '24/7', 'lbl' => 'Automation', 'icon' => 'fa-solid fa-clock'],
                 'features'  => ['Welcome Series', 'Cart Abandonment', 'Follow-Ups'],
                 'techStack' => ['Klaviyo', 'HubSpot']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'Newsletter Campaigns',
                 'tagline'   => 'Stay Connected',
                 'desc'      => 'Send regular newsletters to engage your audience.',
-                'image'     => 'assets/images/services/email-marketing-newsletter.png',
+                'image'     => 'assets/images/services/email-marketing-newsletter.webp',
                 'metric'    => ['val' => 'Consistent', 'lbl' => 'Engagement', 'icon' => 'fa-solid fa-envelope'],
                 'features'  => ['Content Emails', 'Promotional Emails', 'Updates'],
                 'techStack' => ['Mailchimp']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Drip Email Campaigns',
                 'tagline'   => 'Nurture Leads',
                 'desc'      => 'Send automated sequences to convert leads.',
-                'image'     => 'assets/images/services/email-marketing-drip.png',
+                'image'     => 'assets/images/services/email-marketing-drip.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Conversion', 'icon' => 'fa-solid fa-bullseye'],
                 'features'  => ['Lead Nurturing', 'Email Sequences', 'Conversion Funnels'],
                 'techStack' => ['ActiveCampaign']

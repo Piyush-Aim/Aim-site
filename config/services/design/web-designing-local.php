@@ -40,7 +40,7 @@ return [
                 'desc' => 'Layouts designed to generate more calls, leads, and sales.'
             ]
         ],
-        'img' => 'assets/images/services/web-designing-local-intro.png',
+        'img' => 'assets/images/services/web-designing-local-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Lead Growth',
@@ -78,7 +78,7 @@ return [
                     'Mobile Responsive Design'
                 ],
                 'techStack' => ['HTML5', 'CSS3', 'PHP'],
-                'image' => 'assets/images/services/web-designing-local-business.png',
+                'image' => 'assets/images/services/web-designing-local-business.webp',
                 'metric' => [
                     'icon' => 'fa-solid fa-star',
                     'val' => 'Premium',
@@ -99,7 +99,7 @@ return [
                     'Mobile Shopping UX'
                 ],
                 'techStack' => ['Shopify', 'WooCommerce', 'Laravel'],
-                'image' => 'assets/images/services/web-designing-local-ecommerce.png',
+                'image' => 'assets/images/services/web-designing-local-ecommerce.webp',
                 'metric' => [
                     'icon' => 'fa-solid fa-chart-line',
                     'val' => '3X',
@@ -120,7 +120,7 @@ return [
                     'Fast Loading Pages'
                 ],
                 'techStack' => ['React', 'HTML', 'Analytics'],
-                'image' => 'assets/images/services/web-designing-local-landing.png',
+                'image' => 'assets/images/services/web-designing-local-landing.webp',
                 'metric' => [
                     'icon' => 'fa-solid fa-arrow-up',
                     'val' => '+300%',
@@ -141,7 +141,7 @@ return [
                     'Better User Flow'
                 ],
                 'techStack' => ['Figma', 'CSS', 'JavaScript'],
-                'image' => 'assets/images/services/web-designing-local-redesign.png',
+                'image' => 'assets/images/services/web-designing-local-redesign.webp',
                 'metric' => [
                     'icon' => 'fa-solid fa-wand-magic-sparkles',
                     'val' => 'Modern',

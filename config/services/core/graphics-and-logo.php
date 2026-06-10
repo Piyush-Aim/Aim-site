@@ -43,7 +43,7 @@ return [
                 'desc' => 'Designs aligned with your business goals and audience.'
             ],
         ],
-        'img' => 'assets/images/services/graphic_design_workspace.png',
+        'img' => 'assets/images/services/graphic_design_workspace.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-palette',
             'label' => 'Creativity',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Logo Design',
                 'tagline'   => 'Your Brand Symbol',
                 'desc'      => 'We design unique, memorable logos that represent your brand identity and leave a lasting impression.',
-                'image'     => 'assets/images/services/logo-design.png',
+                'image'     => 'assets/images/services/logo-design.webp',
                 'metric'    => ['val' => '100%', 'lbl' => 'Unique Designs', 'icon' => 'fa-solid fa-star'],
                 'features'  => ['Custom Logo Concepts', 'Multiple Revisions', 'All File Formats'],
                 'techStack' => ['Illustrator', 'Photoshop', 'Figma']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Brand Identity Design',
                 'tagline'   => 'Complete Branding',
                 'desc'      => 'We create complete brand identities including color palettes, typography, and brand guidelines.',
-                'image'     => 'assets/images/services/brand-identity.png',
+                'image'     => 'assets/images/services/brand-identity.webp',
                 'metric'    => ['val' => 'Consistent', 'lbl' => 'Branding', 'icon' => 'fa-solid fa-palette'],
                 'features'  => ['Brand Guidelines', 'Typography & Colors', 'Visual Identity'],
                 'techStack' => ['Illustrator', 'Figma', 'Adobe Suite']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'Social Media Graphics',
                 'tagline'   => 'Engaging Visuals',
                 'desc'      => 'We design eye-catching social media posts, banners, and ads that increase engagement and brand awareness.',
-                'image'     => 'assets/images/services/social-media-graphics.png',
+                'image'     => 'assets/images/services/social-media-graphics.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Engagement', 'icon' => 'fa-solid fa-thumbs-up'],
                 'features'  => ['Instagram Posts', 'Facebook Ads', 'LinkedIn Graphics'],
                 'techStack' => ['Photoshop', 'Canva', 'Illustrator']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Marketing Materials Design',
                 'tagline'   => 'Promote Your Brand',
                 'desc'      => 'We design brochures, flyers, banners, and other marketing materials to support your business growth.',
-                'image'     => 'assets/images/services/marketing-materials.png',
+                'image'     => 'assets/images/services/marketing-materials.webp',
                 'metric'    => ['val' => 'Impactful', 'lbl' => 'Designs', 'icon' => 'fa-solid fa-bullseye'],
                 'features'  => ['Brochures & Flyers', 'Business Cards', 'Print & Digital Ads'],
                 'techStack' => ['Illustrator', 'InDesign', 'Photoshop']

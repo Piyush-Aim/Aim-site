@@ -43,7 +43,7 @@ return [
                 'desc' => 'Attract ready-to-buy customers with product-focused ads.'
             ],
         ],
-        'img' => 'assets/images/services/product-listing-ads-intro.png',
+        'img' => 'assets/images/services/product-listing-ads-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Sales',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Google Shopping Campaigns',
                 'tagline'   => 'Showcase Products',
                 'desc'      => 'Run optimized shopping campaigns to drive product sales.',
-                'image'     => 'assets/images/services/product-listing-ads-shopping.png',
+                'image'     => 'assets/images/services/product-listing-ads-shopping.webp',
                 'metric'    => ['val' => 'Top', 'lbl' => 'Placement', 'icon' => 'fa-solid fa-trophy'],
                 'features'  => ['Product Ads', 'Smart Campaigns', 'Bid Optimization'],
                 'techStack' => ['Google Ads', 'Merchant Center']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Product Feed Setup',
                 'tagline'   => 'Strong Foundation',
                 'desc'      => 'Set up and structure product feeds for better performance.',
-                'image'     => 'assets/images/services/product-listing-ads-feed.png',
+                'image'     => 'assets/images/services/product-listing-ads-feed.webp',
                 'metric'    => ['val' => 'Accurate', 'lbl' => 'Data', 'icon' => 'fa-solid fa-check'],
                 'features'  => ['Feed Creation', 'Attribute Mapping', 'Error Fixing'],
                 'techStack' => ['Google Merchant Center', 'Feed Tools']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'Product Feed Optimization',
                 'tagline'   => 'Improve Performance',
                 'desc'      => 'Optimize product titles, descriptions, and images for better CTR.',
-                'image'     => 'assets/images/services/product-listing-ads-optimization.png',
+                'image'     => 'assets/images/services/product-listing-ads-optimization.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'CTR', 'icon' => 'fa-solid fa-chart-line'],
                 'features'  => ['Title Optimization', 'Image Enhancement', 'Keyword Mapping'],
                 'techStack' => ['Analytics', 'Merchant Tools']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Dynamic Remarketing Ads',
                 'tagline'   => 'Recover Lost Sales',
                 'desc'      => 'Show personalized product ads to users who visited your store.',
-                'image'     => 'assets/images/services/product-listing-ads-remarketing.png',
+                'image'     => 'assets/images/services/product-listing-ads-remarketing.webp',
                 'metric'    => ['val' => '2X', 'lbl' => 'Conversions', 'icon' => 'fa-solid fa-repeat'],
                 'features'  => ['Dynamic Ads', 'Audience Targeting', 'Cart Recovery'],
                 'techStack' => ['Google Ads', 'Tag Manager']

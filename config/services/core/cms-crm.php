@@ -43,7 +43,7 @@ return [
                 'desc' => 'Automate repetitive tasks and workflows to save time and increase efficiency.'
             ],
         ],
-        'img' => 'assets/images/services/cms-crm-intro.png',
+        'img' => 'assets/images/services/cms-crm-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-database',
             'label' => 'Data Management',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Custom CMS Development',
                 'tagline'   => 'Easy Content Control',
                 'desc'      => 'We develop user-friendly CMS platforms that allow you to manage website content effortlessly without technical knowledge.',
-                'image'     => 'assets/images/services/cms-custom.png',
+                'image'     => 'assets/images/services/cms-custom.webp',
                 'metric'    => ['val' => 'No-Code', 'lbl' => 'Management', 'icon' => 'fa-solid fa-pen'],
                 'features'  => ['WordPress & Headless CMS', 'Custom Dashboards', 'SEO-Friendly Structure'],
                 'techStack' => ['WordPress', 'Strapi', 'Contentful', 'PHP']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'CRM Development',
                 'tagline'   => 'Customer Relationship Management',
                 'desc'      => 'Build powerful CRM systems to track leads, manage customers, and improve sales performance with real-time data insights.',
-                'image'     => 'assets/images/services/crm-pipeline.png',
+                'image'     => 'assets/images/services/crm-pipeline.webp',
                 'metric'    => ['val' => '100%', 'lbl' => 'Lead Tracking', 'icon' => 'fa-solid fa-user-check'],
                 'features'  => ['Lead Management', 'Sales Pipeline', 'Customer Insights'],
                 'techStack' => ['Laravel', 'Node.js', 'React', 'MySQL']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'CMS & CRM Integration',
                 'tagline'   => 'Connected Systems',
                 'desc'      => 'We integrate CMS and CRM systems to ensure seamless data flow between your website and customer management tools.',
-                'image'     => 'assets/images/services/cms-crm-integration.png',
+                'image'     => 'assets/images/services/cms-crm-integration.webp',
                 'metric'    => ['val' => 'Seamless', 'lbl' => 'Integration', 'icon' => 'fa-solid fa-link'],
                 'features'  => ['API Integration', 'Data Sync', 'Third-Party Tools'],
                 'techStack' => ['REST API', 'Zapier', 'Node.js']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Workflow Automation',
                 'tagline'   => 'Save Time & Effort',
                 'desc'      => 'Automate business processes like lead nurturing, email marketing, and reporting to improve efficiency.',
-                'image'     => 'assets/images/services/crm-workflow.png',
+                'image'     => 'assets/images/services/crm-workflow.webp',
                 'metric'    => ['val' => '80%', 'lbl' => 'Time Saved', 'icon' => 'fa-solid fa-clock'],
                 'features'  => ['Email Automation', 'Task Automation', 'Reporting Systems'],
                 'techStack' => ['Zapier', 'Make', 'Custom APIs']

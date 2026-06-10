@@ -524,7 +524,7 @@
 
     /* Services-detail template */
     .process-horz {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr !important;
     }
 }
 
@@ -539,7 +539,7 @@
     .btn-outline-premium {
         width: 100%;
         max-width: 320px;
-        padding: 1rem 2rem;
+        padding: 0.8rem 1rem;
     }
 
     /* TRUST INDICATORS */
@@ -702,7 +702,7 @@
     }
 
     .process-horz {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 
     .webdev-glass-form {
@@ -725,6 +725,18 @@
         padding: 2rem;
     }
 
+    .tech-why-bento,
+    .tech-bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-code-visual img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;
+    }
+
     /* policy / T&C */
     .policy-item h2 {
         font-size: 1.4rem;
@@ -742,6 +754,13 @@
 }
 
 @media (max-width: 480px) {
+
+    /* About page hero section */
+    .legacy-stats-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
 
     /* WHY CHOOSE US */
     .why-items {
@@ -788,10 +807,33 @@
         left: -10px;
     }
 
-
     /* Case Studies-sidebar */
     .case-sidebar {
         width: 80%;
         right: -90%;
+    }
+
+    /* service detail */
+    .expertise-tabs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* hero form */
+    .webdev-glass-form h3 {
+        font-size: 1.6rem;
+    }
+
+    .floating-metric,
+    .glass-stat-card {
+        display: none;
+    }
+
+    /* technology detail mobile */
+    .bento-feat {
+        padding: 2rem 1.25rem;
+    }
+
+    .tech-bento-card {
+        padding: 2rem 1.25rem;
     }
 }

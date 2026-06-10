@@ -43,7 +43,7 @@ return [
                 'desc' => 'Optimize pages to turn visitors into customers.'
             ],
         ],
-        'img' => 'assets/images/services/ecommerce-seo-intro.png',
+        'img' => 'assets/images/services/ecommerce-seo-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Sales Growth',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Product Page SEO',
                 'tagline'   => 'Rank Your Products',
                 'desc'      => 'Optimize product pages with keywords, descriptions, and structured data.',
-                'image'     => 'assets/images/services/ecommerce-seo-product.png',
+                'image'     => 'assets/images/services/ecommerce-seo-product.webp',
                 'metric'    => ['val' => 'Top', 'lbl' => 'Rankings', 'icon' => 'fa-solid fa-trophy'],
                 'features'  => ['Keyword Optimization', 'Rich Snippets', 'Image SEO'],
                 'techStack' => ['Schema.org', 'Ahrefs', 'SEMrush']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Category Page Optimization',
                 'tagline'   => 'Capture Bulk Traffic',
                 'desc'      => 'Optimize category pages to rank for high-volume keywords.',
-                'image' => 'assets/images/services/ecommerce-seo-category.png',
+                'image' => 'assets/images/services/ecommerce-seo-category.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Traffic', 'icon' => 'fa-solid fa-chart-line'],
                 'features'  => ['Category Content', 'Internal Linking', 'SEO Structure'],
                 'techStack' => ['Google Search Console', 'Screaming Frog']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'Technical Ecommerce SEO',
                 'tagline'   => 'Strong Backend',
                 'desc'      => 'Fix technical issues to improve crawling, indexing, and performance.',
-                'image'     => 'assets/images/services/ecommerce-seo-technical.png',
+                'image'     => 'assets/images/services/ecommerce-seo-technical.webp',
                 'metric'    => ['val' => '100%', 'lbl' => 'Optimized', 'icon' => 'fa-solid fa-check'],
                 'features'  => ['Site Speed', 'Mobile Optimization', 'Schema Markup'],
                 'techStack' => ['Lighthouse', 'Core Web Vitals', 'Schema']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Conversion Rate Optimization',
                 'tagline'   => 'More Sales',
                 'desc'      => 'Improve user experience to increase conversions and revenue.',
-                'image'     => 'assets/images/services/ecommerce-seo-conversion.png',
+                'image'     => 'assets/images/services/ecommerce-seo-conversion.webp',
                 'metric'    => ['val' => '3X', 'lbl' => 'Conversions', 'icon' => 'fa-solid fa-arrow-up'],
                 'features'  => ['UX Optimization', 'A/B Testing', 'Checkout Optimization'],
                 'techStack' => ['Hotjar', 'Google Analytics', 'Clarity']

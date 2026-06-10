@@ -43,7 +43,7 @@ return [
                 'desc' => 'Optimized for all devices and screen sizes.'
             ],
         ],
-        'img' => 'assets/images/services/wordpress-web-design-intro.png',
+        'img' => 'assets/images/services/wordpress-web-design-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Engagement',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Custom Theme Design',
                 'tagline'   => 'Unique Look & Feel',
                 'desc'      => 'Design custom WordPress themes tailored to your brand identity.',
-                'image'     => 'assets/images/services/wordpress-web-design-theme.png',
+                'image'     => 'assets/images/services/wordpress-web-design-theme.webp',
                 'metric'    => ['val' => 'Unique', 'lbl' => 'Design', 'icon' => 'fa-solid fa-star'],
                 'features'  => ['Custom Layouts', 'Brand Integration', 'Theme Development'],
                 'techStack' => ['WordPress', 'PHP', 'CSS']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Custom WordPress Design',
                 'tagline'   => 'Tailored Experience',
                 'desc'      => 'Build fully customized WordPress designs to match your business needs.',
-                'image'     => 'assets/images/services/wordpress-web-design-custom.png',
+                'image'     => 'assets/images/services/wordpress-web-design-custom.webp',
                 'metric'    => ['val' => '100%', 'lbl' => 'Custom', 'icon' => 'fa-solid fa-check'],
                 'features'  => ['Unique UI', 'Custom Pages', 'Interactive Design'],
                 'techStack' => ['HTML5', 'CSS3', 'JavaScript']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'WordPress UI/UX Design',
                 'tagline'   => 'User-Centered Design',
                 'desc'      => 'Improve usability and user experience for better engagement.',
-                'image'     => 'assets/images/services/wordpress-web-design-uiux.png',
+                'image'     => 'assets/images/services/wordpress-web-design-uiux.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Usability', 'icon' => 'fa-solid fa-user'],
                 'features'  => ['Wireframes', 'User Journey', 'Prototyping'],
                 'techStack' => ['Figma', 'Adobe XD']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'WordPress Website Redesign',
                 'tagline'   => 'Upgrade Your Website',
                 'desc'      => 'Transform outdated websites into modern, high-performing platforms.',
-                'image'     => 'assets/images/services/wordpress-web-design-redesign.png',
+                'image'     => 'assets/images/services/wordpress-web-design-redesign.webp',
                 'metric'    => ['val' => 'Modern', 'lbl' => 'UI', 'icon' => 'fa-solid fa-rocket'],
                 'features'  => ['UI Refresh', 'UX Optimization', 'Performance Boost'],
                 'techStack' => ['WordPress', 'Elementor', 'WPBakery']

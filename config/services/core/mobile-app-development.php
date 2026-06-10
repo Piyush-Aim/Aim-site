@@ -43,7 +43,7 @@ return [
                 'desc' => 'Optimized apps with smooth performance and fast load times.'
             ],
         ],
-        'img' => 'assets/images/services/mobile-intro.png',
+        'img' => 'assets/images/services/mobile-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-star',
             'label' => 'User Rating',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Android App Development',
                 'tagline'   => 'Reach Millions of Users',
                 'desc'      => 'We develop scalable and user-friendly Android applications tailored to your business requirements.',
-                'image'     => 'assets/images/services/mobile-android.png', // TODO: generate proper image
+                'image'     => 'assets/images/services/mobile-android.webp', // TODO: generate proper image
                 'metric'    => ['val' => '100%', 'lbl' => 'Play Store Ready', 'icon' => 'fa-solid fa-check'],
                 'features'  => ['Custom Android Apps', 'Material UI Design', 'Play Store Deployment'],
                 'techStack' => ['Kotlin', 'Java', 'Firebase']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'iOS App Development',
                 'tagline'   => 'Premium Experience',
                 'desc'      => 'Build high-quality iOS apps with seamless performance and elegant user interfaces.',
-                'image'     => 'assets/images/services/mobile-ios.png', // TODO: generate proper image
+                'image'     => 'assets/images/services/mobile-ios.webp', // TODO: generate proper image
                 'metric'    => ['val' => 'Top', 'lbl' => 'Performance', 'icon' => 'fa-solid fa-gauge-high'],
                 'features'  => ['Swift Development', 'App Store Optimization', 'Secure Architecture'],
                 'techStack' => ['Swift', 'Objective-C', 'Xcode']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'Cross-Platform App Development',
                 'tagline'   => 'One App, Multiple Platforms',
                 'desc'      => 'Save time and cost with apps that work seamlessly on both Android and iOS.',
-                'image'     => 'assets/images/services/mobile-cross.png', // TODO: generate proper image
+                'image'     => 'assets/images/services/mobile-cross.webp', // TODO: generate proper image
                 'metric'    => ['val' => '2X', 'lbl' => 'Faster Delivery', 'icon' => 'fa-solid fa-rocket'],
                 'features'  => ['Single Codebase', 'Fast Development', 'Cost Effective'],
                 'techStack' => ['Flutter', 'React Native', 'Dart']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Mobile App UI/UX Design',
                 'tagline'   => 'Designed for Engagement',
                 'desc'      => 'We create intuitive and visually appealing app designs that enhance user experience.',
-                'image'     => 'assets/images/services/mobile-uiux.png', // TODO: generate proper image
+                'image'     => 'assets/images/services/mobile-uiux.webp', // TODO: generate proper image
                 'metric'    => ['val' => 'UX', 'lbl' => 'Focused', 'icon' => 'fa-solid fa-user'],
                 'features'  => ['Wireframing', 'Prototyping', 'User Testing'],
                 'techStack' => ['Figma', 'Adobe XD', 'Sketch']

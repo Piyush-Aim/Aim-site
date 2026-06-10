@@ -43,7 +43,7 @@ return [
                 'desc' => 'Optimize campaigns to maximize conversions and revenue.'
             ],
         ],
-        'img' => 'assets/images/services/facebook-ads-intro.png',
+        'img' => 'assets/images/services/facebook-ads-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Leads',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Lead Generation Ads',
                 'tagline'   => 'Generate Quality Leads',
                 'desc'      => 'Capture high-quality leads with optimized ad funnels.',
-                'image'     => 'assets/images/services/facebook-ads-lead.png',
+                'image'     => 'assets/images/services/facebook-ads-lead.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Leads', 'icon' => 'fa-solid fa-users'],
                 'features'  => ['Lead Forms', 'Audience Targeting', 'Conversion Tracking'],
                 'techStack' => ['Meta Ads', 'CRM Integration']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Ecommerce Facebook Ads',
                 'tagline'   => 'Drive Sales',
                 'desc'      => 'Promote products with high-converting ecommerce campaigns.',
-                'image'     => 'assets/images/services/facebook-ads-ecommerce.png',
+                'image'     => 'assets/images/services/facebook-ads-ecommerce.webp',
                 'metric'    => ['val' => '4X', 'lbl' => 'ROAS', 'icon' => 'fa-solid fa-chart-line'],
                 'features'  => ['Dynamic Ads', 'Catalog Ads', 'Retargeting'],
                 'techStack' => ['Meta Ads', 'Shopify', 'WooCommerce']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'Facebook Remarketing Ads',
                 'tagline'   => 'Convert Visitors',
                 'desc'      => 'Re-target users who interacted with your brand.',
-                'image'     => 'assets/images/services/facebook-ads-remarketing.png',
+                'image'     => 'assets/images/services/facebook-ads-remarketing.webp',
                 'metric'    => ['val' => '2X', 'lbl' => 'Conversions', 'icon' => 'fa-solid fa-repeat'],
                 'features'  => ['Custom Audiences', 'Dynamic Ads', 'Conversion Tracking'],
                 'techStack' => ['Meta Pixel', 'Analytics']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Brand Awareness Campaigns',
                 'tagline'   => 'Build Recognition',
                 'desc'      => 'Increase visibility and awareness with targeted campaigns.',
-                'image'     => 'assets/images/services/facebook-ads-branding.png',
+                'image'     => 'assets/images/services/facebook-ads-branding.webp',
                 'metric'    => ['val' => 'Wide', 'lbl' => 'Reach', 'icon' => 'fa-solid fa-globe'],
                 'features'  => ['Video Ads', 'Reach Campaigns', 'Engagement Ads'],
                 'techStack' => ['Meta Ads', 'Instagram Ads']

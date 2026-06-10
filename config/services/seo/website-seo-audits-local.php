@@ -40,7 +40,7 @@ return [
                 'desc' => 'Use actionable recommendations to boost search visibility.'
             ],
         ],
-        'img' => 'assets/images/services/website-seo-audits-local-intro.png',
+        'img' => 'assets/images/services/website-seo-audits-local-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-ranking-star',
             'label' => 'SEO Score',
@@ -78,7 +78,7 @@ return [
                     'Schema & Sitemap Review'
                 ],
                 'techStack' => ['Google Search Console', 'Screaming Frog', 'Ahrefs'],
-                'image' => 'assets/images/services/website-seo-audits-local-technical.png',
+                'image' => 'assets/images/services/website-seo-audits-local-technical.webp',
             ],
 
             'local-seo' => [
@@ -94,7 +94,7 @@ return [
                     'Review Profile Analysis'
                 ],
                 'techStack' => ['BrightLocal', 'Semrush', 'Whitespark'],
-                'image' => 'assets/images/services/website-seo-audits-local-local.png',
+                'image' => 'assets/images/services/website-seo-audits-local-local.webp',
             ],
 
             'content-seo' => [
@@ -110,7 +110,7 @@ return [
                     'Content Improvement Plan'
                 ],
                 'techStack' => ['SurferSEO', 'Ahrefs', 'Clearscope'],
-                'image' => 'assets/images/services/website-seo-audits-local-content.png',
+                'image' => 'assets/images/services/website-seo-audits-local-content.webp',
                 'metric' => [
                     'icon' => 'fa-solid fa-arrow-trend-up',
                     'val' => '150%',
@@ -131,7 +131,7 @@ return [
                     'Conversion Improvements'
                 ],
                 'techStack' => ['Shopify', 'WooCommerce', 'Magento'],
-                'image' => 'assets/images/services/website-seo-audits-local-ecommerce.png',
+                'image' => 'assets/images/services/website-seo-audits-local-ecommerce.webp',
             ]
         ]
     ],

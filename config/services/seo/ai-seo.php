@@ -44,7 +44,7 @@ return [
                 'desc' => 'Automate repetitive SEO tasks and scale campaigns.'
             ],
         ],
-        'img' => 'assets/images/services/ai-seo-intro.png',
+        'img' => 'assets/images/services/ai-seo-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Traffic',
@@ -77,7 +77,7 @@ return [
                 'title'     => 'AI Content Optimization',
                 'tagline'   => 'Rank Better Content',
                 'desc'      => 'Improve pages with AI-assisted briefs, topic coverage and on-page optimization.',
-                'image'     => 'assets/images/services/ai-seo-content.png',
+                'image'     => 'assets/images/services/ai-seo-content.webp',
                 'metric'    => ['val' => 'Top', 'lbl' => 'Content', 'icon' => 'fa-solid fa-pen'],
                 'features'  => ['Content Briefs', 'Entity SEO', 'On-Page Optimization'],
                 'techStack' => ['ChatGPT', 'Surfer', 'SEO Tools']
@@ -89,7 +89,7 @@ return [
                 'title'     => 'Technical SEO Automation',
                 'tagline'   => 'Fix Performance Issues',
                 'desc'      => 'Resolve crawl errors, indexing issues, speed bottlenecks and technical blockers.',
-                'image'     => 'assets/images/services/ai-seo-technical.png',
+                'image'     => 'assets/images/services/ai-seo-technical.webp',
                 'metric'    => ['val' => 'Fast', 'lbl' => 'Performance', 'icon' => 'fa-solid fa-bolt'],
                 'features'  => ['Crawl Fixes', 'Schema', 'Core Web Vitals'],
                 'techStack' => ['GSC', 'Screaming Frog', 'PageSpeed']
@@ -101,7 +101,7 @@ return [
                 'title'     => 'AI Local SEO Growth',
                 'tagline'   => 'Dominate Nearby Searches',
                 'desc'      => 'Optimize local presence, maps rankings and city-based search visibility.',
-                'image'     => 'assets/images/services/ai-seo-local.png',
+                'image'     => 'assets/images/services/ai-seo-local.webp',
                 'metric'    => ['val' => 'Top', 'lbl' => 'Maps', 'icon' => 'fa-solid fa-map'],
                 'features'  => ['GBP Optimization', 'Citations', 'Local Pages'],
                 'techStack' => ['GBP', 'Local SEO Tools']
@@ -113,7 +113,7 @@ return [
                 'title'     => 'AI SEO Audit & Strategy',
                 'tagline'   => 'Find Hidden Opportunities',
                 'desc'      => 'Deep audits to uncover ranking issues, content gaps and growth opportunities.',
-                'image'     => 'assets/images/services/ai-seo-audit.png',
+                'image'     => 'assets/images/services/ai-seo-audit.webp',
                 'metric'    => ['val' => 'Deep', 'lbl' => 'Insights', 'icon' => 'fa-solid fa-chart-line'],
                 'features'  => ['Site Audit', 'Keyword Gaps', 'Roadmap'],
                 'techStack' => ['Ahrefs', 'SEMrush', 'Analytics']

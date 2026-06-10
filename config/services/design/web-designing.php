@@ -43,7 +43,7 @@ return [
                 'desc' => 'Optimized for all devices and screen sizes.'
             ],
         ],
-        'img' => 'assets/images/services/web-designing-intro.png',
+        'img' => 'assets/images/services/web-designing-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Engagement',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'UI/UX Design Services',
                 'tagline'   => 'User-Centered Design',
                 'desc'      => 'Design intuitive interfaces focused on user experience and engagement.',
-                'image'     => 'assets/images/services/web-designing-uiux.png',
+                'image'     => 'assets/images/services/web-designing-uiux.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Usability', 'icon' => 'fa-solid fa-user'],
                 'features'  => ['Wireframing', 'Prototyping', 'User Research'],
                 'techStack' => ['Figma', 'Adobe XD', 'Sketch']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Custom Website Design',
                 'tagline'   => 'Unique Brand Identity',
                 'desc'      => 'Create a fully customized website tailored to your brand.',
-                'image'     => 'assets/images/services/web-designing-custom.png',
+                'image'     => 'assets/images/services/web-designing-custom.webp',
                 'metric'    => ['val' => '100%', 'lbl' => 'Custom', 'icon' => 'fa-solid fa-check'],
                 'features'  => ['Custom Layouts', 'Brand Integration', 'Unique Design'],
                 'techStack' => ['HTML5', 'CSS3', 'JavaScript']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'Responsive Web Design',
                 'tagline'   => 'Perfect on All Devices',
                 'desc'      => 'Ensure your website looks and performs perfectly on all devices.',
-                'image'     => 'assets/images/services/web-designing-responsive.png',
+                'image'     => 'assets/images/services/web-designing-responsive.webp',
                 'metric'    => ['val' => 'All', 'lbl' => 'Devices', 'icon' => 'fa-solid fa-mobile'],
                 'features'  => ['Mobile Optimization', 'Cross-Browser Support', 'Adaptive Layouts'],
                 'techStack' => ['Bootstrap', 'Tailwind', 'CSS Grid']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Website Redesign Services',
                 'tagline'   => 'Upgrade Your Website',
                 'desc'      => 'Transform outdated websites into modern, high-performing platforms.',
-                'image'     => 'assets/images/services/web-designing-redesign.png',
+                'image'     => 'assets/images/services/web-designing-redesign.webp',
                 'metric'    => ['val' => 'Modern', 'lbl' => 'UI', 'icon' => 'fa-solid fa-rocket'],
                 'features'  => ['UI Refresh', 'UX Improvements', 'Performance Boost'],
                 'techStack' => ['Figma', 'React', 'WordPress']

@@ -79,7 +79,7 @@ define('SMTP_PORT',     587);
 // Email Identities
 define('MAIL_FROM_EMAIL', 'noreply@aiminfocorp.com');
 define('MAIL_FROM_NAME',  'Aim Infocorp Website');
-define('ADMIN_EMAIL',     'piyushpanchalaim@gmail.com'); // Form data Show in this mail
+define('ADMIN_EMAIL',     'aiminfocorp.com@gmail.com'); // Form data Show in this mail
 
 // Mail Debug
 define('MAIL_DEBUG', 0);

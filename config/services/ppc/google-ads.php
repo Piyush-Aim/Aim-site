@@ -43,7 +43,7 @@ return [
                 'desc' => 'Optimize campaigns to maximize conversions and ROI.'
             ],
         ],
-        'img' => 'assets/images/services/google-ads-intro.png',
+        'img' => 'assets/images/services/google-ads-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Conversions',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Google Search Ads',
                 'tagline'   => 'Capture Buyer Intent',
                 'desc'      => 'Appear at the top of Google search results for high-intent keywords.',
-                'image'     => 'assets/images/services/google-ads-search.png',
+                'image'     => 'assets/images/services/google-ads-search.webp',
                 'metric'    => ['val' => 'Top', 'lbl' => 'Position', 'icon' => 'fa-solid fa-trophy'],
                 'features'  => ['Keyword Targeting', 'Ad Copy Optimization', 'Conversion Tracking'],
                 'techStack' => ['Google Ads', 'Keyword Planner', 'Analytics']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Google Display Ads',
                 'tagline'   => 'Expand Brand Reach',
                 'desc'      => 'Reach your audience across millions of websites and apps.',
-                'image'     => 'assets/images/services/google-ads-display.png',
+                'image'     => 'assets/images/services/google-ads-display.webp',
                 'metric'    => ['val' => 'Wide', 'lbl' => 'Reach', 'icon' => 'fa-solid fa-globe'],
                 'features'  => ['Banner Ads', 'Audience Targeting', 'Brand Awareness'],
                 'techStack' => ['Google Display Network', 'Analytics']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'YouTube Advertising',
                 'tagline'   => 'Engage with Video',
                 'desc'      => 'Promote your brand with engaging video ads on YouTube.',
-                'image'     => 'assets/images/services/google-ads-youtube.png',
+                'image'     => 'assets/images/services/google-ads-youtube.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Engagement', 'icon' => 'fa-solid fa-play'],
                 'features'  => ['Video Ads', 'Skippable Ads', 'Audience Targeting'],
                 'techStack' => ['YouTube Ads', 'Google Ads']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Google Remarketing Ads',
                 'tagline'   => 'Re-engage Visitors',
                 'desc'      => 'Bring back users who visited your site and convert them into customers.',
-                'image'     => 'assets/images/services/google-ads-remarketing.png',
+                'image'     => 'assets/images/services/google-ads-remarketing.webp',
                 'metric'    => ['val' => '2X', 'lbl' => 'Conversions', 'icon' => 'fa-solid fa-repeat'],
                 'features'  => ['Audience Retargeting', 'Dynamic Ads', 'Conversion Tracking'],
                 'techStack' => ['Google Ads', 'Tag Manager']

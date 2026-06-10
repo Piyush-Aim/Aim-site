@@ -43,7 +43,7 @@ return [
                 'desc' => 'Ensure seamless shopping experience across devices.'
             ],
         ],
-        'img' => 'assets/images/services/ecommerce-web-design-intro.png',
+        'img' => 'assets/images/services/ecommerce-web-design-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Sales',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Ecommerce UI/UX Design',
                 'tagline'   => 'User-Centered Shopping',
                 'desc'      => 'Create intuitive shopping experiences that increase engagement and conversions.',
-                'image'     => 'assets/images/services/ecommerce-web-design-uiux.png',
+                'image'     => 'assets/images/services/ecommerce-web-design-uiux.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Usability', 'icon' => 'fa-solid fa-user'],
                 'features'  => ['User Journey', 'Wireframes', 'Prototyping'],
                 'techStack' => ['Figma', 'Adobe XD']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Product Page Design',
                 'tagline'   => 'Convert Browsers to Buyers',
                 'desc'      => 'Design product pages that highlight features and drive conversions.',
-                'image'     => 'assets/images/services/ecommerce-web-design-product.png',
+                'image'     => 'assets/images/services/ecommerce-web-design-product.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Conversion', 'icon' => 'fa-solid fa-chart-line'],
                 'features'  => ['Product Layouts', 'CTA Optimization', 'Image Presentation'],
                 'techStack' => ['Shopify', 'WooCommerce']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'Checkout Optimization Design',
                 'tagline'   => 'Reduce Cart Abandonment',
                 'desc'      => 'Simplify checkout process to improve conversions and reduce drop-offs.',
-                'image'     => 'assets/images/services/ecommerce-web-design-checkout.png',
+                'image'     => 'assets/images/services/ecommerce-web-design-checkout.webp',
                 'metric'    => ['val' => '2X', 'lbl' => 'Conversion Rate', 'icon' => 'fa-solid fa-arrow-up'],
                 'features'  => ['One-Page Checkout', 'UX Optimization', 'Trust Signals'],
                 'techStack' => ['Stripe', 'PayPal']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Ecommerce Store Redesign',
                 'tagline'   => 'Modernize Your Store',
                 'desc'      => 'Upgrade your store design to improve user experience and sales.',
-                'image'     => 'assets/images/services/ecommerce-web-design-redesign.png',
+                'image'     => 'assets/images/services/ecommerce-web-design-redesign.webp',
                 'metric'    => ['val' => 'Modern', 'lbl' => 'UI', 'icon' => 'fa-solid fa-rocket'],
                 'features'  => ['UI Refresh', 'UX Improvements', 'Performance Boost'],
                 'techStack' => ['Shopify', 'WooCommerce']

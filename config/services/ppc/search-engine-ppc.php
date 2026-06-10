@@ -43,7 +43,7 @@ return [
                 'desc' => 'Optimize campaigns to maximize return on investment.'
             ],
         ],
-        'img' => 'assets/images/services/search-engine-ppc-intro.png',
+        'img' => 'assets/images/services/search-engine-ppc-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Conversions',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Google Ads Management',
                 'tagline'   => 'Dominate Search Results',
                 'desc'      => 'Run high-performing Google Ads campaigns to drive traffic and conversions.',
-                'image'     => 'assets/images/services/search-engine-ppc-google.png',
+                'image'     => 'assets/images/services/search-engine-ppc-google.webp',
                 'metric'    => ['val' => 'Top', 'lbl' => 'Ad Position', 'icon' => 'fa-solid fa-trophy'],
                 'features'  => ['Search Ads', 'Display Ads', 'YouTube Ads'],
                 'techStack' => ['Google Ads', 'Keyword Planner', 'Analytics']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Bing Ads Management',
                 'tagline'   => 'Expand Reach',
                 'desc'      => 'Reach additional audiences with cost-effective Bing Ads campaigns.',
-                'image'     => 'assets/images/services/search-engine-ppc-bing.png',
+                'image'     => 'assets/images/services/search-engine-ppc-bing.webp',
                 'metric'    => ['val' => 'Low', 'lbl' => 'CPC', 'icon' => 'fa-solid fa-dollar-sign'],
                 'features'  => ['Search Ads', 'Audience Targeting', 'Cost Optimization'],
                 'techStack' => ['Microsoft Ads', 'Analytics']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'Remarketing Campaigns',
                 'tagline'   => 'Convert Visitors',
                 'desc'      => 'Re-engage users who visited your site and turn them into customers.',
-                'image'     => 'assets/images/services/search-engine-ppc-remarketing.png',
+                'image'     => 'assets/images/services/search-engine-ppc-remarketing.webp',
                 'metric'    => ['val' => '2X', 'lbl' => 'Conversions', 'icon' => 'fa-solid fa-repeat'],
                 'features'  => ['Audience Retargeting', 'Display Ads', 'Conversion Tracking'],
                 'techStack' => ['Google Ads', 'Facebook Pixel']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Google Shopping Ads',
                 'tagline'   => 'Sell More Products',
                 'desc'      => 'Promote your products directly in search results with shopping ads.',
-                'image'     => 'assets/images/services/search-engine-ppc-shopping.png',
+                'image'     => 'assets/images/services/search-engine-ppc-shopping.webp',
                 'metric'    => ['val' => '3X', 'lbl' => 'Sales', 'icon' => 'fa-solid fa-chart-line'],
                 'features'  => ['Product Listings', 'Feed Optimization', 'Conversion Tracking'],
                 'techStack' => ['Google Merchant Center', 'Shopify', 'WooCommerce']

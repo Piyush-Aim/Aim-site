@@ -43,7 +43,7 @@ return [
                 'desc' => 'Reach users not heavily targeted on Google.'
             ],
         ],
-        'img' => 'assets/images/services/bing-ads-intro.png',
+        'img' => 'assets/images/services/bing-ads-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Conversions',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Bing Search Ads',
                 'tagline'   => 'Capture Search Traffic',
                 'desc'      => 'Show your ads on Bing search results for targeted keywords.',
-                'image'     => 'assets/images/services/bing-ads-search.png',
+                'image'     => 'assets/images/services/bing-ads-search.webp',
                 'metric'    => ['val' => 'Top', 'lbl' => 'Position', 'icon' => 'fa-solid fa-trophy'],
                 'features'  => ['Keyword Targeting', 'Ad Copy Optimization', 'Conversion Tracking'],
                 'techStack' => ['Microsoft Ads', 'Keyword Planner', 'Analytics']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Advanced Audience Targeting',
                 'tagline'   => 'Reach the Right Users',
                 'desc'      => 'Target users based on demographics, interests, and behavior.',
-                'image'     => 'assets/images/services/bing-ads-audience.png',
+                'image'     => 'assets/images/services/bing-ads-audience.webp',
                 'metric'    => ['val' => 'Precise', 'lbl' => 'Targeting', 'icon' => 'fa-solid fa-bullseye'],
                 'features'  => ['Demographic Targeting', 'Device Targeting', 'Location Targeting'],
                 'techStack' => ['Microsoft Ads', 'Audience Insights']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'Bing Remarketing Ads',
                 'tagline'   => 'Re-engage Visitors',
                 'desc'      => 'Reconnect with users who visited your site and convert them.',
-                'image'     => 'assets/images/services/bing-ads-remarketing.png',
+                'image'     => 'assets/images/services/bing-ads-remarketing.webp',
                 'metric'    => ['val' => '2X', 'lbl' => 'Conversions', 'icon' => 'fa-solid fa-repeat'],
                 'features'  => ['Audience Lists', 'Dynamic Ads', 'Conversion Tracking'],
                 'techStack' => ['Microsoft Ads', 'Tracking Tools']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Campaign Optimization',
                 'tagline'   => 'Maximize ROI',
                 'desc'      => 'Continuously optimize campaigns to improve performance and reduce costs.',
-                'image'     => 'assets/images/services/bing-ads-optimization.png',
+                'image'     => 'assets/images/services/bing-ads-optimization.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'ROI', 'icon' => 'fa-solid fa-chart-line'],
                 'features'  => ['Bid Optimization', 'A/B Testing', 'Performance Tracking'],
                 'techStack' => ['Analytics', 'Microsoft Ads']

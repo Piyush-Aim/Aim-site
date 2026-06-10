@@ -43,7 +43,7 @@ return [
                 'desc' => 'Test variations to find what works best.'
             ],
         ],
-        'img' => 'assets/images/services/conversion-rate-optimization-intro.png',
+        'img' => 'assets/images/services/conversion-rate-optimization-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-arrow-up',
             'label' => 'Conversion',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Website CRO Audit',
                 'tagline'   => 'Identify Issues',
                 'desc'      => 'Analyze your website to find conversion bottlenecks.',
-                'image'     => 'assets/images/services/conversion-rate-optimization-audit.png',
+                'image'     => 'assets/images/services/conversion-rate-optimization-audit.webp',
                 'metric'    => ['val' => 'Detailed', 'lbl' => 'Analysis', 'icon' => 'fa-solid fa-search'],
                 'features'  => ['UX Review', 'Analytics Audit', 'Funnel Analysis'],
                 'techStack' => ['Google Analytics', 'Hotjar']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'A/B Testing & Experimentation',
                 'tagline'   => 'Test & Improve',
                 'desc'      => 'Run experiments to improve conversions.',
-                'image'     => 'assets/images/services/conversion-rate-optimization-testing.png',
+                'image'     => 'assets/images/services/conversion-rate-optimization-testing.webp',
                 'metric'    => ['val' => 'Proven', 'lbl' => 'Results', 'icon' => 'fa-solid fa-check'],
                 'features'  => ['Split Testing', 'Landing Page Testing', 'CTA Optimization'],
                 'techStack' => ['Google Optimize', 'VWO']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'User Experience Optimization',
                 'tagline'   => 'Better Experience',
                 'desc'      => 'Improve usability to increase conversions.',
-                'image'     => 'assets/images/services/conversion-rate-optimization-ux.png',
+                'image'     => 'assets/images/services/conversion-rate-optimization-ux.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Usability', 'icon' => 'fa-solid fa-user'],
                 'features'  => ['UI Improvements', 'Navigation Optimization', 'Mobile UX'],
                 'techStack' => ['Figma', 'UX Tools']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Sales Funnel Optimization',
                 'tagline'   => 'Increase Conversions',
                 'desc'      => 'Optimize funnels to convert more visitors into customers.',
-                'image'     => 'assets/images/services/conversion-rate-optimization-funnels.png',
+                'image'     => 'assets/images/services/conversion-rate-optimization-funnels.webp',
                 'metric'    => ['val' => '2X', 'lbl' => 'Conversions', 'icon' => 'fa-solid fa-arrow-up'],
                 'features'  => ['Landing Pages', 'Checkout Optimization', 'Lead Funnels'],
                 'techStack' => ['Funnels Tools', 'CRM']

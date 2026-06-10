@@ -42,7 +42,7 @@ return [
                 'desc' => 'Maximize visibility with trending content.'
             ],
         ],
-        'img' => 'assets/images/services/tiktok-ads-intro.png',
+        'img' => 'assets/images/services/tiktok-ads-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-eye',
             'label' => 'Views',
@@ -74,7 +74,7 @@ return [
                 'title'     => 'TikTok In-Feed Ads',
                 'tagline'   => 'Native Content Ads',
                 'desc'      => 'Display ads within the user feed for maximum engagement.',
-                'image'     => 'assets/images/services/tiktok-ads-infeed.png',
+                'image'     => 'assets/images/services/tiktok-ads-infeed.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Engagement', 'icon' => 'fa-solid fa-heart'],
                 'features'  => ['Native Ads', 'Full-Screen Video', 'CTA Optimization'],
                 'techStack' => ['TikTok Ads Manager']
@@ -86,7 +86,7 @@ return [
                 'title'     => 'TikTok Spark Ads',
                 'tagline'   => 'Boost Organic Content',
                 'desc'      => 'Promote organic posts to increase reach and engagement.',
-                'image'     => 'assets/images/services/tiktok-ads-spark.png',
+                'image'     => 'assets/images/services/tiktok-ads-spark.webp',
                 'metric'    => ['val' => 'Viral', 'lbl' => 'Reach', 'icon' => 'fa-solid fa-fire'],
                 'features'  => ['Content Boosting', 'Organic Integration', 'Engagement Growth'],
                 'techStack' => ['TikTok Ads']
@@ -98,7 +98,7 @@ return [
                 'title'     => 'TikTok Ecommerce Ads',
                 'tagline'   => 'Drive Sales',
                 'desc'      => 'Promote products with engaging video ads.',
-                'image'     => 'assets/images/services/tiktok-ads-ecommerce.png',
+                'image'     => 'assets/images/services/tiktok-ads-ecommerce.webp',
                 'metric'    => ['val' => '4X', 'lbl' => 'ROAS', 'icon' => 'fa-solid fa-chart-line'],
                 'features'  => ['Product Ads', 'UGC Style Content', 'Retargeting'],
                 'techStack' => ['TikTok Ads', 'Shopify']
@@ -110,7 +110,7 @@ return [
                 'title'     => 'TikTok Remarketing Ads',
                 'tagline'   => 'Convert Visitors',
                 'desc'      => 'Re-target users who interacted with your brand.',
-                'image'     => 'assets/images/services/tiktok-ads-remarketing.png',
+                'image'     => 'assets/images/services/tiktok-ads-remarketing.webp',
                 'metric'    => ['val' => '2X', 'lbl' => 'Conversions', 'icon' => 'fa-solid fa-repeat'],
                 'features'  => ['Custom Audiences', 'Dynamic Ads', 'Conversion Tracking'],
                 'techStack' => ['TikTok Pixel', 'Analytics']

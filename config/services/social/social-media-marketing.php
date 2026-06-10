@@ -42,7 +42,7 @@ return [
                 'desc' => 'Boost likes, shares, and interactions.'
             ],
         ],
-        'img' => 'assets/images/services/social-media-marketing-intro.png',
+        'img' => 'assets/images/services/social-media-marketing-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Engagement',
@@ -74,7 +74,7 @@ return [
                 'title'     => 'Social Media Content Creation',
                 'tagline'   => 'Creative Content',
                 'desc'      => 'Design engaging posts, graphics, and videos for your audience.',
-                'image'     => 'assets/images/services/social-media-marketing-content.png',
+                'image'     => 'assets/images/services/social-media-marketing-content.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Engagement', 'icon' => 'fa-solid fa-heart'],
                 'features'  => ['Post Design', 'Captions', 'Hashtag Strategy'],
                 'techStack' => ['Canva', 'Adobe', 'Figma']
@@ -86,7 +86,7 @@ return [
                 'title'     => 'Post Scheduling & Management',
                 'tagline'   => 'Consistent Posting',
                 'desc'      => 'Plan and schedule posts to maintain consistency.',
-                'image'     => 'assets/images/services/social-media-marketing-posting.png',
+                'image'     => 'assets/images/services/social-media-marketing-posting.webp',
                 'metric'    => ['val' => 'Daily', 'lbl' => 'Posting', 'icon' => 'fa-solid fa-clock'],
                 'features'  => ['Content Calendar', 'Automation', 'Consistency'],
                 'techStack' => ['Hootsuite', 'Buffer']
@@ -98,7 +98,7 @@ return [
                 'title'     => 'Social Media Advertising',
                 'tagline'   => 'Reach More People',
                 'desc'      => 'Run targeted ad campaigns on social platforms.',
-                'image'     => 'assets/images/services/social-media-marketing-ads.png',
+                'image'     => 'assets/images/services/social-media-marketing-ads.webp',
                 'metric'    => ['val' => 'Wide', 'lbl' => 'Reach', 'icon' => 'fa-solid fa-globe'],
                 'features'  => ['Targeted Ads', 'Campaign Optimization', 'A/B Testing'],
                 'techStack' => ['Meta Ads', 'Instagram Ads']
@@ -110,7 +110,7 @@ return [
                 'title'     => 'Social Media Analytics & Reporting',
                 'tagline'   => 'Data-Driven Growth',
                 'desc'      => 'Track performance and improve strategies with insights.',
-                'image'     => 'assets/images/services/social-media-marketing-analytics.png',
+                'image'     => 'assets/images/services/social-media-marketing-analytics.webp',
                 'metric'    => ['val' => 'Insights', 'lbl' => 'Data', 'icon' => 'fa-solid fa-chart-line'],
                 'features'  => ['Performance Reports', 'Insights', 'Growth Tracking'],
                 'techStack' => ['Analytics Tools', 'Meta Insights']

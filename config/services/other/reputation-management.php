@@ -43,7 +43,7 @@ return [
                 'desc' => 'Track brand mentions across the web.'
             ],
         ],
-        'img' => 'assets/images/services/reputation-management-intro.png',
+        'img' => 'assets/images/services/reputation-management-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-star',
             'label' => 'Ratings',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Online Review Management',
                 'tagline'   => 'Boost Ratings',
                 'desc'      => 'Manage and improve reviews across platforms.',
-                'image'     => 'assets/images/services/reputation-management-reviews.png',
+                'image'     => 'assets/images/services/reputation-management-reviews.webp',
                 'metric'    => ['val' => '5★', 'lbl' => 'Ratings', 'icon' => 'fa-solid fa-star'],
                 'features'  => ['Review Monitoring', 'Response Management', 'Feedback Strategy'],
                 'techStack' => ['Google Reviews', 'Trustpilot']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Reputation Monitoring',
                 'tagline'   => 'Track Everything',
                 'desc'      => 'Monitor brand mentions across platforms.',
-                'image'     => 'assets/images/services/reputation-management-monitoring.png',
+                'image'     => 'assets/images/services/reputation-management-monitoring.webp',
                 'metric'    => ['val' => '24/7', 'lbl' => 'Monitoring', 'icon' => 'fa-solid fa-clock'],
                 'features'  => ['Brand Tracking', 'Alerts', 'Sentiment Analysis'],
                 'techStack' => ['Monitoring Tools']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'Negative Content Management',
                 'tagline'   => 'Protect Your Image',
                 'desc'      => 'Handle negative reviews and harmful content.',
-                'image'     => 'assets/images/services/reputation-management-removal.png',
+                'image'     => 'assets/images/services/reputation-management-removal.webp',
                 'metric'    => ['val' => 'Safe', 'lbl' => 'Brand', 'icon' => 'fa-solid fa-shield'],
                 'features'  => ['Content Suppression', 'Response Strategy', 'Reputation Repair'],
                 'techStack' => ['ORM Tools']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Brand Reputation Building',
                 'tagline'   => 'Build Authority',
                 'desc'      => 'Create a strong and positive brand image.',
-                'image'     => 'assets/images/services/reputation-management-branding.png',
+                'image'     => 'assets/images/services/reputation-management-branding.webp',
                 'metric'    => ['val' => 'Strong', 'lbl' => 'Brand', 'icon' => 'fa-solid fa-award'],
                 'features'  => ['Positive Content', 'PR Strategy', 'Brand Positioning'],
                 'techStack' => ['PR Tools']

@@ -43,7 +43,7 @@ return [
                 'desc' => 'Earn backlinks that boost SEO rankings.'
             ],
         ],
-        'img' => 'assets/images/services/digital-pr-intro.png',
+        'img' => 'assets/images/services/digital-pr-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Traffic',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Media Outreach Campaigns',
                 'tagline'   => 'Connect with Journalists',
                 'desc'      => 'Reach journalists and influencers to promote your brand.',
-                'image'     => 'assets/images/services/digital-pr-outreach.png',
+                'image'     => 'assets/images/services/digital-pr-outreach.webp',
                 'metric'    => ['val' => 'Wide', 'lbl' => 'Coverage', 'icon' => 'fa-solid fa-globe'],
                 'features'  => ['Journalist Outreach', 'Influencer Collaboration', 'Pitching'],
                 'techStack' => ['Email Tools', 'CRM']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Press Release Distribution',
                 'tagline'   => 'Announce Your Brand',
                 'desc'      => 'Publish press releases to reach a wider audience.',
-                'image'     => 'assets/images/services/digital-pr-press.png',
+                'image'     => 'assets/images/services/digital-pr-press.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Visibility', 'icon' => 'fa-solid fa-eye'],
                 'features'  => ['PR Writing', 'Distribution', 'Media Coverage'],
                 'techStack' => ['PR Platforms']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'High Authority Link Building',
                 'tagline'   => 'Boost SEO',
                 'desc'      => 'Earn backlinks from trusted websites.',
-                'image'     => 'assets/images/services/digital-pr-backlinks.png',
+                'image'     => 'assets/images/services/digital-pr-backlinks.webp',
                 'metric'    => ['val' => 'Strong', 'lbl' => 'SEO', 'icon' => 'fa-solid fa-chart-line'],
                 'features'  => ['Guest Posting', 'Editorial Links', 'Outreach'],
                 'techStack' => ['SEO Tools']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Brand Mentions & Coverage',
                 'tagline'   => 'Build Reputation',
                 'desc'      => 'Increase brand mentions across platforms.',
-                'image'     => 'assets/images/services/digital-pr-branding.png',
+                'image'     => 'assets/images/services/digital-pr-branding.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Trust', 'icon' => 'fa-solid fa-star'],
                 'features'  => ['Mentions', 'Reputation Management', 'Visibility'],
                 'techStack' => ['PR Tools']

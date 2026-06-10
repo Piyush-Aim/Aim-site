@@ -43,7 +43,7 @@ return [
                 'desc' => 'Rank in different languages with localized content strategies.'
             ],
         ],
-        'img' => 'assets/images/services/seo-intro.png',
+        'img' => 'assets/images/services/seo-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Traffic Growth',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'International SEO Optimization',
                 'tagline'   => 'Rank Across Borders',
                 'desc'      => 'Optimize your website to rank in multiple countries with geo-targeting and hreflang strategies.',
-                'image'     => 'assets/images/services/seo-international.png',
+                'image'     => 'assets/images/services/seo-international.webp',
                 'metric'    => ['val' => '50+', 'lbl' => 'Countries', 'icon' => 'fa-solid fa-location-dot'],
                 'features'  => ['Hreflang Setup', 'Geo Targeting', 'Country-Specific SEO'],
                 'techStack' => ['Google Search Console', 'Ahrefs', 'SEMrush']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Multilingual SEO Services',
                 'tagline'   => 'Speak Every Language',
                 'desc'      => 'Optimize content for multiple languages while maintaining search relevance and accuracy.',
-                'image'     => 'assets/images/services/seo-multilingual.png',
+                'image'     => 'assets/images/services/seo-multilingual.webp',
                 'metric'    => ['val' => 'Multi', 'lbl' => 'Languages', 'icon' => 'fa-solid fa-comments'],
                 'features'  => ['Localized Keywords', 'Translation SEO', 'Content Localization'],
                 'techStack' => ['WPML', 'Polylang', 'DeepL']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'Technical SEO Optimization',
                 'tagline'   => 'Strong Foundation',
                 'desc'      => 'Improve site performance, indexing, and crawling for better global rankings.',
-                'image'     => 'assets/images/services/seo-technical.png',
+                'image'     => 'assets/images/services/seo-technical.webp',
                 'metric'    => ['val' => '100%', 'lbl' => 'Optimized', 'icon' => 'fa-solid fa-check'],
                 'features'  => ['Site Speed Optimization', 'Schema Markup', 'Crawl Optimization'],
                 'techStack' => ['Lighthouse', 'Schema.org', 'Screaming Frog']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Global Ecommerce SEO',
                 'tagline'   => 'Sell Worldwide',
                 'desc'      => 'Optimize ecommerce websites to attract global customers and increase conversions.',
-                'image'     => 'assets/images/services/seo-ecommerce.png',
+                'image'     => 'assets/images/services/seo-ecommerce.webp',
                 'metric'    => ['val' => '2X', 'lbl' => 'Sales Growth', 'icon' => 'fa-solid fa-arrow-up-right-dots'],
                 'features'  => ['Product SEO', 'International Listings', 'Conversion Optimization'],
                 'techStack' => ['Shopify', 'WooCommerce', 'Google Merchant Center']

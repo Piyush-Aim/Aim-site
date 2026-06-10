@@ -43,7 +43,7 @@ return [
                 'desc' => 'Protect your website with SSL, firewalls, and backups.'
             ],
         ],
-        'img' => 'assets/images/services/website-hosting-intro.png',
+        'img' => 'assets/images/services/website-hosting-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Speed',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Shared Hosting',
                 'tagline'   => 'Affordable Hosting',
                 'desc'      => 'Cost-effective hosting for small websites and startups.',
-                'image'     => 'assets/images/services/website-hosting-shared.png',
+                'image'     => 'assets/images/services/website-hosting-shared.webp',
                 'metric'    => ['val' => 'Low', 'lbl' => 'Cost', 'icon' => 'fa-solid fa-dollar-sign'],
                 'features'  => ['Affordable Plans', 'Easy Setup', 'Basic Resources'],
                 'techStack' => ['cPanel', 'LiteSpeed']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'VPS Hosting',
                 'tagline'   => 'More Power & Control',
                 'desc'      => 'Dedicated resources with better performance and scalability.',
-                'image'     => 'assets/images/services/website-hosting-vps.png',
+                'image'     => 'assets/images/services/website-hosting-vps.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Performance', 'icon' => 'fa-solid fa-bolt'],
                 'features'  => ['Dedicated Resources', 'Root Access', 'Scalability'],
                 'techStack' => ['Linux', 'Docker']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'Cloud Hosting',
                 'tagline'   => 'Scalable Infrastructure',
                 'desc'      => 'Highly scalable hosting with distributed servers.',
-                'image'     => 'assets/images/services/website-hosting-cloud.png',
+                'image'     => 'assets/images/services/website-hosting-cloud.webp',
                 'metric'    => ['val' => 'Scalable', 'lbl' => 'Resources', 'icon' => 'fa-solid fa-cloud'],
                 'features'  => ['Auto Scaling', 'High Availability', 'Load Balancing'],
                 'techStack' => ['AWS', 'Google Cloud', 'Azure']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Managed Hosting',
                 'tagline'   => 'Hassle-Free Hosting',
                 'desc'      => 'We manage your hosting so you can focus on your business.',
-                'image'     => 'assets/images/services/website-hosting-managed.png',
+                'image'     => 'assets/images/services/website-hosting-managed.webp',
                 'metric'    => ['val' => 'Easy', 'lbl' => 'Management', 'icon' => 'fa-solid fa-check'],
                 'features'  => ['Automatic Updates', 'Security Monitoring', 'Backup Management'],
                 'techStack' => ['cPanel', 'Cloudflare']

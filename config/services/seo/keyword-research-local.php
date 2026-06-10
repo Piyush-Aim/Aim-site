@@ -46,7 +46,7 @@ return [
             ],
         ],
 
-        'img' => 'assets/images/services/keyword-research-local-intro.png',
+        'img' => 'assets/images/services/keyword-research-local-intro.webp',
 
         'glass_card_1' => [
             'icon' => 'fa-solid fa-arrow-trend-up',
@@ -90,7 +90,7 @@ return [
 
                 'techStack' => ['Ahrefs', 'SEMrush', 'SpyFu'],
 
-                'image' => 'assets/images/services/keyword-research-local-competitive.png',
+                'image' => 'assets/images/services/keyword-research-local-competitive.webp',
 
                 'metric' => [
                     'icon' => 'fa-solid fa-chess-knight',
@@ -117,7 +117,7 @@ return [
 
                 'techStack' => ['BrightLocal', 'Google Trends', 'Whitespark'],
 
-                'image' => 'assets/images/services/keyword-research-local-local.png',
+                'image' => 'assets/images/services/keyword-research-local-local.webp',
 
                 'metric' => [
                     'icon' => 'fa-solid fa-location-crosshairs',
@@ -144,7 +144,7 @@ return [
 
                 'techStack' => ['AnswerThePublic', 'Ahrefs', 'Search Console'],
 
-                'image' => 'assets/images/services/keyword-research-local-longtail.png',
+                'image' => 'assets/images/services/keyword-research-local-longtail.webp',
 
                 'metric' => [
                     'icon' => 'fa-solid fa-bullseye',
@@ -171,7 +171,7 @@ return [
 
                 'techStack' => ['Google Shopping', 'SEMrush', 'Ahrefs'],
 
-                'image' => 'assets/images/services/keyword-research-local-ecommerce.png',
+                'image' => 'assets/images/services/keyword-research-local-ecommerce.webp',
 
                 'metric' => [
                     'icon' => 'fa-solid fa-bag-shopping',

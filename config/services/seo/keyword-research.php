@@ -47,7 +47,7 @@ return [
             ],
         ],
 
-        'img' => 'assets/images/services/keyword-research-intro.png',
+        'img' => 'assets/images/services/keyword-research-intro.webp',
 
         'glass_card_1' => [
             'icon'  => 'fa-solid fa-arrow-trend-up',
@@ -94,7 +94,7 @@ return [
                     'SEMrush',
                     'SpyFu'
                 ],
-                'image' => 'assets/images/services/keyword-research-competitive.png',
+                'image' => 'assets/images/services/keyword-research-competitive.webp',
                 'metric' => [
                     'icon' => 'fa-solid fa-chess-knight',
                     'val' => '#1',
@@ -119,7 +119,7 @@ return [
                     'Ahrefs',
                     'Google Search Console'
                 ],
-                'image' => 'assets/images/services/keyword-research-longtail.png',
+                'image' => 'assets/images/services/keyword-research-longtail.webp',
                 'metric' => [
                     'icon' => 'fa-solid fa-bullseye',
                     'val' => '5X',
@@ -144,7 +144,7 @@ return [
                     'Whitespark',
                     'Google Trends'
                 ],
-                'image' => 'assets/images/services/keyword-research-local.png',
+                'image' => 'assets/images/services/keyword-research-local.webp',
                 'metric' => [
                     'icon' => 'fa-solid fa-location-crosshairs',
                     'val' => 'Top 3',
@@ -169,7 +169,7 @@ return [
                     'Ahrefs',
                     'Google Shopping'
                 ],
-                'image' => 'assets/images/services/keyword-research-ecommerce.png',
+                'image' => 'assets/images/services/keyword-research-ecommerce.webp',
                 'metric' => [
                     'icon' => 'fa-solid fa-bag-shopping',
                     'val' => '+200%',

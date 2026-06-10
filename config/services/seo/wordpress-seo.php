@@ -43,7 +43,7 @@ return [
                 'desc' => 'Optimize content, keywords, and meta tags.'
             ],
         ],
-        'img' => 'assets/images/services/wordpress-seo-intro.png',
+        'img' => 'assets/images/services/wordpress-seo-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'SEO Score',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'WordPress On-Page SEO',
                 'tagline'   => 'Optimize Every Page',
                 'desc'      => 'Improve content, headings, keywords, and internal linking structure.',
-                'image'     => 'assets/images/services/wordpress-seo-onpage.png',
+                'image'     => 'assets/images/services/wordpress-seo-onpage.webp',
                 'metric'    => ['val' => 'Top', 'lbl' => 'Rankings', 'icon' => 'fa-solid fa-trophy'],
                 'features'  => ['Keyword Optimization', 'Meta Tags', 'Content SEO'],
                 'techStack' => ['Yoast SEO', 'Rank Math', 'All in One SEO']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Technical WordPress SEO',
                 'tagline'   => 'Fix Backend Issues',
                 'desc'      => 'Improve crawlability, indexing, and site architecture.',
-                'image'     => 'assets/images/services/wordpress-seo-technical.png',
+                'image'     => 'assets/images/services/wordpress-seo-technical.webp',
                 'metric'    => ['val' => '100%', 'lbl' => 'Optimized', 'icon' => 'fa-solid fa-check'],
                 'features'  => ['XML Sitemap', 'Robots.txt', 'Schema Markup'],
                 'techStack' => ['Search Console', 'Schema.org', 'Screaming Frog']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'WordPress Speed Optimization',
                 'tagline'   => 'Fast Loading Sites',
                 'desc'      => 'Boost website speed to improve rankings and user experience.',
-                'image'     => 'assets/images/services/wordpress-seo-speed.png',
+                'image'     => 'assets/images/services/wordpress-seo-speed.webp',
                 'metric'    => ['val' => '90+', 'lbl' => 'PageSpeed', 'icon' => 'fa-solid fa-gauge'],
                 'features'  => ['Caching Setup', 'Image Optimization', 'Core Web Vitals'],
                 'techStack' => ['WP Rocket', 'LiteSpeed', 'Cloudflare']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'SEO Plugin Setup & Optimization',
                 'tagline'   => 'Smart SEO Tools',
                 'desc'      => 'Configure and optimize SEO plugins for maximum performance.',
-                'image'     => 'assets/images/services/wordpress-seo-plugin.png',
+                'image'     => 'assets/images/services/wordpress-seo-plugin.webp',
                 'metric'    => ['val' => 'Pro', 'lbl' => 'Setup', 'icon' => 'fa-solid fa-wrench'],
                 'features'  => ['Yoast Setup', 'Rank Math Config', 'Automation'],
                 'techStack' => ['Yoast', 'Rank Math', 'AIOSEO']

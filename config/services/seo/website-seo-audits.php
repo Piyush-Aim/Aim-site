@@ -42,7 +42,7 @@ return [
                 'desc' => 'Use actionable recommendations to boost search visibility.'
             ],
         ],
-        'img' => 'assets/images/services/website-seo-audits-intro.png',
+        'img' => 'assets/images/services/website-seo-audits-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-ranking-star',
             'label' => 'SEO Score',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Technical SEO Audit',
                 'tagline'   => 'Fix Core SEO Errors',
                 'desc'      => 'Audit indexing, crawling, speed, schema, mobile usability and site structure.',
-                'image'     => 'assets/images/services/website-seo-audits-technical.png',
+                'image'     => 'assets/images/services/website-seo-audits-technical.webp',
                 'metric'    => ['val' => '90+', 'lbl' => 'Checks', 'icon' => 'fa-solid fa-check'],
                 'features'  => ['Crawl Errors', 'Speed Audit', 'Schema Review'],
                 'techStack' => ['GSC', 'PageSpeed', 'Screaming Frog']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Content SEO Audit',
                 'tagline'   => 'Improve Content Quality',
                 'desc'      => 'Review thin pages, keyword targeting, duplicate content and content gaps.',
-                'image'     => 'assets/images/services/website-seo-audits-content.png',
+                'image'     => 'assets/images/services/website-seo-audits-content.webp',
                 'metric'    => ['val' => 'Top', 'lbl' => 'Content', 'icon' => 'fa-solid fa-pen'],
                 'features'  => ['Keyword Gaps', 'Duplicate Checks', 'Content Quality'],
                 'techStack' => ['SEO Tools', 'Analytics']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'Local SEO Audit',
                 'tagline'   => 'Improve Local Visibility',
                 'desc'      => 'Audit Google Business Profile, citations, reviews and local landing pages.',
-                'image'     => 'assets/images/services/website-seo-audits-local.png',
+                'image'     => 'assets/images/services/website-seo-audits-local.webp',
                 'metric'    => ['val' => 'Local', 'lbl' => 'Growth', 'icon' => 'fa-solid fa-map'],
                 'features'  => ['GBP Review', 'Citation Audit', 'Location Pages'],
                 'techStack' => ['GBP', 'Local SEO Tools']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Ecommerce SEO Audit',
                 'tagline'   => 'Optimize Store Rankings',
                 'desc'      => 'Review product pages, categories, filters, duplicate URLs and conversions.',
-                'image'     => 'assets/images/services/website-seo-audits-ecommerce.png',
+                'image'     => 'assets/images/services/website-seo-audits-ecommerce.webp',
                 'metric'    => ['val' => 'Sales', 'lbl' => 'Ready', 'icon' => 'fa-solid fa-chart-line'],
                 'features'  => ['Product SEO', 'Category SEO', 'UX Review'],
                 'techStack' => ['GA4', 'Search Console']

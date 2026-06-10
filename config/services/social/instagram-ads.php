@@ -43,7 +43,7 @@ return [
                 'desc' => 'Increase likes, shares, and interactions.'
             ],
         ],
-        'img' => 'assets/images/services/instagram-ads-intro.png',
+        'img' => 'assets/images/services/instagram-ads-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-heart',
             'label' => 'Engagement',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Instagram Reels Ads',
                 'tagline'   => 'Engage with Short Videos',
                 'desc'      => 'Run engaging short-form video ads to capture attention.',
-                'image'     => 'assets/images/services/instagram-ads-reels.png',
+                'image'     => 'assets/images/services/instagram-ads-reels.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Engagement', 'icon' => 'fa-solid fa-play'],
                 'features'  => ['Video Ads', 'Creative Editing', 'Audience Targeting'],
                 'techStack' => ['Meta Ads', 'Video Tools']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Instagram Story Ads',
                 'tagline'   => 'Full-Screen Impact',
                 'desc'      => 'Create immersive full-screen ads for better engagement.',
-                'image'     => 'assets/images/services/instagram-ads-stories.png',
+                'image'     => 'assets/images/services/instagram-ads-stories.webp',
                 'metric'    => ['val' => 'Wide', 'lbl' => 'Reach', 'icon' => 'fa-solid fa-eye'],
                 'features'  => ['Full-Screen Ads', 'Swipe Up CTA', 'Targeting'],
                 'techStack' => ['Instagram Ads', 'Meta Ads']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'Instagram Ecommerce Ads',
                 'tagline'   => 'Drive Product Sales',
                 'desc'      => 'Promote products with visually appealing ads.',
-                'image'     => 'assets/images/services/instagram-ads-shopping.png',
+                'image'     => 'assets/images/services/instagram-ads-shopping.webp',
                 'metric'    => ['val' => '4X', 'lbl' => 'ROAS', 'icon' => 'fa-solid fa-chart-line'],
                 'features'  => ['Catalog Ads', 'Dynamic Ads', 'Retargeting'],
                 'techStack' => ['Meta Ads', 'Shopify']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Instagram Remarketing Ads',
                 'tagline'   => 'Convert Visitors',
                 'desc'      => 'Re-target users who interacted with your brand.',
-                'image'     => 'assets/images/services/instagram-ads-influencer.png',
+                'image'     => 'assets/images/services/instagram-ads-influencer.webp',
                 'metric'    => ['val' => '2X', 'lbl' => 'Conversions', 'icon' => 'fa-solid fa-repeat'],
                 'features'  => ['Custom Audiences', 'Dynamic Ads', 'Conversion Tracking'],
                 'techStack' => ['Meta Pixel', 'Analytics']

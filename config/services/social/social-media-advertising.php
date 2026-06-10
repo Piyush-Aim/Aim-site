@@ -44,7 +44,7 @@ return [
                 'desc' => 'Optimized campaigns focused on conversions and revenue.'
             ],
         ],
-        'img' => 'assets/images/services/social-media-advertising-intro.png',
+        'img' => 'assets/images/services/social-media-advertising-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-bullseye',
             'label' => 'CTR',
@@ -77,7 +77,7 @@ return [
                 'title'     => 'Facebook Advertising Campaigns',
                 'tagline'   => 'Scale Leads & Sales',
                 'desc'      => 'Run highly targeted Facebook campaigns for traffic, leads and conversions.',
-                'image'     => 'assets/images/services/social-media-advertising-facebook.png',
+                'image'     => 'assets/images/services/social-media-advertising-facebook.webp',
                 'metric'    => ['val' => '5X', 'lbl' => 'ROAS', 'icon' => 'fa-solid fa-chart-line'],
                 'features'  => ['Lead Ads', 'Retargeting', 'Conversion Campaigns'],
                 'techStack' => ['Meta Ads Manager', 'Pixel', 'Analytics']
@@ -89,7 +89,7 @@ return [
                 'title'     => 'Instagram Growth Advertising',
                 'tagline'   => 'Visual Brand Growth',
                 'desc'      => 'Promote products and services with creative Instagram ad campaigns.',
-                'image'     => 'assets/images/services/social-media-advertising-instagram.png',
+                'image'     => 'assets/images/services/social-media-advertising-instagram.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Engagement', 'icon' => 'fa-solid fa-heart'],
                 'features'  => ['Story Ads', 'Reels Ads', 'Product Promotions'],
                 'techStack' => ['Meta Ads', 'Creative Testing']
@@ -101,7 +101,7 @@ return [
                 'title'     => 'LinkedIn B2B Advertising',
                 'tagline'   => 'Professional Lead Generation',
                 'desc'      => 'Generate B2B leads and decision-maker reach with LinkedIn campaigns.',
-                'image'     => 'assets/images/services/social-media-advertising-linkedin.png',
+                'image'     => 'assets/images/services/social-media-advertising-linkedin.webp',
                 'metric'    => ['val' => 'B2B', 'lbl' => 'Leads', 'icon' => 'fa-solid fa-briefcase'],
                 'features'  => ['Lead Forms', 'Sponsored Content', 'Audience Targeting'],
                 'techStack' => ['LinkedIn Campaign Manager']
@@ -113,7 +113,7 @@ return [
                 'title'     => 'Retargeting Ad Campaigns',
                 'tagline'   => 'Recover Lost Visitors',
                 'desc'      => 'Bring back previous visitors and turn them into paying customers.',
-                'image'     => 'assets/images/services/social-media-advertising-retargeting.png',
+                'image'     => 'assets/images/services/social-media-advertising-retargeting.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Conversions', 'icon' => 'fa-solid fa-bullseye'],
                 'features'  => ['Cart Recovery', 'Remarketing', 'Dynamic Ads'],
                 'techStack' => ['Meta Pixel', 'Audience Sync']

@@ -74,7 +74,7 @@ return [
                 'title'     => 'Search Engine Optimization',
                 'tagline'   => 'Long-Term Rankings',
                 'desc'      => 'Improve visibility, authority, and traffic through strategic SEO execution.',
-                'image'     => 'assets/images/services/seo-and-ppc-marketing-seo.png',
+                'image'     => 'assets/images/services/seo-and-ppc-marketing-seo.webp',
                 'metric'    => ['val' => 'Top', 'lbl' => 'Rankings', 'icon' => 'fa-solid fa-trophy'],
                 'features'  => ['Keyword Research', 'On-Page SEO', 'Technical SEO'],
                 'techStack' => ['Ahrefs', 'Semrush', 'Search Console']
@@ -86,7 +86,7 @@ return [
                 'title'     => 'Google Ads Management',
                 'tagline'   => 'Instant Visibility',
                 'desc'      => 'Drive qualified traffic quickly with expertly managed PPC campaigns.',
-                'image'     => 'assets/images/services/seo-and-ppc-marketing-ppc.png',
+                'image'     => 'assets/images/services/seo-and-ppc-marketing-ppc.webp',
                 'metric'    => ['val' => 'Low', 'lbl' => 'CPC', 'icon' => 'fa-solid fa-dollar-sign'],
                 'features'  => ['Search Ads', 'Display Ads', 'Lead Campaigns'],
                 'techStack' => ['Google Ads', 'Analytics']
@@ -98,7 +98,7 @@ return [
                 'title'     => 'Social Media Advertising',
                 'tagline'   => 'Audience Growth',
                 'desc'      => 'Reach targeted users through paid campaigns on social platforms.',
-                'image'     => 'assets/images/services/seo-and-ppc-marketing-social.png',
+                'image'     => 'assets/images/services/seo-and-ppc-marketing-social.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Reach', 'icon' => 'fa-solid fa-users'],
                 'features'  => ['Facebook Ads', 'Instagram Ads', 'Retargeting'],
                 'techStack' => ['Meta Ads', 'LinkedIn Ads']
@@ -110,7 +110,7 @@ return [
                 'title'     => 'Remarketing Campaigns',
                 'tagline'   => 'Recover Lost Leads',
                 'desc'      => 'Reconnect with previous visitors and increase conversions.',
-                'image'     => 'assets/images/services/seo-and-ppc-marketing-remarketing.png',
+                'image'     => 'assets/images/services/seo-and-ppc-marketing-remarketing.webp',
                 'metric'    => ['val' => '2X', 'lbl' => 'Conversions', 'icon' => 'fa-solid fa-repeat'],
                 'features'  => ['Audience Lists', 'Display Retargeting', 'Sales Recovery'],
                 'techStack' => ['Google Ads', 'Meta Pixel']

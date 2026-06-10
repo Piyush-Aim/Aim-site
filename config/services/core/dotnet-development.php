@@ -43,7 +43,7 @@ return [
                 'desc' => 'Applications designed to scale with your growing business needs.'
             ],
         ],
-        'img' => 'assets/images/services/dotnet-intro.png',
+        'img' => 'assets/images/services/dotnet-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-server',
             'label' => 'Performance',
@@ -75,7 +75,7 @@ return [
                 'title'     => '.NET Web Development',
                 'tagline'   => 'High-Performance Websites',
                 'desc'      => 'We build fast, secure, and scalable web applications using ASP.NET and modern frameworks.',
-                'image'     => 'assets/images/services/dotnet-webdev.png',
+                'image'     => 'assets/images/services/dotnet-webdev.webp',
                 'metric'    => ['val' => 'Fast', 'lbl' => 'Performance', 'icon' => 'fa-solid fa-bolt'],
                 'features'  => ['ASP.NET Core', 'MVC Architecture', 'Responsive UI'],
                 'techStack' => ['ASP.NET', 'C#', 'SQL Server', 'Azure']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Enterprise Application Development',
                 'tagline'   => 'Business Solutions',
                 'desc'      => 'We develop large-scale enterprise applications to streamline business processes and improve efficiency.',
-                'image'     => 'assets/images/services/dotnet-enterprise.png',
+                'image'     => 'assets/images/services/dotnet-enterprise.webp',
                 'metric'    => ['val' => 'Enterprise', 'lbl' => 'Grade', 'icon' => 'fa-solid fa-building'],
                 'features'  => ['ERP Systems', 'CRM Systems', 'Custom Dashboards'],
                 'techStack' => ['.NET Core', 'Azure', 'SQL Server']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'API Development & Integration',
                 'tagline'   => 'Connected Systems',
                 'desc'      => 'We create secure APIs for seamless integration with third-party services and applications.',
-                'image'     => 'assets/images/services/dotnet-api.png',
+                'image'     => 'assets/images/services/dotnet-api.webp',
                 'metric'    => ['val' => 'Secure', 'lbl' => 'API', 'icon' => 'fa-solid fa-lock'],
                 'features'  => ['REST APIs', 'Third-party Integration', 'Microservices'],
                 'techStack' => ['ASP.NET Web API', 'JSON', 'OAuth']
@@ -111,7 +111,7 @@ return [
                 'title'     => '.NET Migration & Upgrade',
                 'tagline'   => 'Modernize Systems',
                 'desc'      => 'Upgrade legacy applications to modern .NET platforms for better performance and security.',
-                'image'     => 'assets/images/services/dotnet-migration.png',
+                'image'     => 'assets/images/services/dotnet-migration.webp',
                 'metric'    => ['val' => 'Modern', 'lbl' => 'Upgrade', 'icon' => 'fa-solid fa-rocket'],
                 'features'  => ['Legacy Migration', 'Cloud Migration', 'Performance Optimization'],
                 'techStack' => ['.NET Core', 'Azure', 'Docker']

@@ -7,7 +7,6 @@ return [
     'menu_desc' => 'Leveraging intelligence to automate and enhance your products.',
     'menu_icon' => 'fa-solid fa-microchip',
 
-
     'pageTitle' => 'AI & ML Integration Services | ' . COMPANY_NAME . ' - Intelligent Automation Solutions',
     'pageDescription' => 'AI and Machine Learning integration services by ' . COMPANY_NAME . '. Automate processes, gain insights, and build intelligent systems using advanced AI technologies.',
     'pageKey' => 'ai_ml_integration',
@@ -43,7 +42,7 @@ return [
                 'desc' => 'Use machine learning to forecast trends and make better decisions.'
             ],
         ],
-        'img' => 'assets/images/services/aiml-intro.png',
+        'img' => 'assets/images/services/aiml-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-brain',
             'label' => 'AI Accuracy',
@@ -75,7 +74,7 @@ return [
                 'title'     => 'AI Chatbot Development',
                 'tagline'   => '24/7 Smart Support',
                 'desc'      => 'Deploy intelligent chatbots for customer support, lead generation, and automation.',
-                'image'     => 'assets/images/services/aiml-automation.png',
+                'image'     => 'assets/images/services/aiml-automation.webp',
                 'metric'    => ['val' => '24/7', 'lbl' => 'Availability', 'icon' => 'fa-solid fa-clock'],
                 'features'  => ['NLP Processing', 'Multi-platform Integration', 'Context Awareness'],
                 'techStack' => ['OpenAI API', 'Dialogflow', 'Rasa']
@@ -87,7 +86,7 @@ return [
                 'title'     => 'Machine Learning & Predictive Analytics',
                 'tagline'   => 'Data-Driven Decisions',
                 'desc'      => 'Analyze data patterns and predict future outcomes using advanced ML models.',
-                'image'     => 'assets/images/services/aiml-analytics.png',
+                'image'     => 'assets/images/services/aiml-analytics.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Accuracy', 'icon' => 'fa-solid fa-bullseye'],
                 'features'  => ['Data Modeling', 'Forecasting', 'Anomaly Detection'],
                 'techStack' => ['Python', 'TensorFlow', 'Scikit-learn']
@@ -99,7 +98,7 @@ return [
                 'title'     => 'Computer Vision Solutions',
                 'tagline'   => 'See with AI',
                 'desc'      => 'Build systems that analyze images and videos for automation and insights.',
-                'image'     => 'assets/images/services/aiml-nlp.png',
+                'image'     => 'assets/images/services/aiml-nlp.webp',
                 'metric'    => ['val' => 'Real-time', 'lbl' => 'Processing', 'icon' => 'fa-solid fa-video'],
                 'features'  => ['Object Detection', 'Face Recognition', 'Image Classification'],
                 'techStack' => ['OpenCV', 'YOLO', 'PyTorch']
@@ -111,7 +110,7 @@ return [
                 'title'     => 'AI Process Automation',
                 'tagline'   => 'Work Smarter',
                 'desc'      => 'Automate business workflows using AI-driven decision-making systems.',
-                'image'     => 'assets/images/services/aiml-computer-vision.png',
+                'image'     => 'assets/images/services/aiml-computer-vision.webp',
                 'metric'    => ['val' => '60%', 'lbl' => 'Efficiency Boost', 'icon' => 'fa-solid fa-bolt'],
                 'features'  => ['Workflow Automation', 'Smart Decision Engines', 'AI Integration'],
                 'techStack' => ['Python', 'Node.js', 'Zapier']

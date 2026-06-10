@@ -7,7 +7,6 @@ return [
     'menu_desc' => 'Optimizing business processes with custom enterprise software.',
     'menu_icon' => 'fa-solid fa-briefcase',
 
-
     'pageTitle' => 'ERP Development Services | ' . COMPANY_NAME . ' - Smart Business Automation',
     'pageDescription' => 'Custom ERP development services by ' . COMPANY_NAME . '. Streamline operations, automate workflows, and manage your entire business with scalable ERP solutions.',
     'pageKey' => 'erp_development',
@@ -43,7 +42,7 @@ return [
                 'desc' => 'Automate repetitive tasks to improve productivity and reduce errors.'
             ],
         ],
-        'img' => 'assets/images/services/erp-intro.png',
+        'img' => 'assets/images/services/erp-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Productivity',
@@ -75,7 +74,7 @@ return [
                 'title'     => 'Custom ERP Development',
                 'tagline'   => 'Built for Your Business',
                 'desc'      => 'We create fully customized ERP systems aligned with your unique business workflows.',
-                'image'     => 'assets/images/services/erp-custom.png',
+                'image'     => 'assets/images/services/erp-custom.webp',
                 'metric'    => ['val' => '100%', 'lbl' => 'Custom Fit', 'icon' => 'fa-solid fa-puzzle-piece'],
                 'features'  => ['Tailored Modules', 'Scalable Architecture', 'Business-Specific Logic'],
                 'techStack' => ['Laravel', 'Node.js', 'React', 'MySQL']
@@ -87,7 +86,7 @@ return [
                 'title'     => 'Cloud-Based ERP Solutions',
                 'tagline'   => 'Access Anywhere',
                 'desc'      => 'Manage your business from anywhere with secure cloud-based ERP systems.',
-                'image'     => 'assets/images/services/erp-cloud.png',
+                'image'     => 'assets/images/services/erp-cloud.webp',
                 'metric'    => ['val' => '99.9%', 'lbl' => 'Uptime', 'icon' => 'fa-solid fa-server'],
                 'features'  => ['Remote Access', 'Cloud Hosting', 'Real-Time Data'],
                 'techStack' => ['AWS', 'Azure', 'Firebase']
@@ -99,7 +98,7 @@ return [
                 'title'     => 'ERP Integration Services',
                 'tagline'   => 'Seamless Connectivity',
                 'desc'      => 'Integrate ERP with your existing tools like CRM, accounting, and inventory systems.',
-                'image'     => 'assets/images/services/erp-integration.png',
+                'image'     => 'assets/images/services/erp-integration.webp',
                 'metric'    => ['val' => 'Seamless', 'lbl' => 'Integration', 'icon' => 'fa-solid fa-plug'],
                 'features'  => ['API Integration', 'Third-party Sync', 'Data Migration'],
                 'techStack' => ['REST API', 'Zapier', 'Webhooks']
@@ -111,7 +110,7 @@ return [
                 'title'     => 'ERP Analytics & Reporting',
                 'tagline'   => 'Data-Driven Decisions',
                 'desc'      => 'Get real-time insights and reports to make informed business decisions.',
-                'image'     => 'assets/images/services/erp-analytics.png', // TODO: replace with proper analytics image
+                'image'     => 'assets/images/services/erp-analytics.webp', // TODO: replace with proper analytics image
                 'metric'    => ['val' => 'Real-time', 'lbl' => 'Insights', 'icon' => 'fa-solid fa-chart-line'],
                 'features'  => ['Dashboard Reports', 'Custom Analytics', 'KPI Tracking'],
                 'techStack' => ['Power BI', 'Tableau', 'Custom Dashboards']

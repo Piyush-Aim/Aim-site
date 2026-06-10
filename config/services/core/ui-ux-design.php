@@ -43,7 +43,7 @@ return [
                 'desc' => 'We test and optimize designs to ensure seamless user experience and performance.'
             ],
         ],
-        'img' => 'assets/images/services/uiux-intro.png',
+        'img' => 'assets/images/services/uiux-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-users',
             'label' => 'User Experience',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'UX Research & Strategy',
                 'tagline'   => 'Data-Driven Insights',
                 'desc'      => 'We conduct user research, competitor analysis, and journey mapping to build a strong design foundation.',
-                'image'     => 'assets/images/services/uiux-research.png',
+                'image'     => 'assets/images/services/uiux-research.webp',
                 'metric'    => ['val' => '100%', 'lbl' => 'User-Focused', 'icon' => 'fa-solid fa-users'],
                 'features'  => ['User Personas', 'Journey Mapping', 'Information Architecture'],
                 'techStack' => ['Hotjar', 'Google Analytics', 'Miro']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Modern UI Design',
                 'tagline'   => 'Visually Engaging',
                 'desc'      => 'We design clean, modern, and responsive interfaces that align with your brand identity.',
-                'image'     => 'assets/images/services/uiux-modern-ui.png',
+                'image'     => 'assets/images/services/uiux-modern-ui.webp',
                 'metric'    => ['val' => 'Pixel Perfect', 'lbl' => 'Design', 'icon' => 'fa-solid fa-crop'],
                 'features'  => ['Responsive Layouts', 'Custom UI Elements', 'Brand Consistency'],
                 'techStack' => ['Figma', 'Adobe XD', 'Sketch']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'Wireframing & Prototyping',
                 'tagline'   => 'Interactive Experience',
                 'desc'      => 'We create wireframes and interactive prototypes to visualize your product before development.',
-                'image'     => 'assets/images/services/uiux-wireframing.png',
+                'image'     => 'assets/images/services/uiux-wireframing.webp',
                 'metric'    => ['val' => 'Interactive', 'lbl' => 'Prototype', 'icon' => 'fa-solid fa-play'],
                 'features'  => ['Low-Fidelity Wireframes', 'High-Fidelity Prototypes', 'User Flow Mapping'],
                 'techStack' => ['Figma', 'InVision', 'Adobe XD']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Design Systems',
                 'tagline'   => 'Scalable Design',
                 'desc'      => 'We build scalable design systems for consistency across products and faster development cycles.',
-                'image'     => 'assets/images/services/uiux-design-systems.png',
+                'image'     => 'assets/images/services/uiux-design-systems.webp',
                 'metric'    => ['val' => 'Scalable', 'lbl' => 'System', 'icon' => 'fa-solid fa-layer-group'],
                 'features'  => ['Component Libraries', 'Design Tokens', 'Reusable UI Elements'],
                 'techStack' => ['Figma', 'Storybook', 'Zeroheight']

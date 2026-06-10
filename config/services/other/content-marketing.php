@@ -42,7 +42,7 @@ return [
                 'desc' => 'Content designed to rank higher on search engines.'
             ],
         ],
-        'img' => 'assets/images/services/content-marketing-intro.png',
+        'img' => 'assets/images/services/content-marketing-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Traffic',
@@ -74,7 +74,7 @@ return [
                 'title'     => 'SEO Blog Writing',
                 'tagline'   => 'Drive Organic Traffic',
                 'desc'      => 'Create SEO-friendly blog posts that rank and attract visitors.',
-                'image'     => 'assets/images/services/content-marketing-blog.png',
+                'image'     => 'assets/images/services/content-marketing-blog.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Traffic', 'icon' => 'fa-solid fa-chart-line'],
                 'features'  => ['Keyword Research', 'SEO Writing', 'Content Optimization'],
                 'techStack' => ['Surfer SEO', 'Ahrefs']
@@ -86,7 +86,7 @@ return [
                 'title'     => 'SEO Content Creation',
                 'tagline'   => 'Rank Higher',
                 'desc'      => 'Create optimized content that ranks on search engines.',
-                'image'     => 'assets/images/services/content-marketing-seo.png',
+                'image'     => 'assets/images/services/content-marketing-seo.webp',
                 'metric'    => ['val' => 'Top', 'lbl' => 'Ranking', 'icon' => 'fa-solid fa-trophy'],
                 'features'  => ['On-Page SEO', 'Keyword Optimization', 'Content Strategy'],
                 'techStack' => ['Google Search Console', 'Analytics']
@@ -98,7 +98,7 @@ return [
                 'title'     => 'Social Media Content',
                 'tagline'   => 'Engage Audience',
                 'desc'      => 'Create engaging social media posts and creatives.',
-                'image'     => 'assets/images/services/content-marketing-social.png',
+                'image'     => 'assets/images/services/content-marketing-social.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Engagement', 'icon' => 'fa-solid fa-heart'],
                 'features'  => ['Post Design', 'Captions', 'Content Planning'],
                 'techStack' => ['Canva', 'Adobe']
@@ -110,7 +110,7 @@ return [
                 'title'     => 'Content Marketing Strategy',
                 'tagline'   => 'Plan for Growth',
                 'desc'      => 'Develop data-driven strategies for long-term success.',
-                'image'     => 'assets/images/services/content-marketing-strategy.png',
+                'image'     => 'assets/images/services/content-marketing-strategy.webp',
                 // 'metric'    => ['val' => 'Smart', 'lbl' => 'Strategy', 'icon' => 'fa-solid fa-brain'],
                 'features'  => ['Content Calendar', 'Audience Research', 'Funnel Strategy'],
                 'techStack' => ['Analytics', 'SEO Tools']

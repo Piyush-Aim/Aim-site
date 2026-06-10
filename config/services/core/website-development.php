@@ -43,7 +43,7 @@ return [
                 'desc' => 'Optimized for speed, Core Web Vitals, and better Google rankings.'
             ],
         ],
-        'img' => 'assets/images/services/webdev-intro.png',
+        'img' => 'assets/images/services/webdev-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-gauge-high',
             'label' => 'Speed',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Ecommerce Website Development',
                 'tagline'   => 'Designed for Sales',
                 'desc'      => 'We build ecommerce websites that maximize conversions with seamless checkout, mobile optimization, and secure payment integrations.',
-                'image'     => 'assets/images/services/webdev-ecommerce.png',
+                'image'     => 'assets/images/services/webdev-ecommerce.webp',
                 'metric'    => ['val' => '250%', 'lbl' => 'Conversion Growth', 'icon' => 'fa-solid fa-arrow-up-right-dots'],
                 'features'  => ['Shopify & WooCommerce', 'Secure Payment Gateway', 'Mobile Optimization'],
                 'techStack' => ['Shopify', 'WooCommerce', 'Stripe', 'Next.js']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'CMS Website Development',
                 'tagline'   => 'Easy Content Management',
                 'desc'      => 'Manage your website easily with our CMS solutions. We build flexible and scalable CMS websites for businesses of all sizes.',
-                'image'     => 'assets/images/services/webdev-wordpress.png',
+                'image'     => 'assets/images/services/webdev-wordpress.webp',
                 'metric'    => ['val' => 'Easy', 'lbl' => 'Content Control', 'icon' => 'fa-solid fa-wand-magic-sparkles'],
                 'features'  => ['WordPress Development', 'Custom CMS', 'SEO Optimization'],
                 'techStack' => ['WordPress', 'PHP', 'MySQL', 'Strapi']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'Custom Web Application Development',
                 'tagline'   => 'Scalable & Secure',
                 'desc'      => 'We develop custom web applications and SaaS platforms with powerful features, scalability, and high performance.',
-                'image'     => 'assets/images/services/webdev-custom.png',
+                'image'     => 'assets/images/services/webdev-custom.webp',
                 'metric'    => ['val' => '99.9%', 'lbl' => 'Uptime', 'icon' => 'fa-solid fa-server'],
                 'features'  => ['Custom Dashboards', 'API Integration', 'Cloud Deployment'],
                 'techStack' => ['React', 'Node.js', 'Laravel', 'AWS']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Corporate Website Development',
                 'tagline'   => 'Professional Presence',
                 'desc'      => 'Build a strong online presence with professional corporate websites designed for branding, trust, and lead generation.',
-                'image'     => 'assets/images/services/webdev-corporate.png',
+                'image'     => 'assets/images/services/webdev-corporate.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Trust', 'icon' => 'fa-solid fa-user-shield'],
                 'features'  => ['Responsive Design', 'SEO Friendly', 'Fast Loading'],
                 'techStack' => ['HTML', 'CSS', 'Next.js', 'PHP']

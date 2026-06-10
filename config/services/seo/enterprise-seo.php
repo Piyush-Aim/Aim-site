@@ -43,7 +43,7 @@ return [
                 'desc' => 'Automate repetitive SEO tasks for efficiency.'
             ],
         ],
-        'img' => 'assets/images/services/enterprise-seo-intro.png',
+        'img' => 'assets/images/services/enterprise-seo-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Traffic',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Enterprise Technical SEO',
                 'tagline'   => 'Strong Foundation',
                 'desc'      => 'Optimize crawlability, indexing, and performance for large websites.',
-                'image'     => 'assets/images/services/enterprise-seo-technical.png',
+                'image'     => 'assets/images/services/enterprise-seo-technical.webp',
                 'metric'    => ['val' => '100%', 'lbl' => 'Optimized', 'icon' => 'fa-solid fa-check'],
                 'features'  => ['Crawl Budget Optimization', 'Site Architecture', 'Schema Markup'],
                 'techStack' => ['Screaming Frog', 'Search Console', 'Schema']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'SEO Automation & Scaling',
                 'tagline'   => 'Work Smarter',
                 'desc'      => 'Automate SEO tasks like meta generation, internal linking, and reporting.',
-                'image'     => 'assets/images/services/enterprise-seo-automation.png',
+                'image'     => 'assets/images/services/enterprise-seo-automation.webp',
                 'metric'    => ['val' => '10X', 'lbl' => 'Efficiency', 'icon' => 'fa-solid fa-bolt'],
                 'features'  => ['Automation Tools', 'AI Content Support', 'Bulk Optimization'],
                 'techStack' => ['Python', 'Zapier', 'AI Tools']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'Enterprise Content Strategy',
                 'tagline'   => 'Scale Content',
                 'desc'      => 'Create and optimize content at scale for maximum visibility.',
-                'image'     => 'assets/images/services/enterprise-seo-content.png',
+                'image'     => 'assets/images/services/enterprise-seo-content.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Visibility', 'icon' => 'fa-solid fa-eye'],
                 'features'  => ['Content Clusters', 'Keyword Mapping', 'Bulk Publishing'],
                 'techStack' => ['Ahrefs', 'SEMrush', 'Surfer SEO']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Advanced SEO Analytics',
                 'tagline'   => 'Data-Driven Growth',
                 'desc'      => 'Track performance with advanced analytics and reporting dashboards.',
-                'image'     => 'assets/images/services/enterprise-seo-analytics.png',
+                'image'     => 'assets/images/services/enterprise-seo-analytics.webp',
                 'metric'    => ['val' => 'Real-time', 'lbl' => 'Insights', 'icon' => 'fa-solid fa-chart-line'],
                 'features'  => ['Custom Dashboards', 'KPI Tracking', 'ROI Analysis'],
                 'techStack' => ['Google Analytics', 'Data Studio', 'BigQuery']

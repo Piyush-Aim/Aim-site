@@ -43,7 +43,7 @@ return [
                 'desc' => 'Improve your online reputation with positive reviews.'
             ],
         ],
-        'img' => 'assets/images/services/local-seo-intro.png',
+        'img' => 'assets/images/services/local-seo-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Leads',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Google Business Profile Optimization',
                 'tagline'   => 'Optimize Your Listing',
                 'desc'      => 'Fully optimize your Google Business Profile to improve visibility and attract local customers.',
-                'image'     => 'assets/images/services/local-seo-gmb.png',
+                'image'     => 'assets/images/services/local-seo-gmb.webp',
                 'metric'    => ['val' => 'Top', 'lbl' => 'Map Ranking', 'icon' => 'fa-solid fa-map-pin'],
                 'features'  => ['Profile Optimization', 'Keyword Targeting', 'Post Management'],
                 'techStack' => ['Google Business Profile', 'BrightLocal', 'Whitespark']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Google Maps SEO',
                 'tagline'   => 'Rank in Top 3',
                 'desc'      => 'Improve your position in Google Maps for location-based searches.',
-                'image'     => 'assets/images/services/local-seo-maps.png',
+                'image'     => 'assets/images/services/local-seo-maps.webp',
                 'metric'    => ['val' => 'Top 3', 'lbl' => 'Ranking', 'icon' => 'fa-solid fa-location-dot'],
                 'features'  => ['NAP Consistency', 'Geo Signals', 'Map Ranking Boost'],
                 'techStack' => ['Google Maps', 'Geo Tools', 'Local Schema']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'Local Citation Building',
                 'tagline'   => 'Build Authority',
                 'desc'      => 'Create consistent business listings across directories to boost credibility.',
-                'image'     => 'assets/images/services/local-seo-citations.png',
+                'image'     => 'assets/images/services/local-seo-citations.webp',
                 'metric'    => ['val' => '100+', 'lbl' => 'Listings', 'icon' => 'fa-solid fa-list'],
                 'features'  => ['Directory Listings', 'NAP Consistency', 'Authority Building'],
                 'techStack' => ['Yelp', 'Justdial', 'IndiaMART']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Review & Reputation Management',
                 'tagline'   => 'Build Trust',
                 'desc'      => 'Manage and improve your online reviews to increase trust and conversions.',
-                'image'     => 'assets/images/services/local-seo-reviews.png',
+                'image'     => 'assets/images/services/local-seo-reviews.webp',
                 'metric'    => ['val' => '4.5★+', 'lbl' => 'Ratings', 'icon' => 'fa-solid fa-star'],
                 'features'  => ['Review Strategy', 'Response Management', 'Reputation Growth'],
                 'techStack' => ['Google Reviews', 'Trustpilot', 'Review Tools']

@@ -43,7 +43,7 @@ return [
                 'desc' => 'Maximize your return on ad spend with optimized campaigns.'
             ],
         ],
-        'img' => 'assets/images/services/ecommerce-ppc-intro.png',
+        'img' => 'assets/images/services/ecommerce-ppc-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Sales',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Google Shopping Ads',
                 'tagline'   => 'Show Products Directly',
                 'desc'      => 'Promote your products with high-visibility shopping ads in search results.',
-                'image'     => 'assets/images/services/ecommerce-ppc-shopping.png',
+                'image'     => 'assets/images/services/ecommerce-ppc-shopping.webp',
                 'metric'    => ['val' => 'Top', 'lbl' => 'Product Visibility', 'icon' => 'fa-solid fa-eye'],
                 'features'  => ['Product Listings', 'Feed Optimization', 'Smart Bidding'],
                 'techStack' => ['Google Merchant Center', 'Shopify', 'WooCommerce']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Ecommerce Search Ads',
                 'tagline'   => 'Capture Buyer Intent',
                 'desc'      => 'Target high-intent keywords to drive ready-to-buy customers.',
-                'image'     => 'assets/images/services/ecommerce-ppc-search.png',
+                'image'     => 'assets/images/services/ecommerce-ppc-search.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Intent Traffic', 'icon' => 'fa-solid fa-bullseye'],
                 'features'  => ['Keyword Targeting', 'Ad Copy Optimization', 'Conversion Tracking'],
                 'techStack' => ['Google Ads', 'Analytics', 'Keyword Planner']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'Ecommerce Remarketing',
                 'tagline'   => 'Recover Lost Sales',
                 'desc'      => 'Re-target visitors who didn’t purchase and bring them back to convert.',
-                'image'     => 'assets/images/services/ecommerce-ppc-remarketing.png',
+                'image'     => 'assets/images/services/ecommerce-ppc-remarketing.webp',
                 'metric'    => ['val' => '2X', 'lbl' => 'Conversion Rate', 'icon' => 'fa-solid fa-repeat'],
                 'features'  => ['Dynamic Ads', 'Audience Segmentation', 'Cart Recovery'],
                 'techStack' => ['Google Ads', 'Facebook Pixel']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Product Feed Optimization',
                 'tagline'   => 'Optimize Product Data',
                 'desc'      => 'Improve product feed quality to increase visibility and conversions.',
-                'image'     => 'assets/images/services/ecommerce-ppc-feed.png',
+                'image'     => 'assets/images/services/ecommerce-ppc-feed.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'CTR', 'icon' => 'fa-solid fa-chart-line'],
                 'features'  => ['Feed Structuring', 'Title Optimization', 'Image Optimization'],
                 'techStack' => ['Google Merchant Center', 'Feed Tools']

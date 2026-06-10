@@ -43,7 +43,7 @@ return [
                 'desc' => 'Optimize content for voice and chat-based queries.'
             ],
         ],
-        'img' => 'assets/images/services/generative-engine-optimization-intro.png',
+        'img' => 'assets/images/services/generative-engine-optimization-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'AI Traffic',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'Generative Engine Optimization (GEO)',
                 'tagline'   => 'Optimize for AI Answers',
                 'desc'      => 'Structure your content to appear in AI-generated responses and summaries.',
-                'image'     => 'assets/images/services/generative-engine-optimization-geo.png',
+                'image'     => 'assets/images/services/generative-engine-optimization-geo.webp',
                 'metric'    => ['val' => 'Top', 'lbl' => 'AI Results', 'icon' => 'fa-solid fa-star'],
                 'features'  => ['Answer Optimization', 'Content Structuring', 'Featured Snippets'],
                 'techStack' => ['Schema.org', 'NLP Tools', 'AI Models']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'AI Content Optimization',
                 'tagline'   => 'Content for AI Ranking',
                 'desc'      => 'Create and optimize content that AI models can easily understand and rank.',
-                'image'     => 'assets/images/services/generative-engine-optimization-ai_content.png',
+                'image'     => 'assets/images/services/generative-engine-optimization-ai_content.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Relevance', 'icon' => 'fa-solid fa-bullseye'],
                 'features'  => ['Semantic SEO', 'Topic Clusters', 'Entity Optimization'],
                 'techStack' => ['Surfer SEO', 'Clearscope', 'OpenAI']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'Schema & Structured Data SEO',
                 'tagline'   => 'Machine-Readable Content',
                 'desc'      => 'Implement structured data to help AI understand your website better.',
-                'image'     => 'assets/images/services/generative-engine-optimization-schema.png',
+                'image'     => 'assets/images/services/generative-engine-optimization-schema.webp',
                 'metric'    => ['val' => 'Rich', 'lbl' => 'Results', 'icon' => 'fa-solid fa-code'],
                 'features'  => ['Schema Markup', 'Rich Snippets', 'Knowledge Graph'],
                 'techStack' => ['JSON-LD', 'Schema.org', 'Google Rich Results']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Voice Search Optimization',
                 'tagline'   => 'Optimize for Voice',
                 'desc'      => 'Rank for voice queries and conversational search.',
-                'image' => 'assets/images/services/generative-engine-optimization-voice.png',
+                'image' => 'assets/images/services/generative-engine-optimization-voice.webp',
                 'metric'    => ['val' => 'Top', 'lbl' => 'Voice Results', 'icon' => 'fa-solid fa-microphone'],
                 'features'  => ['Natural Language SEO', 'FAQ Optimization', 'Long-tail Keywords'],
                 'techStack' => ['Google Assistant', 'Alexa', 'Siri']

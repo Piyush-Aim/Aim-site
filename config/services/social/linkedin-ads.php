@@ -43,7 +43,7 @@ return [
                 'desc' => 'Perfect for high-ticket and service-based businesses.'
             ],
         ],
-        'img' => 'assets/images/services/linkedin-ads-intro.png',
+        'img' => 'assets/images/services/linkedin-ads-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Leads',
@@ -75,7 +75,7 @@ return [
                 'title'     => 'LinkedIn Lead Generation Ads',
                 'tagline'   => 'Capture Quality Leads',
                 'desc'      => 'Generate high-quality B2B leads with optimized forms.',
-                'image'     => 'assets/images/services/linkedin-ads-inmail.png',
+                'image'     => 'assets/images/services/linkedin-ads-inmail.webp',
                 'metric'    => ['val' => 'High', 'lbl' => 'Leads', 'icon' => 'fa-solid fa-users'],
                 'features'  => ['Lead Forms', 'Audience Targeting', 'CRM Integration'],
                 'techStack' => ['LinkedIn Ads', 'CRM Tools']
@@ -87,7 +87,7 @@ return [
                 'title'     => 'Sponsored Content Ads',
                 'tagline'   => 'Promote Content',
                 'desc'      => 'Promote posts directly in user feeds to increase visibility.',
-                'image'     => 'assets/images/services/linkedin-ads-lead.png',
+                'image'     => 'assets/images/services/linkedin-ads-lead.webp',
                 'metric'    => ['val' => 'Wide', 'lbl' => 'Reach', 'icon' => 'fa-solid fa-globe'],
                 'features'  => ['Feed Ads', 'Engagement Campaigns', 'Targeting'],
                 'techStack' => ['LinkedIn Ads']
@@ -99,7 +99,7 @@ return [
                 'title'     => 'LinkedIn Message Ads',
                 'tagline'   => 'Direct Outreach',
                 'desc'      => 'Send personalized messages directly to your target audience.',
-                'image'     => 'assets/images/services/linkedin-ads-sponsored.png',
+                'image'     => 'assets/images/services/linkedin-ads-sponsored.webp',
                 'metric'    => ['val' => 'Direct', 'lbl' => 'Engagement', 'icon' => 'fa-solid fa-envelope-open'],
                 'features'  => ['Personalized Messaging', 'Targeted Outreach', 'Lead Conversion'],
                 'techStack' => ['LinkedIn Ads']
@@ -111,7 +111,7 @@ return [
                 'title'     => 'Brand Awareness Campaigns',
                 'tagline'   => 'Build Authority',
                 'desc'      => 'Increase brand visibility among professionals.',
-                'image'     => 'assets/images/services/linkedin-ads-dynamic.png',
+                'image'     => 'assets/images/services/linkedin-ads-dynamic.webp',
                 'metric'    => ['val' => 'Strong', 'lbl' => 'Brand', 'icon' => 'fa-solid fa-award'],
                 'features'  => ['Video Ads', 'Awareness Campaigns', 'Engagement'],
                 'techStack' => ['LinkedIn Ads']

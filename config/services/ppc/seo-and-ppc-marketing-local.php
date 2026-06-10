@@ -40,7 +40,7 @@ return [
                 'desc' => 'Run paid campaigns that generate calls and inquiries quickly.'
             ]
         ],
-        'img' => 'assets/images/services/seo-and-ppc-marketing-local-intro.png',
+        'img' => 'assets/images/services/seo-and-ppc-marketing-local-intro.webp',
         'glass_card_1' => [
             'icon' => 'fa-solid fa-chart-line',
             'label' => 'Traffic Growth',
@@ -78,7 +78,7 @@ return [
                     'Link Building'
                 ],
                 'techStack' => ['Ahrefs', 'Semrush', 'Google Search Console'],
-                'image' => 'assets/images/services/seo-and-ppc-marketing-local-seo.png',
+                'image' => 'assets/images/services/seo-and-ppc-marketing-local-seo.webp',
                 'metric' => [
                     'icon' => 'fa-solid fa-arrow-up',
                     'val' => 'Top 10',
@@ -99,7 +99,7 @@ return [
                     'Conversion Tracking'
                 ],
                 'techStack' => ['Google Ads', 'GA4', 'Tag Manager'],
-                'image' => 'assets/images/services/seo-and-ppc-marketing-local-ppc.png',
+                'image' => 'assets/images/services/seo-and-ppc-marketing-local-ppc.webp',
                 'metric' => [
                     'icon' => 'fa-solid fa-hand-pointer',
                     'val' => 'Low CPC',
@@ -120,7 +120,7 @@ return [
                     'Location Extensions'
                 ],
                 'techStack' => ['Google Maps', 'Google Ads', 'BrightLocal'],
-                'image' => 'assets/images/services/seo-and-ppc-marketing-local-local.png',
+                'image' => 'assets/images/services/seo-and-ppc-marketing-local-local.webp',
                 'metric' => [
                     'icon' => 'fa-solid fa-phone',
                     'val' => 'More Calls',
@@ -141,7 +141,7 @@ return [
                     'ROAS Scaling'
                 ],
                 'techStack' => ['Shopify', 'WooCommerce', 'Merchant Center'],
-                'image' => 'assets/images/services/seo-and-ppc-marketing-local-ecommerce.png',
+                'image' => 'assets/images/services/seo-and-ppc-marketing-local-ecommerce.webp',
                 'metric' => [
                     'icon' => 'fa-solid fa-sack-dollar',
                     'val' => 'High ROAS',
