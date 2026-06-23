@@ -81,6 +81,12 @@ define('MAIL_FROM_EMAIL', 'noreply@aiminfocorp.com');
 define('MAIL_FROM_NAME',  'Aim Infocorp Website');
 define('ADMIN_EMAIL',     'aiminfocorp.com@gmail.com'); // Form data Show in this mail
 
+// =========================================================================
+// Google reCAPTCHA v3 Config
+// =========================================================================
+define('RECAPTCHA_SITE_KEY', '6Ld5py8tAAAAADKrBNiXAl5WjNOjwhwnDTVjzs76');
+define('RECAPTCHA_SECRET_KEY', '6Ld5py8tAAAAAMHmaQruEWWrrgT_Dr33SyUbKXbi');
+
 // Mail Debug
 define('MAIL_DEBUG', 0);
 

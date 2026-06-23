@@ -52,6 +52,46 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
+// ReCAPTCHA v3 Validation
+if (defined('RECAPTCHA_SECRET_KEY') && RECAPTCHA_SECRET_KEY !== 'YOUR_SECRET_KEY_HERE' && RECAPTCHA_SECRET_KEY !== '') {
+    $recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
+    
+    if (empty($recaptchaResponse)) {
+        echo json_encode(['status' => 'error', 'message' => 'Please complete the CAPTCHA.']);
+        exit;
+    }
+
+    $verifyUrl = 'https://www.google.com/recaptcha/api/siteverify';
+    $verifyData = [
+        'secret' => RECAPTCHA_SECRET_KEY,
+        'response' => $recaptchaResponse,
+        'remoteip' => $_SERVER['REMOTE_ADDR'] ?? ''
+    ];
+
+    $options = [
+        'http' => [
+            'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+            'method'  => 'POST',
+            'content' => http_build_query($verifyData)
+        ]
+    ];
+    $context  = stream_context_create($options);
+    $verifyResult = @file_get_contents($verifyUrl, false, $context);
+    
+    if ($verifyResult) {
+        $responseData = json_decode($verifyResult);
+        if (!$responseData->success || $responseData->score < 0.5) {
+            echo json_encode(['status' => 'error', 'message' => 'CAPTCHA validation failed. Please try again.']);
+            exit;
+        }
+    } else {
+        // If Google API fails to respond, you might want to log it and either allow or reject. 
+        // We'll reject for security.
+        echo json_encode(['status' => 'error', 'message' => 'Failed to verify CAPTCHA with the server.']);
+        exit;
+    }
+}
+
 $mail = new PHPMailer(true);
 
 try {

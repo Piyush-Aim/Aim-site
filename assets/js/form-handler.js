@@ -23,6 +23,31 @@ document.addEventListener('DOMContentLoaded', () => {
             try {
                 const formData = new FormData(form);
 
+                // ReCAPTCHA v3 Integration
+                if (window.RECAPTCHA_SITE_KEY && window.RECAPTCHA_SITE_KEY !== 'YOUR_SITE_KEY_HERE' && window.RECAPTCHA_SITE_KEY !== '') {
+                    if (typeof grecaptcha === 'undefined') {
+                        throw new Error('Security check failed to load. Please disable adblockers or refresh the page.');
+                    }
+                    
+                    const token = await new Promise((resolve, reject) => {
+                        grecaptcha.ready(() => {
+                            try {
+                                grecaptcha.execute(window.RECAPTCHA_SITE_KEY, {action: 'submit'})
+                                    .then(resolve)
+                                    .catch(reject);
+                            } catch (e) {
+                                reject(new Error('Failed to execute CAPTCHA.'));
+                            }
+                        });
+                    });
+                    
+                    if (!token) {
+                        throw new Error('Failed to generate security token. Please try again.');
+                    }
+                    
+                    formData.append('g-recaptcha-response', token);
+                }
+
                 const response = await fetch(window.CONTACT_HANDLER || '/handlers/contact-handler.php', {
                     method: 'POST',
                     body: formData

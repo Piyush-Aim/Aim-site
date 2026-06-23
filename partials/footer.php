@@ -81,11 +81,13 @@
     </div>
 </footer>
 
-<script src="<?= asset('js/global.js') ?>"></script>
+<script src="<?= asset('js/global.js') ?>?v=<?= time() ?>"></script>
 <script>
     window.CONTACT_HANDLER = "<?= url('handlers/contact-handler.php') ?>";
+    window.RECAPTCHA_SITE_KEY = "<?= defined('RECAPTCHA_SITE_KEY') ? RECAPTCHA_SITE_KEY : '' ?>";
 </script>
-<script src="<?= asset('js/form-handler.js') ?>"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=<?= defined('RECAPTCHA_SITE_KEY') ? RECAPTCHA_SITE_KEY : '' ?>"></script>
+<script src="<?= asset('js/form-handler.js') ?>?v=<?= time() ?>"></script>
 
 <?php
 if (isset($extraJS)) {
