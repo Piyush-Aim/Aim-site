@@ -15,7 +15,7 @@ return [
     ],
     'client' => 'Confirmed.Church',
     'category' => 'crm',
-    'img' => 'images/portfolio/confirmed-church.webp',
+    'img' => 'images/portfolio/Confirmed-Church.webp',
 
     'desc' => 'Confirmed.Church is an international SaaS communication platform that automates volunteer scheduling, attendance confirmations, and church communications through SMS-based workflows and Church Management System integrations.',
 

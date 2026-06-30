@@ -9,8 +9,6 @@ return [
     'tech_expertise' => 'Expert',
     'tech_best_for' => ['Enterprise Apps', 'Complex Workflows', 'PWAs'],
 
-
-
     'pageTitle' => 'Angular Development Services | ' . COMPANY_NAME,
     'pageDescription' => COMPANY_NAME . ' delivers scalable Angular development services for enterprise web apps, dashboards, portals, SaaS platforms and modern business applications.',
     'pageKey' => 'angular-development',
@@ -35,7 +33,7 @@ return [
             'icon' => 'fa-solid fa-layer-group',
             'title' => 'Structured Framework Architecture',
             'desc' => 'Angular uses TypeScript, modules and reusable components that make enterprise applications easier to manage and scale.',
-            'code_img' => 'assets/images/frontend/angular.webp'
+            'code_img' => 'assets/images/frontend/Angular.webp'
         ],
 
         'features' => [

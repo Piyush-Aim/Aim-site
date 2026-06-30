@@ -15,7 +15,7 @@ return [
     ],
     'client' => 'Intelmatix',
     'category' => 'crm',
-    'img' => 'images/portfolio/intelmatix.webp',
+    'img' => 'images/portfolio/Intelmatix.webp',
 
     'desc' => 'Intelmatix is a deep-tech artificial intelligence company specializing in enterprise decision intelligence, advanced demand forecasting, and autonomous supply chain optimization. The platform enables organizations to reduce stockouts, minimize inventory waste, and align replenishment schedules with future demand using predictive analytics.',
 

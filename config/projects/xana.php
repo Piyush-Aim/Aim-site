@@ -15,7 +15,7 @@ return [
     ],
     'client' => 'XANA',
     'category' => 'web',
-    'img' => 'images/portfolio/xana.webp',
+    'img' => 'images/portfolio/XANA.webp',
 
     'desc' => 'XANA is a Web3-powered Metaverse and SocialFi infrastructure platform that combines immersive digital environments, blockchain asset ownership, AI-powered interactions, and large-scale virtual experiences across multiple devices.',
 

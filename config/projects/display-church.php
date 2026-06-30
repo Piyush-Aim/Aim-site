@@ -15,7 +15,7 @@ return [
     ],
     'client' => 'Display.Church',
     'category' => 'crm',
-    'img' => 'images/portfolio/display-church.webp',
+    'img' => 'images/portfolio/Display-Church.webp',
 
     'desc' => 'Display.Church is a SaaS visual communication platform that transforms church calendar data into beautiful, customizable event displays through automated synchronization and code-free templates.',
 

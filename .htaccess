@@ -5,6 +5,10 @@
 DirectoryIndex index.php
 RewriteEngine On
 
+# Canonical domain redirect (non-www to www-less)
+RewriteCond %{HTTP_HOST} ^www\.aiminfocorp\.com$ [NC]
+RewriteRule ^(.*)$ https://aiminfocorp.com/$1 [R=301,L]
+
 # Base structure for XAMPP subdirectory
 #----for local server
 RewriteBase /Aim-Rebuild/Aim-site/
