@@ -8,7 +8,7 @@ $stateSlug = isset($_GET['state']) ? htmlspecialchars($_GET['state']) : '';
 $citySlug = isset($_GET['city']) ? htmlspecialchars($_GET['city']) : '';
 
 if (empty($slug) || !isset($servicesData[$slug])) {
-    header("Location: " . url('services'));
+    require __DIR__ . '/../404.php';
     exit;
 }
 
@@ -22,12 +22,12 @@ $locationName = '';
 if ($stateSlug) {
     $localSlug = $slug . '-local';
     if (!isset($servicesData[$localSlug])) {
-        header("Location: " . url('services/' . $slug));
+        require __DIR__ . '/../404.php';
         exit;
     }
 
     if (!isset($locationsData[$stateSlug])) {
-        header("Location: " . url('services/' . $slug));
+        require __DIR__ . '/../404.php';
         exit;
     }
 
@@ -36,7 +36,7 @@ if ($stateSlug) {
 
     if ($citySlug) {
         if (!isset($stateData['cities'][$citySlug])) {
-            header("Location: " . url('services/' . $slug . '/' . $stateSlug));
+            require __DIR__ . '/../404.php';
             exit;
         }
         $cityName = $stateData['cities'][$citySlug];
@@ -108,6 +108,20 @@ $extraJS = [
         <div class="container">
             <div class="webdev-hero-grid">
                 <div class="webdev-hero-text section-fade">
+                    <?php
+                    $crumbs = [
+                        'Home' => url(''),
+                        'Services' => url('services'),
+                        ($pageData['menu_title'] ?? strip_tags($pageData['hero']['title'] ?? 'Service')) => empty($stateSlug) ? '' : url("services/$slug")
+                    ];
+                    if (!empty($stateSlug) && isset($locationsData[$stateSlug])) {
+                        $crumbs[$locationsData[$stateSlug]['name']] = empty($citySlug) ? '' : url("services/$slug/$stateSlug");
+                    }
+                    if (!empty($citySlug) && isset($cityName)) {
+                        $crumbs[$cityName] = '';
+                    }
+                    render_breadcrumbs($crumbs);
+                    ?>
                     <div class="tag tag-primary">
                         <?= $pageData['hero']['tag'] ?>
                     </div>

@@ -55,6 +55,7 @@ usort($powerTech, function ($a, $b) use ($featuredNames) {
         <div class="container">
             <div class="tech-hero-grid section-fade visible">
                 <div class="tech-hero-text">
+                    <?php render_breadcrumbs(['Home' => url(''), 'Technologies' => '']); ?>
                     <p class="tag tag-primary">
                         <i class="fa-solid fa-bolt-lightning"></i> The Power Behind Innovation
                     </p>

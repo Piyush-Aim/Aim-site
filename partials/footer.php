@@ -41,7 +41,7 @@
             <div class="footer-col">
                 <h6 class="footer-h6">Company</h6>
                 <ul class="footer-links">
-                    <li><a href="<?= url('about') ?>" class="<?php echo isActive('about', $pageKey ?? ''); ?>">About Us</a></li>
+                    <li><a href="<?= url('about-us') ?>" class="<?php echo isActive('about-us', $pageKey ?? ''); ?>">About Us</a></li>
                     <li><a href="<?= url('portfolio') ?>" class="<?php echo isActive('portfolio', $pageKey ?? ''); ?>">Our Portfolio</a></li>
                     <li><a href="<?= url('case-studies') ?>" class="<?php echo isActive('cases', $pageKey ?? ''); ?>">Case Studies</a></li>
                     <li><a href="<?= url('contact') ?>" class="<?php echo isActive('contact', $pageKey ?? ''); ?>">Contact Us</a></li>

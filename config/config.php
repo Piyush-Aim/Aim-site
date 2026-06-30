@@ -44,11 +44,30 @@ if (!function_exists('url')) {
 }
 
 // Helper for asset paths
-
 if (!function_exists('asset')) {
     function asset($path = '')
     {
         return url('assets/' . ltrim($path, '/'));
+    }
+}
+
+// Helper to render breadcrumbs cleanly
+if (!function_exists('render_breadcrumbs')) {
+    function render_breadcrumbs(array $crumbs)
+    {
+        $breadcrumbs = [];
+        foreach ($crumbs as $key => $value) {
+            if (is_array($value)) {
+                $breadcrumbs[] = $value; // Support old array of arrays format
+            } else {
+                if (is_int($key)) {
+                    $breadcrumbs[] = ['name' => $value, 'url' => ''];
+                } else {
+                    $breadcrumbs[] = ['name' => $key, 'url' => $value];
+                }
+            }
+        }
+        include __DIR__ . '/../partials/breadcrumbs.php';
     }
 }
 

@@ -34,6 +34,7 @@ $extraJS = [
         <div class="container">
             <div class="s3-hero-grid section-fade">
                 <div class="s3-hero-text">
+                    <?php render_breadcrumbs(['Home' => url(''), 'Services' => '']); ?>
                     <div class="tag tag-primary">
                         <i class="fa-solid fa-bolt"></i> Elite IT Solutions
                     </div>

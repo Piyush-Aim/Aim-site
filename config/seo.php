@@ -10,7 +10,7 @@ $seoConfig = [
         'title' => 'Elite IT Solutions & Services | ' . COMPANY_NAME,
         'description' => 'Comprehensive IT solutions spanning from web and mobile development to SEO, PPC, and our modern technology stack.'
     ],
-    'about' => [
+    'about-us' => [
         'title' => 'Our Story, Mission & Elite Team | ' . COMPANY_NAME,
         'description' => 'Learn about the passion, expertise, and digital innovation at ' . COMPANY_NAME . '. We bridge the gap between vision and reality.'
     ],

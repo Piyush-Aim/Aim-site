@@ -7,6 +7,9 @@ return [
         'cities' => [
             'richmond-va'        => 'Richmond, VA',
             'virginia-beach-va' => 'Virginia Beach, VA',
+            'roanoke-va' => 'Roanoke, VA',
+            'alexandria-va' => 'Alexandria, VA',
+            'lynchburg-va' => 'Lynchburg, VA',
         ]
     ],
     'north-carolina' => [
@@ -28,6 +31,16 @@ return [
             'encinitas-ca' => 'Encinitas, CA',
             'carlsbad-ca' => 'Carlsbad, CA',
             'vista-ca' => 'Vista, CA',
+            'burlingame-ca' => 'Burlingame, CA',
+            'cardiff-ca' => 'Cardiff, CA',
+            'del-mar-ca' => 'Del Mar, CA',
+            'yorba-linda-ca' => 'Yorba Linda, CA',
+            'tustin-ca' => 'Tustin, CA',
+            'chula-vista-ca' => 'Chula Vista, CA',
+            'san-luis-obispo-ca' => 'San Luis Obispo, CA',
+            'pleasanton-ca' => 'Pleasanton, CA',
+            'pasadena-ca' => 'Pasadena, CA',
+            'milpitas-ca' => 'Milpitas CA'
         ]
     ],
     'colorado' => [
@@ -54,6 +67,8 @@ return [
         'cities' => [
             'harrisburg-pa' => 'Harrisburg, PA',
             'philadelphia-pa' => 'Philadelphia, PA',
+            'reading-pa' => 'Reading, PA',
+            'pittsburgh-pa' => 'Pittsburgh, PA',
         ]
     ],
     'ohio' => [
@@ -81,5 +96,11 @@ return [
         'cities' => [
             'duluth-mn' => 'Duluth, MN',
         ]
-    ]
+    ],
+    'illinois' => [
+        'name' => 'Illinois',
+        'cities' => [
+            'bloomington-il' => 'Bloomington, IL',
+        ]
+    ],
 ];

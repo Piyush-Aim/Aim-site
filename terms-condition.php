@@ -30,6 +30,7 @@ $pageDescription = "Review the terms and conditions for using " . COMPANY_NAME .
 
         <div class="container">
             <div class="policy-hero-inner section-fade">
+                <?php render_breadcrumbs(['Home' => url(''), 'Terms & Conditions' => '']); ?>
                 <p class="tag tag-primary">Legal Documentation</p>
                 <h1><span class="gradient-text">Terms and Conditions</span> for <?= COMPANY_NAME_LONG ?></h1>
                 <p class="last-updated">Last Updated: April 27, 2026</p>

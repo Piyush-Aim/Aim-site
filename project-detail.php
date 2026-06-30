@@ -6,7 +6,7 @@ $projectsData = require __DIR__ . '/config/projects_data.php';
 $projectSlug = isset($_GET['slug']) ? htmlspecialchars($_GET['slug']) : '';
 
 if (empty($projectSlug) || !isset($projectsData[$projectSlug])) {
-    header("Location: " . url('portfolio'));
+    require __DIR__ . '/404.php';
     exit;
 }
 
@@ -45,6 +45,13 @@ $extraJS = [
 
         <div class="container">
             <div class="hero-inner">
+                <?php
+                render_breadcrumbs([
+                    'Home' => url(''),
+                    'Our Work' => url('portfolio'),
+                    strip_tags($project['title'] ?? 'Case Study') => ''
+                ]);
+                ?>
                 <p class="tag tag-primary"><?php echo $project['tag']; ?></p>
                 <h1><?php echo $project['heroTitle']; ?></h1>
                 <p class="subtitle"><?php echo $project['heroSubtitle']; ?></p>

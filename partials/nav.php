@@ -12,7 +12,7 @@ function isActive($key, $currentPageKey)
         </a>
         <ul class="nav-links">
             <li><a href="<?= url('') ?>" class="<?php echo isActive('home', $pageKey ?? ''); ?>">Home</a></li>
-            <li><a href="<?= url('about') ?>" class="<?php echo isActive('about', $pageKey ?? ''); ?>">About</a></li>
+            <li><a href="<?= url('about-us') ?>" class="<?php echo isActive('about-us', $pageKey ?? ''); ?>">About</a></li>
             <?php
             // Detect current slug and type from URL for active states
             $currentPath = parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH);
@@ -195,7 +195,7 @@ function isActive($key, $currentPageKey)
         </div>
         <div class="mobile-menu-links">
             <a href="<?= url('') ?>" class="<?php echo isActive('home', $pageKey ?? ''); ?>">Home</a>
-            <a href="<?= url('about') ?>" class="<?php echo isActive('about', $pageKey ?? ''); ?>">About</a>
+            <a href="<?= url('about-us') ?>" class="<?php echo isActive('about-us', $pageKey ?? ''); ?>">About</a>
             <div class="mobile-dropdown <?php echo $isServiceParentActive ? 'active open' : ''; ?>">
                 <div class="mobile-dropdown-btn">
                     <a href="<?= url('services') ?>" class="<?php echo $isServiceParentActive ? 'active' : ''; ?>">Services <i class="fa-solid fa-chevron-down mobile-dropdown-toggle"></i></a>

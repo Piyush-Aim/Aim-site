@@ -30,6 +30,7 @@ $pageDescription = "Read the Privacy Policy of " . COMPANY_NAME . " to understan
 
         <div class="container">
             <div class="policy-hero-inner section-fade">
+                <?php render_breadcrumbs(['Home' => url(''), 'Privacy Policy' => '']); ?>
                 <p class="tag tag-primary">Legal Documentation</p>
                 <h1><span class="gradient-text">Privacy Policy</span> for <?= COMPANY_NAME_LONG ?></h1>
                 <p class="last-updated">Last Updated: April 27, 2026</p>

@@ -31,6 +31,7 @@ $extraJS = [
 
         <div class="container section-fade">
             <div class="hero-content">
+                <?php render_breadcrumbs(['Home' => url(''), 'Contact Us' => '']); ?>
                 <p class="tag tag-primary">Get In Touch</p>
                 <h1>Let’s build something <span class="gradient-text">remarkable</span> together</h1>
                 <p class="subtitle">Have a vision? We have the expertise. Reach out to start your digital transformation journey with our elite team of experts.</p>

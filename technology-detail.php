@@ -5,7 +5,7 @@ require_once __DIR__ . '/config/data.php';
 $slug = isset($_GET['slug']) ? htmlspecialchars($_GET['slug']) : '';
 
 if (empty($slug) || !isset($appTechMapping[$slug])) {
-    header("Location: " . url('technology'));
+    require __DIR__ . '/404.php';
     exit;
 }
 
@@ -49,6 +49,13 @@ $extraJS = [
         <div class="container">
             <div class="webdev-hero-grid">
                 <div class="webdev-hero-text section-fade">
+                    <?php
+                    render_breadcrumbs([
+                        'Home' => url(''),
+                        'Technology' => url('technology'),
+                        $techData['menu_title'] ?? strip_tags($techData['hero']['title'] ?? 'Details') => ''
+                    ]);
+                    ?>
                     <div class="tag tag-primary"><i class="<?= htmlspecialchars($techData['hero']['tag_icon']) ?>"></i> <?= htmlspecialchars($techData['hero']['tag']) ?></div>
                     <h1><?= $techData['hero']['title'] ?></h1>
                     <p class="subtitle hero-sub">

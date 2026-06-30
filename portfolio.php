@@ -35,6 +35,7 @@ $extraJS = [
 
         <div class="container">
             <div class="port-hero-inner section-fade">
+                <?php render_breadcrumbs(['Home' => url(''), 'Our Work' => '']); ?>
                 <p class="tag tag-primary">Digital Masterpieces </p>
                 <h1 class="port-hero-h1">
                     Results That <span class="gradient-text">Defines</span> Brands

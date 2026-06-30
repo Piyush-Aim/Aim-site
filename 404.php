@@ -13,13 +13,16 @@ $pageDescription = 'The page you are looking for does not exist or has been move
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 
-<?php include 'partials/head.php'; ?>
+<head>
+    <?php include 'partials/head.php'; ?>
+    <link rel="stylesheet" href="<?= asset('css/404-page.css') ?>">
+</head>
 
 <body>
     <?php include 'partials/nav.php'; ?>
 
-    <!-- HERO SECTION -->
-    <section class="contact-hero" style="min-height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center;">
+    <!-- HERO SECTION (Reusing brand elements) -->
+    <section class="contact-hero error-hero" style="text-align: center;">
         <div class="hero-bg-shapes">
             <div class="shape shape-1"></div>
             <div class="shape shape-2"></div>
@@ -28,12 +31,36 @@ $pageDescription = 'The page you are looking for does not exist or has been move
         <div class="hero-orb-center"></div>
         <div class="grid-overlay"></div>
 
-        <div class="container section-fade">
-            <div class="hero-content">
-                <p class="tag tag-primary">404 Error</p>
-                <h1 style="font-size: 5rem;">Page Not <span class="gradient-text">Found</span></h1>
-                <p class="subtitle" style="margin-bottom: 2rem;">Oops! The page you are looking for doesn't exist or has been moved.</p>
-                <a href="<?= url('') ?>" class="btn btn-primary-lg">Return Home <i class="fa-solid fa-arrow-right"></i></a>
+        <div class="error-bg-text">404</div>
+        <div class="container error-content-wrapper">
+            <div class="error-title-wrapper">
+                <span class="tag tag-primary"><i class="fa-solid fa-triangle-exclamation"></i> Error 404</span>
+                <h1 class="error-title">Looks like you're <span class="gradient-text">lost in space.</span></h1>
+                <p class="error-subtitle">The page you're looking for doesn't exist, has been moved, or is temporarily unavailable.</p>
+            </div>
+
+            <div class="error-quick-links fade-up" style="animation-delay: 0.2s;">
+                <h3>Let's get you back on track</h3>
+                <p>Here are some helpful links to guide you back:</p>
+
+                <div class="links-grid">
+                    <a href="<?= url('') ?>" class="link-card">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="<?= url('services') ?>" class="link-card">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <span>Services</span>
+                    </a>
+                    <a href="<?= url('case-studies') ?>" class="link-card">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Portfolio</span>
+                    </a>
+                    <a href="<?= url('contact') ?>" class="link-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>

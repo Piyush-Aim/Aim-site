@@ -9,12 +9,18 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.aiminfocorp\.com$ [NC]
 RewriteRule ^(.*)$ https://aiminfocorp.com/$1 [R=301,L]
 
-# Base structure for XAMPP subdirectory
-#----for local server
-RewriteBase /Aim-Rebuild/Aim-site/
+# ==============================================================================
+# Dynamic Base Path Detection (Zero-Config for Local vs Live)
+# ==============================================================================
+RewriteCond %{HTTP_HOST} ^(localhost|127\.0\.0\.1)$
+RewriteRule ^ - [E=BASE:/Aim-Rebuild/Aim-site/]
 
-#----for live server
-# RewriteBase /
+RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1)$
+RewriteRule ^ - [E=BASE:/]
+
+# redirection
+RewriteRule ^about/?$ %{ENV:BASE}about-us [R=301,L]
+RewriteRule ^service/?$ %{ENV:BASE}services [R=301,L]
 
 # 1. Project Detail Routing
 RewriteCond %{REQUEST_FILENAME} !-f
@@ -45,48 +51,52 @@ RewriteRule ^technology/([^/]+)/?$ technology-detail.php?slug=$1 [L,QSA]
 # 5. External Redirects for Clean URLs
 RewriteCond %{ENV:REDIRECT_STATUS} ^$
 RewriteCond %{QUERY_STRING} ^slug=([^&]+)$
-RewriteRule ^project-detail(\.php)?$ project/%1? [R=301,L]
+RewriteRule ^project-detail(\.php)?$ %{ENV:BASE}project/%1? [R=301,L]
 
 RewriteCond %{ENV:REDIRECT_STATUS} ^$
 RewriteCond %{QUERY_STRING} ^slug=([^&]+)$
-RewriteRule ^service-pages/service-detail(\.php)?$ services/%1? [R=301,L]
+RewriteRule ^service-pages/service-detail(\.php)?$ %{ENV:BASE}services/%1? [R=301,L]
 
 RewriteCond %{ENV:REDIRECT_STATUS} ^$
 RewriteCond %{QUERY_STRING} ^slug=([^&]+)$
-RewriteRule ^technology-detail(\.php)?$ technology/%1? [R=301,L]
+RewriteRule ^technology-detail(\.php)?$ %{ENV:BASE}technology/%1? [R=301,L]
 
 # 6. Remove index.php from root
 RewriteCond %{ENV:REDIRECT_STATUS} ^$
-RewriteRule ^index(\.php)?$ ./ [R=301,L]
+RewriteRule ^index(\.php)?$ %{ENV:BASE} [R=301,L]
 
 # 7. Force Extensionless PHP Files
 RewriteCond %{ENV:REDIRECT_STATUS} ^$
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} -f
-RewriteCond %{REQUEST_URI} ^(.+)\.php$
+RewriteCond %{REQUEST_URI} ^(.*)/([^/]+)\.php$
 RewriteCond %{REQUEST_URI} !handlers/
-RewriteRule ^ %1 [R=301,L]
+RewriteRule ^ %1/%2 [R=301,L]
+
+# 8. Remove trailing slashes (MUST be before internal rewrites to prevent invalid path generation)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} ^(.*)/+$
+RewriteRule ^ %1 [L,R=301]
 
 # Internal rewrite to .php
+# We check that the URI doesn't already end in .php to prevent Apache from continuously appending it
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteCond %{REQUEST_URI} !\.php$ [NC]
 RewriteRule ^(.*)$ $1.php [L,QSA]
-
-# 8. Remove trailing slashes
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} (.+)/$
-RewriteRule ^(.*)/$ $1 [L,R=301]
 
 # ==============================================================================
 # Performance & Error Handling
 # ==============================================================================
 
-# Custom 404 Page
-# NOTE: For local server
-# ErrorDocument 404 /Aim-Rebuild/Aim-site/404.php
+# Disable MultiViews to prevent Apache from guessing file extensions
+Options -MultiViews
 
-# NOTE: For live server
-ErrorDocument 404 /404.php
+# Universal 404 Routing (Works perfectly on local and live)
+RewriteCond %{REQUEST_URI} !404\.php$ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ %{ENV:BASE}404.php [L]
 
 # Browser Caching
 <IfModule mod_expires.c>

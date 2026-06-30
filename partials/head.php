@@ -25,12 +25,11 @@ $seo = getSEO($pageKey ?? 'home');
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title><?php echo htmlspecialchars($pageTitle ?? $seo['title']); ?></title>
     <meta name="description" content="<?php echo htmlspecialchars($pageDescription ?? $seo['description']); ?>" />
-    <!-- Favicon -->
+
     <link rel="icon" type="image/png" href="<?= asset('images/aim-favicon.png') ?>">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
     <link rel="stylesheet" href="<?= asset('css/global.css') ?>" />
+    <link rel="stylesheet" href="<?= asset('css/components/breadcrumbs.css') ?>" />
 
     <?php
     if (isset($extraCSS)) {
@@ -45,4 +44,34 @@ $seo = getSEO($pageKey ?? 'home');
     ?>
 
     <link rel="stylesheet" href="<?= asset('css/responsive.css') ?>" />
+
+    <?php
+    // Extract the raw request path without query string
+    $request_path = strtok($_SERVER['REQUEST_URI'], '?');
+
+    // Safely remove the local sub-directory path (e.g., /Aim-Rebuild/Aim-site) if we are testing locally
+    global $base_path;
+    if (!empty($base_path) && strpos($request_path, $base_path) === 0) {
+        $request_path = substr($request_path, strlen($base_path));
+    }
+
+    // Ensure it starts with a slash
+    if (empty($request_path) || $request_path[0] !== '/') {
+        $request_path = '/' . $request_path;
+    }
+
+    // Generate production canonical URL
+    $canonical = 'https://aiminfocorp.com' . $request_path;
+
+    // Remove trailing slash except for homepage
+    if ($canonical !== 'https://aiminfocorp.com/') {
+        $canonical = rtrim($canonical, '/');
+    }
+
+    // Do not output canonical tag on 404 error pages
+    global $pageKey;
+    if (($pageKey ?? '') !== '404'):
+    ?>
+        <link rel="canonical" href="<?= htmlspecialchars($canonical, ENT_QUOTES, 'UTF-8') ?>" />
+    <?php endif; ?>
 </head>

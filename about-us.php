@@ -2,7 +2,7 @@
 require_once __DIR__ . '/config/config.php';
 // about.php
 require_once __DIR__ . '/config/data.php';
-$pageKey = 'about';
+$pageKey = 'about-us';
 
 // Extra CSS files for this page
 $extraCSS = [
@@ -35,6 +35,7 @@ require_once 'partials/head.php';
         <div class="container hero-container">
             <div class="legacy-composition">
                 <div class="legacy-narrative section-fade">
+                    <?php render_breadcrumbs(['Home' => url(''), 'About Us' => '']); ?>
                     <p class="tag tag-primary">GLOBAL STRATEGY</p>
                     <h1 class="legacy-h1">
                         Creating Digital <span class="gradient-text">Masterpieces</span>

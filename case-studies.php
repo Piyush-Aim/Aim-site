@@ -49,6 +49,7 @@ require_once 'partials/head.php';
                 </div>
             </div>
             <div class="hero-content-centered section-fade">
+                <?php render_breadcrumbs(['Home' => url(''), 'Case Studies' => '']); ?>
                 <p class="tag tag-primary">Engineering Exceptional Success</p>
                 <h1>The Architecture of <span class="gradient-text">Exceptional Success</span></h1>
                 <p class="subtitle">We bridge the gap between creative vision and technical precision. <?= COMPANY_NAME ?> empowers global brands with high-performance ecosystems, optimized by AI-Driven leadership.</p>
