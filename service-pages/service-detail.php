@@ -429,8 +429,45 @@ $extraJS = [
     <!-- FINAL CTA -->
     <?php include __DIR__ . '/../reuseable-block/cta.php'; ?>
 
-    <!-- STATE CITIES LIST -->
-    <?php if (!empty($stateSlug) && empty($citySlug) && isset($locationsData[$stateSlug]['cities']) && !empty($locationsData[$stateSlug]['cities'])): ?>
+    <!-- LOCATIONS WE SERVE (Base Service Page) OR CITIES WE SERVE (State Page) -->
+    <?php if (empty($stateSlug) && !empty($locationsData)): ?>
+        <section class="state-cities-sec">
+            <div class="container section-fade">
+                <div class="section-header text-center">
+                    <div class="tag tag-primary">
+                        <i class="fa-solid fa-map-location-dot"></i>Locations We Serve
+                    </div>
+                    <h2>Find <?= htmlspecialchars($pageData['menu_title'] ?? 'Services') ?> Near You</h2>
+                    <p class="subtitle">Explore the states and cities where we provide our top-tier services.</p>
+                </div>
+                <div class="faq-accordion">
+                    <?php foreach ($locationsData as $sSlug => $sData): ?>
+                        <div class="faq-item state-cities-accordion">
+                            <button class="faq-toggle"><?= htmlspecialchars($sData['name']) ?> <i class="fa-solid fa-plus faq-icon"></i></button>
+                            <div class="faq-content">
+                                <div class="cities-grid">
+                                    <a href="<?= url("services/{$slug}/{$sSlug}") ?>" class="city-card" style="border-color: var(--primary);">
+                                        <div class="city-icon"><i class="fa-solid fa-map"></i></div>
+                                        <h3 class="city-name" style="color: var(--primary);">All <?= htmlspecialchars($sData['name']) ?> Services</h3>
+                                        <i class="fa-solid fa-angle-right city-arrow"></i>
+                                    </a>
+                                    <?php if (!empty($sData['cities'])): ?>
+                                        <?php foreach ($sData['cities'] as $cSlug => $cName): ?>
+                                            <a href="<?= url("services/{$slug}/{$sSlug}/{$cSlug}") ?>" class="city-card">
+                                                <div class="city-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                                                <h3 class="city-name"><?= htmlspecialchars($cName) ?></h3>
+                                                <i class="fa-solid fa-angle-right city-arrow"></i>
+                                            </a>
+                                        <?php endforeach; ?>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+        </section>
+    <?php elseif (!empty($stateSlug) && empty($citySlug) && isset($locationsData[$stateSlug]['cities']) && !empty($locationsData[$stateSlug]['cities'])): ?>
         <section class="state-cities-sec">
             <div class="container section-fade">
                 <div class="section-header text-center">
