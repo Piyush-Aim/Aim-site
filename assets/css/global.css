@@ -378,16 +378,14 @@ footer {
   gap: 0.4rem;
 }
 
-.has-dropdown i {
+.has-dropdown i,
+.has-mega-menu i {
   font-size: 0.7rem;
   transition: transform 0.3s;
 }
 
-.has-mega-menu .fa-chevron-down {
-  font-size: 0.7rem;
-}
-
-.has-dropdown:hover i {
+.has-dropdown:hover i,
+.has-mega-menu:hover i {
   transform: rotate(180deg);
 }
 
