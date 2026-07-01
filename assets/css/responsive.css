@@ -21,6 +21,11 @@
     .project-summary-grid {
         gap: 1.5rem;
     }
+
+    /* STATE CITIES LIST */
+    .cities-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media (max-width: 1180px) {
@@ -337,6 +342,15 @@
 
     .webdev-t-grid {
         grid-template-columns: 1fr 1fr;
+    }
+
+    /* STATE CITIES LIST */
+    .cities-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .faq-item.state-cities-accordion {
+        padding: 0 1.5rem;
     }
 }
 
@@ -753,6 +767,28 @@
     }
 }
 
+@media (max-width: 650px) {
+
+    /* STATE CITIES LIST */
+    .cities-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .faq-item.state-cities-accordion {
+        padding: 0 1.25rem;
+    }
+    
+    .state-cities-accordion .faq-toggle {
+        font-size: 1.05rem;
+    }
+
+    /* breadcrumbs */
+    .breadcrumbs-list {
+        columns: 8px;
+        border-radius: 18px;
+    }
+}
+
 @media (max-width: 480px) {
 
     /* About page hero section */
@@ -826,6 +862,10 @@
     .floating-metric,
     .glass-stat-card {
         display: none;
+    }
+
+    .faq-item.state-cities-accordion {
+        padding: 0 1rem;
     }
 
     /* technology detail mobile */

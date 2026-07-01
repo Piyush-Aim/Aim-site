@@ -47,19 +47,26 @@ if ($stateSlug) {
     $pageData = $servicesData[$localSlug];
 }
 
-function replaceLocationPlaceholders($data, $city, $state, $locationName)
+function replaceLocationPlaceholders($data, $city, $state, $locationName, $seed = '')
 {
     $targetLoc = $city ?: $state;
     if (is_array($data)) {
         foreach ($data as $key => $value) {
-            $data[$key] = replaceLocationPlaceholders($value, $city, $state, $locationName);
+            $data[$key] = replaceLocationPlaceholders($value, $city, $state, $locationName, $seed);
         }
         return $data;
     } elseif (is_string($data)) {
         $data = str_replace('{target_loc}', $targetLoc, $data);
         $data = str_replace('{city}', $city ?: '', $data);
         $data = str_replace('{state}', $state ?: '', $data);
-        return preg_replace('/\s+/', ' ', trim($data));
+        $data = preg_replace('/\s+/', ' ', trim($data));
+
+        // Parse deterministic spintax after placeholders are handled
+        if (function_exists('parseSpintax')) {
+            $data = parseSpintax($data, $seed);
+        }
+
+        return $data;
     }
     return $data;
 }
@@ -67,7 +74,10 @@ function replaceLocationPlaceholders($data, $city, $state, $locationName)
 $stateName = $stateSlug ? ($locationsData[$stateSlug]['name'] ?? '') : '';
 $cityName  = ($citySlug && isset($locationsData[$stateSlug]['cities'][$citySlug])) ? $locationsData[$stateSlug]['cities'][$citySlug] : '';
 
-$pageData = replaceLocationPlaceholders($pageData, $cityName, $stateName, $locationName);
+// Create a mathematically deterministic seed based on the URL components
+$pageSeed = $slug . '-' . $stateSlug . '-' . $citySlug;
+
+$pageData = replaceLocationPlaceholders($pageData, $cityName, $stateName, $locationName, $pageSeed);
 
 $pageTitle = $pageData['pageTitle'];
 $pageDescription = $pageData['pageDescription'];
@@ -232,75 +242,77 @@ $extraJS = [
     </section>
 
     <!-- SERVICE -->
-    <section class="webdev-types">
-        <div class="container">
-            <div class="section-header section-fade">
-                <div class="tag tag-primary"><?= $pageData['types']['tag'] ?></div>
-                <h2 class="s3-section-title"><?= $pageData['types']['title'] ?></h2>
-                <p class="subtitle"><?= $pageData['types']['subtitle'] ?></p>
-            </div>
-
-            <!-- Tab buttons -->
-            <div class="expertise-tabs-wrapper section-fade">
-                <div class="expertise-tabs">
-                    <?php
-                    $first = true;
-                    foreach ($pageData['types']['panels'] as $id => $data): ?>
-                        <button class="exp-tab <?= $first ? 'active' : '' ?>" data-tab="<?= $id ?>">
-                            <div class="tab-icon">
-                                <i class="<?= $data['tab_icon'] ?>"></i>
-                            </div>
-                            <span><?= $data['tab_name'] ?></span>
-                        </button>
-                    <?php
-                        $first = false;
-                    endforeach; ?>
+    <?php if (isset($pageData['types'])): ?>
+        <section class="webdev-types">
+            <div class="container">
+                <div class="section-header section-fade">
+                    <div class="tag tag-primary"><?= $pageData['types']['tag'] ?></div>
+                    <h2 class="s3-section-title"><?= $pageData['types']['title'] ?></h2>
+                    <p class="subtitle"><?= $pageData['types']['subtitle'] ?></p>
                 </div>
-                <div class="tab-indicator-track">
-                    <div class="tab-indicator" id="dynamic-indicator"></div>
-                </div>
-            </div>
 
-            <?php
-            $first = true;
-            foreach ($pageData['types']['panels'] as $id => $data): ?>
-                <div class="expertise-panel <?= $first ? 'active' : '' ?> section-fade" data-panel="<?= $id ?>">
-                    <div class="exp-panel-grid">
-                        <div class="exp-panel-visual">
-                            <div class="glass-image-wrapper">
-                                <img src="<?= url($data['image']) ?>" alt="<?= htmlspecialchars($data['title']) ?>">
-                                <?php if (isset($data['metric'])): ?>
-                                    <div class="floating-metric">
-                                        <i class="<?= $data['metric']['icon'] ?>"></i>
-                                        <strong><?= $data['metric']['val'] ?></strong>
-                                        <span><?= $data['metric']['lbl'] ?></span>
-                                    </div>
-                                <?php endif; ?>
+                <!-- Tab buttons -->
+                <div class="expertise-tabs-wrapper section-fade">
+                    <div class="expertise-tabs">
+                        <?php
+                        $first = true;
+                        foreach ($pageData['types']['panels'] as $id => $data): ?>
+                            <button class="exp-tab <?= $first ? 'active' : '' ?>" data-tab="<?= $id ?>">
+                                <div class="tab-icon">
+                                    <i class="<?= $data['tab_icon'] ?>"></i>
+                                </div>
+                                <span><?= $data['tab_name'] ?></span>
+                            </button>
+                        <?php
+                            $first = false;
+                        endforeach; ?>
+                    </div>
+                    <div class="tab-indicator-track">
+                        <div class="tab-indicator" id="dynamic-indicator"></div>
+                    </div>
+                </div>
+
+                <?php
+                $first = true;
+                foreach ($pageData['types']['panels'] as $id => $data): ?>
+                    <div class="expertise-panel <?= $first ? 'active' : '' ?> section-fade" data-panel="<?= $id ?>">
+                        <div class="exp-panel-grid">
+                            <div class="exp-panel-visual">
+                                <div class="glass-image-wrapper">
+                                    <img src="<?= url($data['image']) ?>" alt="<?= htmlspecialchars($data['title']) ?>">
+                                    <?php if (isset($data['metric'])): ?>
+                                        <div class="floating-metric">
+                                            <i class="<?= $data['metric']['icon'] ?>"></i>
+                                            <strong><?= $data['metric']['val'] ?></strong>
+                                            <span><?= $data['metric']['lbl'] ?></span>
+                                        </div>
+                                    <?php endif; ?>
+                                </div>
                             </div>
-                        </div>
-                        <div class="exp-panel-content">
-                            <div class="tag-minimal"><?= $data['tagline'] ?></div>
-                            <h3><?= $data['title'] ?></h3>
-                            <p><?= $data['desc'] ?></p>
-                            <div class="exp-features-list">
-                                <?php foreach ($data['features'] as $feature): ?>
-                                    <div class="feat-li"><i class="fa-solid fa-check"></i> <?= htmlspecialchars($feature) ?></div>
-                                <?php endforeach; ?>
-                            </div>
-                            <div class="exp-tech-chips">
-                                <?php foreach ($data['techStack'] as $tech): ?>
-                                    <span><?= htmlspecialchars($tech) ?></span>
-                                <?php endforeach; ?>
+                            <div class="exp-panel-content">
+                                <div class="tag-minimal"><?= $data['tagline'] ?></div>
+                                <h3><?= $data['title'] ?></h3>
+                                <p><?= $data['desc'] ?></p>
+                                <div class="exp-features-list">
+                                    <?php foreach ($data['features'] as $feature): ?>
+                                        <div class="feat-li"><i class="fa-solid fa-check"></i> <?= htmlspecialchars($feature) ?></div>
+                                    <?php endforeach; ?>
+                                </div>
+                                <div class="exp-tech-chips">
+                                    <?php foreach ($data['techStack'] as $tech): ?>
+                                        <span><?= htmlspecialchars($tech) ?></span>
+                                    <?php endforeach; ?>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            <?php
-                $first = false;
-            endforeach; ?>
+                <?php
+                    $first = false;
+                endforeach; ?>
 
-        </div>
-    </section>
+            </div>
+        </section>
+    <?php endif; ?>
 
     <!-- PROCESS-->
     <section class="webdev-process">
@@ -406,7 +418,7 @@ $extraJS = [
                     <div class="faq-item">
                         <button class="faq-toggle"><?= htmlspecialchars($faq['q']) ?> <i class="fa-solid fa-plus faq-icon"></i></button>
                         <div class="faq-content">
-                            <p><?= htmlspecialchars($faq['a']) ?></p>
+                            <p><?= $faq['a'] ?></p>
                         </div>
                     </div>
                 <?php endforeach; ?>
@@ -416,6 +428,35 @@ $extraJS = [
 
     <!-- FINAL CTA -->
     <?php include __DIR__ . '/../reuseable-block/cta.php'; ?>
+
+    <!-- STATE CITIES LIST -->
+    <?php if (!empty($stateSlug) && empty($citySlug) && isset($locationsData[$stateSlug]['cities']) && !empty($locationsData[$stateSlug]['cities'])): ?>
+        <section class="state-cities-sec">
+            <div class="container section-fade">
+                <div class="section-header text-center">
+                    <div class="tag tag-primary">
+                        <i class="fa-solid fa-city"></i>Cities We Serve
+                    </div>
+                    <h2>Major Cities We Serve in <span class="gradient-text"><?= htmlspecialchars($locationsData[$stateSlug]['name']) ?></span></h2>
+                    <p class="subtitle">Explore the cities where we provide top-tier <?= htmlspecialchars($pageData['menu_title'] ?? 'services') ?> in <?= htmlspecialchars($locationsData[$stateSlug]['name']) ?>.</p>
+                </div>
+                <div class="faq-item state-cities-accordion">
+                    <button class="faq-toggle">View All Service Cities <i class="fa-solid fa-plus faq-icon"></i></button>
+                    <div class="faq-content">
+                        <div class="cities-grid">
+                            <?php foreach ($locationsData[$stateSlug]['cities'] as $cSlug => $cName): ?>
+                                <a href="<?= url("services/{$slug}/{$stateSlug}/{$cSlug}") ?>" class="city-card">
+                                    <div class="city-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                                    <h3 class="city-name"><?= htmlspecialchars($cName) ?></h3>
+                                    <i class="fa-solid fa-angle-right city-arrow"></i>
+                                </a>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <?php endif; ?>
 
     <?php include __DIR__ . '/../partials/footer.php'; ?>
 </body>

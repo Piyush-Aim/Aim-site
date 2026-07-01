@@ -14,7 +14,7 @@ return [
 
     /* ================= HERO ================= */
     'hero' => [
-        'tag' => '<i class="fa-solid fa-palette"></i>&nbsp; UI/UX Design Agency | ' . COMPANY_NAME,
+        'tag' => '<i class="fa-solid fa-palette"></i>&nbsp; UI/UX Design Agency',
         'title' => 'Design <span class="gradient-text">Experiences</span> Users Love',
         'subtitle' => COMPANY_NAME . ' creates intuitive, visually stunning, and conversion-focused user interfaces. We combine user psychology, design strategy, and modern tools to deliver exceptional digital experiences.',
         'metrics' => [

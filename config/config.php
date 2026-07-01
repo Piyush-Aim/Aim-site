@@ -87,11 +87,18 @@ define('COMPANY_ADDRESS_SHORT', 'Rajkot, Gujarat India');
 // =========================================================================
 $isLocal = strpos($_SERVER['HTTP_HOST'], 'localhost') !== false;
 
+// Load .env variables manually
+$envPath = dirname(__DIR__) . '/.env';
+$envVars = [];
+if (file_exists($envPath)) {
+    $envVars = parse_ini_file($envPath);
+}
+
 // SMTP Settings
 define('SMTP_HOST',     'smtp.gmail.com');
 define('SMTP_AUTH',     true);
 define('SMTP_USERNAME', 'piyushpanchalaim@gmail.com');
-define('SMTP_PASSWORD', 'coim yvuc xkdp xfsh'); // app password
+define('SMTP_PASSWORD', $envVars['SMTP_PASSWORD'] ?? 'YOUR_SMTP_PASSWORD'); // app password
 define('SMTP_SECURE',   'tls');
 define('SMTP_PORT',     587);
 
@@ -104,7 +111,7 @@ define('ADMIN_EMAIL',     'aiminfocorp.com@gmail.com'); // Form data Show in thi
 // Google reCAPTCHA v3 Config
 // =========================================================================
 define('RECAPTCHA_SITE_KEY', '6Ld5py8tAAAAADKrBNiXAl5WjNOjwhwnDTVjzs76');
-define('RECAPTCHA_SECRET_KEY', '6Ld5py8tAAAAAMHmaQruEWWrrgT_Dr33SyUbKXbi');
+define('RECAPTCHA_SECRET_KEY', $envVars['RECAPTCHA_SECRET_KEY'] ?? 'YOUR_SECRET_KEY');
 
 // Mail Debug
 define('MAIL_DEBUG', 0);
@@ -133,7 +140,7 @@ if (!function_exists('getRealTestimonials')) {
                     'linear-gradient(135deg,#b91c1c,#f87171)',
                     'linear-gradient(135deg,#ea580c,#fb923c)',
                 ];
-                $t['color'] = $colors[crc32($t['name']) % count($colors)];
+                $t['color'] = $colors[abs(crc32($t['name'])) % count($colors)];
                 $t['rating'] = $t['rating'] ?? 5.0;
 
                 $testimonials[] = $t;
@@ -166,5 +173,29 @@ if (!function_exists('getClientLogos')) {
             }
         }
         return $logos;
+    }
+}
+
+// Helper to deterministically parse Spintax based on a seed
+if (!function_exists('parseSpintax')) {
+    function parseSpintax($text, $seedString = '')
+    {
+        // Loop until there are no more {} blocks containing a | to support nested spintax
+        // The regex strictly requires a pipe | to prevent matching standard placeholders
+        while (preg_match('/\{([^{}]*\|[^{}]*)\}/', $text)) {
+            $text = preg_replace_callback('/\{([^{}]*\|[^{}]*)\}/', function ($matches) use ($seedString, $text) {
+                // If seed is empty, use the text itself to guarantee a deterministic seed
+                $seed = !empty($seedString) ? $seedString : $text;
+                $parts = explode('|', $matches[1]);
+
+                // Hash the seed and the specific match, grab 7 hex chars to safely fit in 32-bit int
+                $hashHex = substr(md5($seed . $matches[0]), 0, 7);
+                $hashInt = hexdec($hashHex);
+
+                $index = $hashInt % count($parts);
+                return $parts[$index];
+            }, $text);
+        }
+        return $text;
     }
 }

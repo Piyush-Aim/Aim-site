@@ -501,7 +501,7 @@
 .logo-item img {
   height: 100%;
   width: auto;
-  max-width: 160px;
+  /* max-width: 160px; */
   object-fit: contain;
 }
 

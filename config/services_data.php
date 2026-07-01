@@ -1,7 +1,5 @@
 <?php
-// config/services_data.php
 
-global $allServicesData;
 $allServicesData = [];
 
 $servicesDir = __DIR__ . '/services';
