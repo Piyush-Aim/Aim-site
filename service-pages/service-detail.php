@@ -93,7 +93,8 @@ $extraCSS = [
 ];
 $extraJS = [
     asset('js/components/faq-accordion.js'),
-    asset('js/services/service-detail.js')
+    asset('js/services/service-detail.js'),
+    asset('js/components/locations-tabs.js')
 ];
 ?>
 
@@ -444,11 +445,22 @@ $extraJS = [
                 <div class="faq-item state-cities-accordion">
                     <button class="faq-toggle">View All Service Locations <i class="fa-solid fa-plus faq-icon"></i></button>
                     <div class="faq-content">
-                        <div class="nested-accordion-wrapper">
-                            <?php foreach ($locationsData as $sSlug => $sData): ?>
-                                <div class="faq-item">
-                                    <button class="faq-toggle nested-faq-toggle"><?= htmlspecialchars($sData['name']) ?> <i class="fa-solid fa-plus faq-icon nested-faq-icon"></i></button>
-                                    <div class="faq-content">
+                        <div class="locations-tabs-container">
+                            <div class="loc-tabs-sidebar">
+                                <?php $isFirst = true; ?>
+                                <?php foreach ($locationsData as $sSlug => $sData): ?>
+                                    <button class="loc-tab-btn <?= $isFirst ? 'active' : '' ?>" data-target="loc-<?= htmlspecialchars($sSlug) ?>">
+                                        <?= htmlspecialchars($sData['name']) ?>
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </button>
+                                    <?php $isFirst = false; ?>
+                                <?php endforeach; ?>
+                            </div>
+                            
+                            <div class="loc-tabs-content">
+                                <?php $isFirst = true; ?>
+                                <?php foreach ($locationsData as $sSlug => $sData): ?>
+                                    <div class="loc-tab-panel <?= $isFirst ? 'active' : '' ?>" id="loc-<?= htmlspecialchars($sSlug) ?>">
                                         <div class="cities-grid">
                                             <a href="<?= url("services/{$slug}/{$sSlug}") ?>" class="city-card highlight-city-card">
                                                 <div class="city-icon"><i class="fa-solid fa-map"></i></div>
@@ -466,8 +478,9 @@ $extraJS = [
                                             <?php endif; ?>
                                         </div>
                                     </div>
-                                </div>
-                            <?php endforeach; ?>
+                                    <?php $isFirst = false; ?>
+                                <?php endforeach; ?>
+                            </div>
                         </div>
                     </div>
                 </div>

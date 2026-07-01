@@ -26,6 +26,12 @@
     .cities-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    /* LOCATIONS TABS */
+    .loc-tabs-content .cities-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0;
+    }
 }
 
 @media (max-width: 1180px) {
@@ -349,8 +355,50 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .faq-item.state-cities-accordion {
-        padding: 0 1.5rem;
+    /* LOCATIONS TABS */
+    .locations-tabs-container {
+        flex-direction: column;
+    }
+
+    .loc-tabs-sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        display: flex;
+        overflow-x: auto;
+        padding: 0;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .loc-tabs-sidebar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .loc-tab-btn {
+        width: auto;
+        padding: 1rem 1.5rem;
+        border-left: none;
+        border-bottom: 4px solid transparent;
+        white-space: nowrap;
+    }
+
+    .loc-tab-btn i {
+        display: none;
+    }
+
+    .loc-tab-btn:hover,
+    .loc-tab-btn.active {
+        border-left-color: transparent;
+        border-bottom-color: var(--primary);
+    }
+
+    .loc-tabs-content {
+        padding: 1.5rem;
+    }
+
+    .loc-tabs-content .cities-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -773,13 +821,24 @@
     .cities-grid {
         grid-template-columns: 1fr;
     }
-    
-    .faq-item.state-cities-accordion {
-        padding: 0 1.25rem;
+
+    /* LOCATIONS TABS */
+    .loc-tabs-content .cities-grid {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
     }
-    
-    .state-cities-accordion .faq-toggle {
+
+    .faq-item.state-cities-accordion>.faq-toggle {
+        padding: 1.25rem 1rem;
         font-size: 1.05rem;
+    }
+
+    .loc-tabs-content .cities-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-content>.cities-grid {
+        padding: 1rem 1rem 1.5rem 1rem;
     }
 
     /* breadcrumbs */
@@ -862,10 +921,6 @@
     .floating-metric,
     .glass-stat-card {
         display: none;
-    }
-
-    .faq-item.state-cities-accordion {
-        padding: 0 1rem;
     }
 
     /* technology detail mobile */
