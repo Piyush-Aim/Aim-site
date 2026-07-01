@@ -440,31 +440,38 @@ $extraJS = [
                     <h2>Find <?= htmlspecialchars($pageData['menu_title'] ?? 'Services') ?> Near You</h2>
                     <p class="subtitle">Explore the states and cities where we provide our top-tier services.</p>
                 </div>
-                <div class="faq-accordion">
-                    <?php foreach ($locationsData as $sSlug => $sData): ?>
-                        <div class="faq-item state-cities-accordion">
-                            <button class="faq-toggle"><?= htmlspecialchars($sData['name']) ?> <i class="fa-solid fa-plus faq-icon"></i></button>
-                            <div class="faq-content">
-                                <div class="cities-grid">
-                                    <a href="<?= url("services/{$slug}/{$sSlug}") ?>" class="city-card" style="border-color: var(--primary);">
-                                        <div class="city-icon"><i class="fa-solid fa-map"></i></div>
-                                        <h3 class="city-name" style="color: var(--primary);">All <?= htmlspecialchars($sData['name']) ?> Services</h3>
-                                        <i class="fa-solid fa-angle-right city-arrow"></i>
-                                    </a>
-                                    <?php if (!empty($sData['cities'])): ?>
-                                        <?php foreach ($sData['cities'] as $cSlug => $cName): ?>
-                                            <a href="<?= url("services/{$slug}/{$sSlug}/{$cSlug}") ?>" class="city-card">
-                                                <div class="city-icon"><i class="fa-solid fa-map-location-dot"></i></div>
-                                                <h3 class="city-name"><?= htmlspecialchars($cName) ?></h3>
+                
+                <div class="faq-item state-cities-accordion">
+                    <button class="faq-toggle">View All Service Locations <i class="fa-solid fa-plus faq-icon"></i></button>
+                    <div class="faq-content">
+                        <div class="faq-accordion" style="padding-bottom: 2rem;">
+                            <?php foreach ($locationsData as $sSlug => $sData): ?>
+                                <div class="faq-item">
+                                    <button class="faq-toggle" style="font-size: 1.1rem; padding: 1.25rem 0;"><?= htmlspecialchars($sData['name']) ?> <i class="fa-solid fa-plus faq-icon" style="font-size: 0.9rem;"></i></button>
+                                    <div class="faq-content">
+                                        <div class="cities-grid" style="padding-top: 0.5rem;">
+                                            <a href="<?= url("services/{$slug}/{$sSlug}") ?>" class="city-card" style="border-color: var(--primary);">
+                                                <div class="city-icon"><i class="fa-solid fa-map"></i></div>
+                                                <h3 class="city-name" style="color: var(--primary);">All <?= htmlspecialchars($sData['name']) ?> Services</h3>
                                                 <i class="fa-solid fa-angle-right city-arrow"></i>
                                             </a>
-                                        <?php endforeach; ?>
-                                    <?php endif; ?>
+                                            <?php if (!empty($sData['cities'])): ?>
+                                                <?php foreach ($sData['cities'] as $cSlug => $cName): ?>
+                                                    <a href="<?= url("services/{$slug}/{$sSlug}/{$cSlug}") ?>" class="city-card">
+                                                        <div class="city-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                                                        <h3 class="city-name"><?= htmlspecialchars($cName) ?></h3>
+                                                        <i class="fa-solid fa-angle-right city-arrow"></i>
+                                                    </a>
+                                                <?php endforeach; ?>
+                                            <?php endif; ?>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                            <?php endforeach; ?>
                         </div>
-                    <?php endforeach; ?>
+                    </div>
                 </div>
+
             </div>
         </section>
     <?php elseif (!empty($stateSlug) && empty($citySlug) && isset($locationsData[$stateSlug]['cities']) && !empty($locationsData[$stateSlug]['cities'])): ?>
