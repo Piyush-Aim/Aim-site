@@ -444,7 +444,7 @@ $extraJS = [
                 <div class="faq-item state-cities-accordion">
                     <button class="faq-toggle">View All Service Locations <i class="fa-solid fa-plus faq-icon"></i></button>
                     <div class="faq-content">
-                        <div class="faq-accordion" style="padding-bottom: 2rem;">
+                        <div style="padding-bottom: 2rem;">
                             <?php foreach ($locationsData as $sSlug => $sData): ?>
                                 <div class="faq-item">
                                     <button class="faq-toggle" style="font-size: 1.1rem; padding: 1.25rem 0;"><?= htmlspecialchars($sData['name']) ?> <i class="fa-solid fa-plus faq-icon" style="font-size: 0.9rem;"></i></button>
