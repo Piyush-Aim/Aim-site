@@ -756,3 +756,25 @@
   color: var(--primary);
   opacity: 1;
 }
+
+/* 9. NESTED ACCORDIONS */
+.nested-accordion-wrapper {
+  padding-bottom: 2rem;
+}
+
+.nested-faq-toggle {
+  font-size: 1.1rem;
+  padding: 1.25rem 0;
+}
+
+.nested-faq-icon {
+  font-size: 0.9rem;
+}
+
+.highlight-city-card {
+  border-color: var(--primary);
+}
+
+.highlight-city-card .city-name {
+  color: var(--primary);
+}
