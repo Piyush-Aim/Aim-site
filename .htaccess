@@ -22,6 +22,9 @@ RewriteRule ^ - [E=BASE:/]
 RewriteRule ^about/?$ %{ENV:BASE}about-us [R=301,L]
 RewriteRule ^service/?$ %{ENV:BASE}services [R=301,L]
 
+# Sitemap Dynamic Routing
+RewriteRule ^sitemap\.xml$ sitemap.php [L,QSA]
+
 # 1. Project Detail Routing
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

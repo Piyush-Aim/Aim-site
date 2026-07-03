@@ -833,10 +833,6 @@
         font-size: 1.05rem;
     }
 
-    .loc-tabs-content .cities-grid {
-        grid-template-columns: 1fr;
-    }
-
     .faq-content>.cities-grid {
         padding: 1rem 1rem 1.5rem 1rem;
     }

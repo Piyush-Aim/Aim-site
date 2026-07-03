@@ -431,7 +431,7 @@ $extraJS = [
     <?php include __DIR__ . '/../reuseable-block/cta.php'; ?>
 
     <!-- LOCATIONS WE SERVE (Base Service Page) OR CITIES WE SERVE (State Page) -->
-    <?php if (empty($stateSlug) && !empty($locationsData)): ?>
+    <?php if (empty($stateSlug) && !empty($locationsData) && isset($servicesData[$slug . '-local'])): ?>
         <section class="state-cities-sec">
             <div class="container section-fade">
                 <div class="section-header text-center">

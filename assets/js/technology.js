@@ -42,17 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentActive) updateIndicator(currentActive);
     });
 
-    // Intersection Observer for fade-in animations
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, {
-        threshold: 0.1
-    });
-    document.querySelectorAll('.section-fade').forEach(el => observer.observe(el));
 
     // Load More Logic - Updated to 6 at a time
     const loadMoreButtons = document.querySelectorAll('.btn-load-more');

@@ -45,8 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Observe all fade elements
-    document.querySelectorAll('.section-fade').forEach(el => observer.observe(el));
     // Observe .conduit-step
     document.querySelectorAll('.conduit-step').forEach(el => observer.observe(el));
 });
