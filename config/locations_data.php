@@ -14,12 +14,12 @@ return [
             'suffolk-va'        => 'Suffolk, VA',
             'leesburg-va'       => 'Leesburg, VA',
             'norfolk-va'        => 'Norfolk, VA',
-        ]
-    ],
-    'north-carolina' => [
-        'name'   => 'North Carolina',
-        'cities' => [
-            'charlotte-nc' => 'Charlotte, NC'
+            'harrisonburg-va'   => 'Harrisonburg, VA',
+            'chesapeake-va'     => 'Chesapeake, VA',
+            'portsmouth-va'     => 'Portsmouth, VA',
+            'manassas-va'       => 'Manassas, VA',
+            'blacksburg-va'     => 'Blacksburg, VA',
+            'abingdon-va'       => 'Abingdon, VA',
         ]
     ],
     'california' => [
@@ -60,6 +60,34 @@ return [
             'san-diego-ca'        => 'San Diego, CA',
             'huntington-beach-ca' => 'Huntington Beach, CA',
             'newport-beach-ca'    => 'Newport Beach, CA',
+            'irvine-ca'           => 'Irvine, CA',
+            'los-gatos-ca'        => 'Los Gatos, CA',
+            'long-beach-ca'       => 'Long Beach, CA',
+            'laguna-beach-ca'     => 'Laguna Beach, CA',
+            'mission-viejo-ca'    => 'Mission Viejo, CA',
+            'laguna-hills-ca'     => 'laguna Hills, CA',
+            'orange-county-ca'    => 'Orange County, CA',
+            'santa-clara-ca'      => 'Santa Clara, CA',
+            'westminster-ca'      => 'Westminster, CA',
+            'san-carlos-ca'       => 'San Carlos, CA',
+            'fountain-valley-ca'  => 'Fountain Valley, CA',
+            'santa-rosa-ca'       => 'Santa Rosa, CA',
+            'anaheim-ca'          => 'Anaheim, CA',
+            'costa-mesa-ca'       => 'Costa Mesa, CA',
+            'inglewood-ca'         => 'Inglewood, CA',
+            'santa-maria-ca'      => 'Santa Maria, CA',
+            'torrance-ca'         => 'Torrance, CA',
+            'san-jose-ca'         => 'San Jose, CA',
+            'san-ramon-ca'        => 'San Ramon, CA',
+            'orange-ca'           => 'Orange, CA',
+            'san-bernardino-ca'   => 'San Bernardino, CA',
+            'lake-forest-ca'      => 'Lake Forest, CA',
+            'daly-city-ca'        => 'Daly City, CA',
+            'pomona-ca'           => 'Pomona, CA',
+            'riverside-ca'        => 'Riverside, CA',
+            'palo-alto-ca'        => 'Palo Alto, CA',
+            'sacramento-ca'       => 'Sacramento, CA',
+            'san-mateo-ca'        => 'San Mateo, CA',
         ]
     ],
     'colorado' => [
@@ -76,7 +104,12 @@ return [
             'broomfield-co'       => 'Broomfield, CO',
             'westminster-co'      => 'Westminster, CO',
             'greeley-co'          => 'Greeley, CO',
-
+            'springs-co'          => 'Springs, CO',
+            'lakewood-co'         => 'Lakewood, CO',
+            'pueblo-co'           => 'Pueblo, CO',
+            'englewood-co'        => 'Englewood, CO',
+            'castle-rock-co'      => 'Castle Rock, CO',
+            'fort-collins-co'     => 'Fort Collins, CO',
         ]
     ],
     'wisconsin' => [
@@ -88,32 +121,48 @@ return [
             'kenosha-wi'     => 'Kenosha, WI',
             'oshkosh-wi'     => 'Oshkosh, WI',
             'appleton-wi'    => 'Appleton, WI',
-
+            'sheboygan-wi'   => 'Sheboygan, WI',
+            'cudahy-wi'      => 'Cudahy, WI',
+            'de-pere-wi'     => 'De Pere, WI',
+            'la-crosse-wi'   => 'La Crosse, WI',
+            'eau-claire-wi'  => 'Eau Claire, WI',
         ]
     ],
     'pennsylvania' => [
         'name' => 'Pennsylvania',
         'cities' => [
-            'harrisburg-pa'       => 'Harrisburg, PA',
-            'philadelphia-pa'     => 'Philadelphia, PA',
-            'reading-pa'          => 'Reading, PA',
-            'pittsburgh-pa'       => 'Pittsburgh, PA',
-            'williamsport-pa'     => 'Williamsport, PA',
-            'easton-pa'           => 'Easton, PA',
-            'lancaster-pa'        => 'Lancaster, PA',
+            'harrisburg-pa'   => 'Harrisburg, PA',
+            'philadelphia-pa' => 'Philadelphia, PA',
+            'reading-pa'      => 'Reading, PA',
+            'pittsburgh-pa'   => 'Pittsburgh, PA',
+            'williamsport-pa' => 'Williamsport, PA',
+            'easton-pa'       => 'Easton, PA',
+            'lancaster-pa'    => 'Lancaster, PA',
+            'erie-pa'         => 'Erie, PA',
+            'scranton-pa'     => 'Scranton, PA',
+            'allentown-pa'    => 'Allentown, PA',
+            'altoona-pa'      => 'Altoona, PA',
         ]
     ],
     'ohio' => [
         'name' => 'Ohio',
         'cities' => [
-            'cleveland-oh'    => 'Cleveland, OH',
-            'columbus-oh'     => 'Columbus, OH',
-            'cincinnati-oh'   => 'Cincinnati, OH',
-            'dayton-oh'       => 'Dayton, OH',
-            'toledo-oh'       => 'Toledo, OH',
-            'mentor-oh'       => 'Mentor, OH',
-            'elyria-oh'       => 'Elyria, OH',
-            'parma-oh'        => 'Parma, OH',
+            'cleveland-oh'   => 'Cleveland, OH',
+            'columbus-oh'    => 'Columbus, OH',
+            'cincinnati-oh'  => 'Cincinnati, OH',
+            'dayton-oh'      => 'Dayton, OH',
+            'toledo-oh'      => 'Toledo, OH',
+            'mentor-oh'      => 'Mentor, OH',
+            'elyria-oh'      => 'Elyria, OH',
+            'parma-oh'       => 'Parma, OH',
+            'youngstown-oh'  => 'Youngstown, OH',
+            'akron-oh'       => 'Akron, OH',
+            'canton-oh'      => 'Canton, OH',
+            'middletown-oh'  => 'Middletown, OH',
+            'cuyahoga-falls-oh' => 'Cuyahoga Falls, OH',
+            'sandusky-oh'    => 'Sandusky, OH',
+            'kettering-oh'   => 'Kettering, OH',
+            'lorain-oh'      => 'Lorain, OH',
         ]
     ],
     'texas' => [
@@ -124,6 +173,7 @@ return [
             'dallas-tx'      => 'Dallas, TX',
             'san-antonio-tx' => 'San Antonio, TX',
             'austin-tx'      => 'Austin, TX',
+            'tulsa-tx'       => 'Tulsa, TX',
         ]
     ],
     'minnesota' => [
@@ -134,32 +184,77 @@ return [
             'minneapolis-mn' => 'Minneapolis, MN',
             'st-paul-mn'     => 'St. Paul, MN',
             'blaine-mn'      => 'Blaine, MN',
+            'lakeville-mn'   => 'Lakeville, MN',
+            'rochester-mn'   => 'Rochester, MN',
+            'maple-grove-mn' => 'Maple Grove, MN',
+            'burnsville-mn'  => 'Burnsville, MN',
+            'woodbury-mn'    => 'Woodbury, MN',
+            'st-cloud-mn'    => 'St. Cloud, MN',
+            'eagan-mn'       => 'Eagan, MN',
+            'brooklyn-park-mn' => 'Brooklyn Park, MN',
+            'eden-prairie-mn' => 'Eden Prairie, MN',
         ]
     ],
     'illinois' => [
         'name' => 'Illinois',
         'cities' => [
-            'bloomington-il'         => 'Bloomington, IL',
-            'champaign-il'           => 'Champaign, IL',
-            'arlington-heights-il'   => 'Arlington Heights, IL',
-            'decatur-il'             => 'Decatur, IL',
-            'naperville-il'          => 'Naperville, IL',
-            'joliet-il'              => 'Joliet, IL',
+            'bloomington-il'       => 'Bloomington, IL',
+            'champaign-il'         => 'Champaign, IL',
+            'arlington-heights-il' => 'Arlington Heights, IL',
+            'decatur-il'           => 'Decatur, IL',
+            'naperville-il'        => 'Naperville, IL',
+            'joliet-il'            => 'Joliet, IL',
+            'peoria-il'            => 'Peoria, IL',
+            'rockford-il'          => 'Rockford, IL',
+            'chicago-il'           => 'Chicago, IL',
+            'schaumburg-il'        => 'Schaumburg, IL',
+            'skokie-il'            => 'Skokie, IL',
+            'elgin-il'             => 'Elgin, IL',
+            'aurora-il'            => 'Aurora, IL',
+            'bolingbrook-il'       => 'Bolingbrook, IL',
+            'springfield-il'       => 'Springfield, IL',
+            'evanston-il'          => 'Evanston, IL',
+            'waukegan-il'          => 'Waukegan, IL',
+            'des-plaines-il'       => 'Des Plaines, IL',
+            'cicero-il'            => 'Cicero, IL',
+            'palatine-il'          => 'Palatine, IL',
         ]
     ],
     'nebraska' => [
         'name' => 'Nebraska',
         'cities' => [
-            'hastings-ne' => 'Hastings, NE',
+            'south-sioux-city-ne' => 'South Sioux City, NE',
+            'hastings-ne'         => 'Hastings, NE',
+            'bellevue-ne'         => 'Bellevue, NE',
+            'papillion-ne'        => 'Papillion, NE',
+            'columbus-ne'         => 'Columbus, NE',
+            'norfolk-ne'          => 'Norfolk, NE',
+            'lincoln-ne'          => 'Lincoln, NE',
+            'omaha-ne'            => 'Omaha, NE',
+            'scottsbluff-ne'      => 'Scottsbluff, NE',
+            'grand-island-ne'     => 'Grand Island, NE',
+            'north-platte-ne'     => 'North Platte, NE',
         ]
-    ],
-    'new-york' => [
-        'name' => 'New York',
     ],
     'georgia' => [
         'name' => 'Georgia',
         'cities' => [
             'atlanta-ga' => 'Atlanta, GA',
         ]
+    ],
+    'north-carolina' => [
+        'name'   => 'North Carolina',
+        'cities' => [
+            'charlotte-nc' => 'Charlotte, NC'
+        ]
+    ],
+    'missouri' => [
+        'name' => 'Missouri',
+        'cities' => [
+            'st-louis-mo' => 'St. Louis, MO',
+        ]
+    ],
+    'new-york' => [
+        'name' => 'New York',
     ],
 ];

@@ -1,7 +1,7 @@
 <?php
 // sitemap.php
 
-header("Content-Type: text/xml;charset=iso-8859-1");
+header('Content-Type: application/xml; charset=UTF-8');
 
 // Suppress errors in XML output so it doesn't break the format
 error_reporting(0);
@@ -20,16 +20,22 @@ $date = date('Y-m-d');
 echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
 echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n";
 
+function escapeXml($value)
+{
+    return htmlspecialchars((string) $value, ENT_XML1 | ENT_COMPAT, 'UTF-8');
+}
+
 /**
  * Helper to generate URL XML block
  */
-function echoUrl($loc, $priority = '0.8', $changefreq = 'weekly') {
+function echoUrl($loc, $priority = '0.8', $changefreq = 'weekly')
+{
     global $date;
     echo "  <url>\n";
-    echo "    <loc>{$loc}</loc>\n";
-    echo "    <lastmod>{$date}</lastmod>\n";
-    echo "    <changefreq>{$changefreq}</changefreq>\n";
-    echo "    <priority>{$priority}</priority>\n";
+    echo '    <loc>' . escapeXml($loc) . '</loc>' . "\n";
+    echo '    <lastmod>' . escapeXml($date) . '</lastmod>' . "\n";
+    echo '    <changefreq>' . escapeXml($changefreq) . '</changefreq>' . "\n";
+    echo '    <priority>' . escapeXml($priority) . '</priority>' . "\n";
     echo "  </url>\n";
 }
 
@@ -62,7 +68,7 @@ if (is_array($servicesData)) {
         echoUrl("{$domain}/services/{$slug}", '0.9');
 
         // Check if there is a local equivalent to generate state/city pages
-        if (isset($servicesData[$slug . '-local'])) {
+        if (isset($servicesData[$slug . '-local']) && is_array($locationsData)) {
             foreach ($locationsData as $stateSlug => $stateData) {
                 // State Level Page
                 echoUrl("{$domain}/services/{$slug}/{$stateSlug}", '0.8');
@@ -89,8 +95,10 @@ if (is_array($appTechMapping)) {
 require_once __DIR__ . '/config/data.php';
 global $portfolioData;
 if (is_array($portfolioData)) {
-    foreach ($portfolioData as $projectSlug => $projectData) {
-        echoUrl("{$domain}/project/{$projectSlug}", '0.8');
+    foreach ($portfolioData as $projectData) {
+        if (isset($projectData['slug'])) {
+            echoUrl("{$domain}/project/{$projectData['slug']}", '0.8');
+        }
     }
 }
 
