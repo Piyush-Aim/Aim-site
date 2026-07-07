@@ -88,6 +88,16 @@ return [
             'palo-alto-ca'        => 'Palo Alto, CA',
             'sacramento-ca'       => 'Sacramento, CA',
             'san-mateo-ca'        => 'San Mateo, CA',
+            'cupertino-ca'        => 'Cupertino, CA',
+            'mountain-view-ca'    => 'Mountain View, CA',
+            'santa-ana-ca'        => 'Santa Ana, CA',
+            'garden-grove-ca'     => 'Garden Grove, CA',
+            'redwood-city-ca'     => 'Redwood City, CA',
+            'norwalk-ca'          => 'Norwalk, CA',
+            'menlo-park-ca'       => 'Menlo Park, CA',
+            'foster-city-ca'      => 'Foster City, CA',
+            'santa-cruz-ca'       => 'Santa Cruz, CA',
+            'fremont-ca'          => 'Fremont, CA',
         ]
     ],
     'colorado' => [
@@ -142,6 +152,10 @@ return [
             'scranton-pa'     => 'Scranton, PA',
             'allentown-pa'    => 'Allentown, PA',
             'altoona-pa'      => 'Altoona, PA',
+            'chester-pa'      => 'Chester, PA',
+            'wilkes-barre-pa' => 'Wilkes-Barre, PA',
+            'york-pa'         => 'York, PA',
+            'bethlehem-pa'    => 'Bethlehem, PA',
         ]
     ],
     'ohio' => [
@@ -163,6 +177,7 @@ return [
             'sandusky-oh'    => 'Sandusky, OH',
             'kettering-oh'   => 'Kettering, OH',
             'lorain-oh'      => 'Lorain, OH',
+            'mansfield-oh'   => 'Mansfield, OH',
         ]
     ],
     'texas' => [
@@ -174,6 +189,8 @@ return [
             'san-antonio-tx' => 'San Antonio, TX',
             'austin-tx'      => 'Austin, TX',
             'tulsa-tx'       => 'Tulsa, TX',
+            'portland-tx'    => 'Portland, TX',
+            'boston-tx'      => 'Boston, TX',
         ]
     ],
     'minnesota' => [
@@ -193,6 +210,7 @@ return [
             'eagan-mn'       => 'Eagan, MN',
             'brooklyn-park-mn' => 'Brooklyn Park, MN',
             'eden-prairie-mn' => 'Eden Prairie, MN',
+            'plymouth-mn'     => 'Plymouth, MN',
         ]
     ],
     'illinois' => [
@@ -234,6 +252,10 @@ return [
             'scottsbluff-ne'      => 'Scottsbluff, NE',
             'grand-island-ne'     => 'Grand Island, NE',
             'north-platte-ne'     => 'North Platte, NE',
+            'kearney-ne'          => 'Kearney, NE',
+            'la-vista-ne'         => 'La Vista, NE',
+            'fremont-ne'          => 'Fremont, NE',
+            'beatrice-ne'         => 'Beatrice, NE',
         ]
     ],
     'georgia' => [
