@@ -699,6 +699,7 @@
 .loc-tabs-content .cities-grid {
   grid-template-columns: repeat(3, 1fr);
   padding: 0;
+  gap: 1rem;
 }
 
 .city-card {
@@ -788,6 +789,7 @@
   overflow: hidden;
   box-shadow: none;
   min-height: 400px;
+  position: relative;
 }
 
 .loc-tabs-sidebar {
@@ -823,9 +825,14 @@
 }
 
 .loc-tabs-content {
-  flex: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 280px;
   padding: 2.5rem;
   background: var(--white);
+  overflow-y: auto;
 }
 
 .loc-tab-panel {
@@ -847,4 +854,22 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Custom Scrollbar for Locations Modal */
+.locations-tabs-container ::-webkit-scrollbar {
+  width: 5px;
+}
+
+.locations-tabs-container ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.locations-tabs-container ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.locations-tabs-container ::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
 }

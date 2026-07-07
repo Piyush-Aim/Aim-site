@@ -395,6 +395,7 @@
 
     .loc-tabs-content {
         padding: 1.5rem;
+        position: static;
     }
 
     .loc-tabs-content .cities-grid {
